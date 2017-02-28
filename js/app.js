@@ -9,6 +9,8 @@ $(document).ready(function() {
 
   img_liquid()
 
+  slider_heroscreen()
+
 })
 //
 
@@ -44,3 +46,16 @@ function img_liquid() {
 
 }
 //
+
+function slider_heroscreen() {
+
+  $('#inicio-heroscreen-slider').slick({
+    autoplay: true,
+    autoPlaySpeed: 5000,
+    arrows: false,
+    dots: false,
+    vertical: true,
+    verticalSwiping: true,
+  })
+
+}

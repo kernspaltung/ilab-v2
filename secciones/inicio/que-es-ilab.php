@@ -1,4 +1,4 @@
-<section id="inicio-que-es" class="columns h-100-v">
+<section id="inicio-que-es" class="columns h-100-v p-top">
 
 
 

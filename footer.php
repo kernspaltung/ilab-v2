@@ -3,7 +3,7 @@
 </div><!-- main -->
 
 
-<footer id="footer" class="columns p-0 h-a">
+<footer id="footer" class="columns p-0">
 
 <div class="columns small-12 medium-6 large-4 h-footer-widget v-center">
 

@@ -81,20 +81,17 @@ div, section, nav, article, ul {
 // movimiento de menu movil
 .posicion-menu {
 
-transition: 1s;
--ms-transform: translateX(100px);
--webkit-transform: translateX(100px);
--moz-transform: translateX(100px);
--o-transform: translateX(100px);
-transform: translateX(100px);
+  transition: 1s;
+  -ms-transform: translateX(100px);
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  -o-transform: translateX(100px);
+  transform: translateX(100px);
 
 }
 
-
-
 //
 footer {
-
   & .h-footer-widget {
     height: 50vh;
     // @extend .p-top;
