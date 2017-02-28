@@ -76,4 +76,20 @@ div, section, nav, article, ul {
 .text-shadow {
   text-shadow: 2px 2px 2px rgba(0,0,0,0.35);
 }
+
 //
+footer {
+
+  & .h-footer-widget {
+    height: 100vh;
+    @extend .p-top;
+  }
+
+}
+
+// responsivos
+@media screen and (max-width:640) {
+  .h-footer-widget {
+    height: 40vh;
+  }
+}
