@@ -14,3 +14,20 @@
 
 
   <div id="main" class="main columns">
+
+
+ <div id="header-escritorio" class="columns h-15-v shadow fixed top left">
+
+<div class="columns h-35">
+  
+</div>
+
+<div class="columns h-65">
+
+<div id="header-escritorio-logo" class="columns medium-4 large-3 imgLiquid imgLiquidNoFill">
+
+  <img src="http://fakeimg.pl/240?text=Ilab-Logo" alt=""></div>
+
+</div>
+
+ </div>

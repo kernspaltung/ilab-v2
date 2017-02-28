@@ -1,24 +1,46 @@
 $(document).foundation();
+
+u = new Utils();
+// 
 $(document).ready(function() {
 
-//
-setup()
+  //
+  setupResize()
 
+  img_liquid()
 
 })
 //
-function setup() {
-  var arr = ['s','e','t','u','p']
-  var i = 0
-  setInterval(
-    function() {
-      if (i > (arr.length - 1 )){
-        i = 0
-      } else {
-      console.log( i + arr[i] )
-      i = i + 1
-    }
-    },
-    500)
+
+function setupResize() {
+
+  u.addWindowResizeFunction( u.verticalCenter )
+  // u.addWindowResizeFunction( u.shareH )
+  // u.addWindowResizeFunction( u.shareW )
+  //
+  setTimeout(function(){
+
+    $(window).trigger('resize')
+
+  },100);
+}
+//
+
+function img_liquid() {
+
+  $(".imgLiquid.imgLiquidFill").imgLiquid()
+
+  $(".imgLiquid.imgLiquidNoFill").imgLiquid({fill:false})
+
+  $(".imgLiquid.imgLiquidNoFillLeft").imgLiquid({
+    fill:false,
+    horizontalAlign:"left",
+  });
+
+  $(".imgLiquid.imgLiquidNoFillRight").imgLiquid({
+    fill:false,
+    horizontalAlign:"right",
+  });
 
 }
+//
