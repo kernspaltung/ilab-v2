@@ -5,21 +5,21 @@
 
 <footer id="footer" class="columns p-0 h-a">
 
-<div class="columns small-12 medium-4 h-50-v h-footer-desk v-center">
+<div class="columns small-12 medium-6 large-4 h-footer-widget v-center">
 
 <div class="columns h-a text-center">
   Widget contacto
 </div>
 
 </div>
-<div class="columns small-12 medium-4 h-50-v h-footer-desk v-center">
+<div class="columns small-12 medium-6 large-4 h-footer-widget v-center">
 
 <div class="columns h-a text-center">
   Widget texto
 </div>
 
 </div>
-<div class="columns small-12 medium-4 h-50-v h-footer-desk v-center">
+<div class="columns small-12 large-4 h-footer-widget v-center">
 
 <div class="columns h-a text-center">
   Widget banners

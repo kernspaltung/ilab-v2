@@ -18,7 +18,7 @@
 
     <div id="header-escritorio" class="columns h-15-v shadow fixed top left">
 
-      <div class="columns h-35">
+      <div class="columns p-0 h-35">
         <div class="columns medium-6"></div>
 
         <div id="header-top-social" class="columns medium-6">
@@ -29,50 +29,76 @@
 
           for ($i=0; $i < 6 ; $i++):
 
-            ?>
+          ?>
 
-            <div class="columns small-2 v-center">
+          <div class="columns small-2 v-center">
 
-              <div class="columns p-0 h-a text-center">
+            <div class="columns p-0 h-a text-center">
 
-                <a class="columns p-0 h-100" href="http://www.facebook.com/" target="_blank">
+              <a class="columns p-0 h-100" href="http://www.facebook.com/" target="_blank">
 
-                  <i class="fa fa-<?php echo $redes[$i];?> text-shadow"></i>
+                <i class="fa fa-<?php echo $redes[$i];?> text-shadow"></i>
 
-                </a>
-
-              </div>
+              </a>
 
             </div>
 
+          </div>
 
 
-          <?php endfor; ?>
+
+        <?php endfor; ?>
+
+      </div>
+
+    </div>
+
+    <div class="columns h-65">
+
+      <div id="header-escritorio-logo" class="columns medium-6 large-2 imgLiquid imgLiquidNoFillLeft">
+
+        <img src="http://fakeimg.pl/340?text=Ilab-Logo" alt="">
+      </div>
+
+
+      <nav id="menu-escritorio" class="columns medium-6 large-10 show-for-large">
+
+        <?php
+
+        include "secciones/general/menu-lista.php";
+
+        ?>
+
+      </nav>
+
+      <!-- contenedor boton movil -->
+      <div class="columns small-6  p-0 hide-for-large">
+
+        <div class="columns small-9 medium-10 p-0"></div>
+
+        <div class="columns small-3 medium-2">
+
+          <a href="#" class="columns p-0 h-100 v-center">
+
+            <div class="columns p-0 h-a text-center">
+
+              <i class="fa fa-bars"></i>
+
+            </div>
+
+          </a>
 
         </div>
 
       </div>
 
-      <div class="columns h-65">
-
-        <div id="header-escritorio-logo" class="columns medium-4 large-3 imgLiquid imgLiquidNoFillLeft">
-
-          <img src="http://fakeimg.pl/340?text=Ilab-Logo" alt="">
-        </div>
+      <nav id="menu-mobil" class="columns small-7 medium-4 h-100-v posicion-menu hide-for-large">
+        <!-- el menu se pasa aqui en movil -->
+      </nav>
 
 
-        <nav class="columns medium-8 large-9">
-
-          <?php
-
-          include "secciones/general/menu-lista.php";
-
-          ?>
-
-        </nav>
-
-      </div>
+    </div>
 
 
 
-    </div> <!-- header escritorio -->
+  </div> <!-- header escritorio -->
