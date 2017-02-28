@@ -1,7 +1,7 @@
 $(document).foundation();
 
 u = new Utils();
-// 
+//
 $(document).ready(function() {
 
   //
@@ -15,8 +15,8 @@ $(document).ready(function() {
 function setupResize() {
 
   u.addWindowResizeFunction( u.verticalCenter )
-  // u.addWindowResizeFunction( u.shareH )
-  // u.addWindowResizeFunction( u.shareW )
+  u.addWindowResizeFunction( u.shareW )
+  u.addWindowResizeFunction( u.shareH )
   //
   setTimeout(function(){
 

@@ -16,18 +16,63 @@
   <div id="main" class="main columns">
 
 
- <div id="header-escritorio" class="columns h-15-v shadow fixed top left">
+    <div id="header-escritorio" class="columns h-15-v shadow fixed top left">
 
-<div class="columns h-35">
-  
-</div>
+      <div class="columns h-35">
+        <div class="columns medium-6"></div>
 
-<div class="columns h-65">
+        <div id="header-top-social" class="columns medium-6">
 
-<div id="header-escritorio-logo" class="columns medium-4 large-3 imgLiquid imgLiquidNoFill">
+          <?php
 
-  <img src="http://fakeimg.pl/240?text=Ilab-Logo" alt=""></div>
+          $redes = array('facebook','twitter','linkedin-square','google-plus','instagram','youtube-play');
 
-</div>
+          for ($i=0; $i < 6 ; $i++):
 
- </div>
+            ?>
+
+            <div class="columns small-2 v-center">
+
+              <div class="columns p-0 h-a text-center">
+
+                <a class="columns p-0 h-100" href="http://www.facebook.com/" target="_blank">
+
+                  <i class="fa fa-<?php echo $redes[$i];?> text-shadow"></i>
+
+                </a>
+
+              </div>
+
+            </div>
+
+
+
+          <?php endfor; ?>
+
+        </div>
+
+      </div>
+
+      <div class="columns h-65">
+
+        <div id="header-escritorio-logo" class="columns medium-4 large-3 imgLiquid imgLiquidNoFillLeft">
+
+          <img src="http://fakeimg.pl/340?text=Ilab-Logo" alt="">
+        </div>
+
+
+        <nav class="columns medium-8 large-9">
+
+          <?php
+
+          include "secciones/general/menu-lista.php";
+
+          ?>
+
+        </nav>
+
+      </div>
+
+
+
+    </div> <!-- header escritorio -->
