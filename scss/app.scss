@@ -53,5 +53,15 @@
 
 // Dependencias
 @import "bower_components/font-awesome/scss/font-awesome";
-@import "submodulos/style-utils/scss/style_utils";
+@import "submodulos/style_utils/scss/style_utils";
+//
+
+// wires
+* { outline: 1px solid rgba(0,0,0,0.5);}
+//
+
+// resets
+div, section, article, ul {
+  @extend .h-100;
+}
 //

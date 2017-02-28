@@ -1,4 +1,4 @@
-<section id="inicio-heroscreen" class="columns h-100-v">
+<section id="inicio-aliados" class="columns h-100-v">
 
 
 
