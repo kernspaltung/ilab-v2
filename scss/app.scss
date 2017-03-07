@@ -80,16 +80,27 @@ div, section, nav, article, ul {
 
 // movimiento de menu movil
 .posicion-menu {
-
   transition: 1s;
-  -ms-transform: translateX(100px);
-  -webkit-transform: translateX(100px);
-  -moz-transform: translateX(100px);
-  -o-transform: translateX(100px);
-  transform: translateX(100px);
-
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
 }
-
+.gira-icono-menu {
+  transition: 0.4s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.color-cerrado {
+  color: blue;
+}
+.color-abierto {
+  color: black;
+}
 //
 footer {
   & .h-footer-widget {

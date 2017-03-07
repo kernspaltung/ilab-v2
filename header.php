@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<head> 
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,17 +77,17 @@
 
 
       <!-- seccion header movil + medium-->
-      <div class="columns small-8 p-0 hide-for-large">
+      <div id="header-movil" class="columns small-8 p-0 hide-for-large">
 
         <div class="columns small-9 medium-10 p-0"></div>
 
         <div class="columns small-3 medium-2">
 
-          <a href="#" class="columns p-0 h-100 v-center">
+          <a id="header-movil-boton-menu" href="#" class="columns p-0 h-100 v-center">
 
             <div class="columns p-0 h-a text-center">
 
-              <i class="fa fa-bars font-l"></i>
+              <i id="header-movil-boton-icono" class="fa fa-bars font-l"></i>
 
             </div>
 
@@ -97,8 +97,13 @@
 
       </div>
 
-      <nav id="menu-mobil" class="columns small-7 medium-4 h-100-v posicion-menu hide-for-large hidden">
+      <nav id="menu-movil" class="columns small-7 medium-4 h-100-v posicion-menu-fuera fixed top right z1k hide-for-large">
         <!-- el menu se pasa aqui en movil -->
+        <?php
+
+        //include_once "secciones/general/menu-movil.php";
+
+        ?>
       </nav>
       <!-- fin seccion header movil -->
 

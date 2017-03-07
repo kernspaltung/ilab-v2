@@ -60,7 +60,7 @@ function slider_heroscreen() {
 
 }
 
-
+var menumovil = $("#menu-movil");//
 function menu_movil() {
   // registra su posicion actual, fuera de la pantalla
   var anchomenumovil = menumovil.width()
@@ -72,12 +72,12 @@ function menu_movil() {
     '-o-transform': 'translateX(' + anchomenumovil +'px)',
     'transform': 'translateX(' + anchomenumovil +'px)'
   })
-  var menuicono = $('#menu-movil-boton i');
+  var menuicono = $('#header-movil-boton-icono');
 
   // reset del icono en caso de resize
   if (menuicono.hasClass('fa-close')) {
 
-    menuicono.removeClass('fa-close').addClass('fa-bars color-secondary-1-2');
+    menuicono.removeClass('fa-close').addClass('fa-bars color-cerrado');
 
   }
   //
@@ -90,12 +90,17 @@ function menu_movil() {
     'transform': 'translateX(' + anchomenumovil +'px)'
   }
 
-  $('#menu-movil-boton').on('click', function() {
+  // abre menu movil
+  $('#header-movil-boton-menu').on('click', function() {
 
     var posicion = menumovil.position();
 
+    // debug
+    console.log(posicion);
+
     if(posicion.left >= $(document).width()) {
       // entra menu
+      alert('entra?')
       menumovil.css({
         'transition': '0.25s',
         '-webkit-transform': 'translateX(0px)',
@@ -111,7 +116,8 @@ function menu_movil() {
       //cambia el icono
       setTimeout(function() {
 
-        menuicono.removeClass('fa-bars color-secondary-1-2').addClass('fa-close color-complement-2');
+        menuicono.removeClass('fa-bars color-abierto')
+        menuicono.addClass('fa-close color-cerrado');
 
       },125);
 
@@ -122,31 +128,6 @@ function menu_movil() {
 
       },500)
 
-
-      // resetea la posicion si un link es presionado
-      $('#level-menu ul li div a').on('click', function() {
-
-        // retrasa cierre del menu despues del scroll
-        setTimeout(function() {
-
-          menumovil.css(salemenu);
-          setTimeout(function() {
-
-            menuicono.toggleClass('gira-icono-menu');
-            menuicono.removeClass('fa-close color-complement-2').addClass('fa-bars color-secondary-1-2');
-
-          },125);
-          // reset giro
-          setTimeout(function() {
-
-            menuicono.toggleClass('gira-icono-menu');
-
-          },500)
-
-        },750)
-
-      })
-
     } else {
       // sale menu
       menumovil.css(salemenu);
@@ -155,7 +136,8 @@ function menu_movil() {
       //cambia el icono
       setTimeout(function() {
 
-        menuicono.removeClass('fa-close color-complement-2').addClass('fa-bars color-secondary-1-2');
+        menuicono.removeClass('fa-close color-abierto')
+        menuicono.addClass('fa-bars color-cerrado');
 
       },125);
 
@@ -191,9 +173,6 @@ function mueve_menu() {
     mobileelement.addClass('shareW h-100');
     desk.append(mayor);
     deskelement.eq(0).removeClass('hidden');
-    //
-    // scroll seccion contacto
-    $('#herum-contacto').addClass('scrollY');
 
     mobile.removeClass('current-menu')
     desk.addClass('current-menu')
@@ -207,9 +186,6 @@ function mueve_menu() {
     deskelement.addClass('shareH');
     mobile.append(menor);
     deskelement.eq(0).addClass('hidden')
-
-    // scroll contacto
-    $('#herum-contacto').removeClass('scrollY')
 
     desk.removeClass('current-menu')
     mobile.addClass('current-menu')
