@@ -1,4 +1,4 @@
-<section id="inicio-heroscreen" class="columns h-100-v p-top">
+<section id="inicio-heroscreen" class="columns h-100-v p-top p-l-0 p-r-0">
 
 
   <div id="inicio-heroscreen-slider" class="columns p-0">
