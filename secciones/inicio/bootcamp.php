@@ -1,15 +1,15 @@
-<section id="inicio-servicios" class="columns h-100-v p-top rel">
+<section id="bootcamp" class="section columns h-100-v p-top rel">
 
 
   <div class="columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
 
-    <img src="http://fakeimg.pl/1220?text=fondo-bootcamp" alt="" />
+    <img src="http://fakeimg.pl/1220?text=bootcamp" alt="" />
 
   </div>
 
   <?php
 
-  for ($i=0; $i < 35 ; $i++):
+  for ($i=0; $i < 4 ; $i++):
 
     ?>
     <div class="columns text-justify h-a w-a">

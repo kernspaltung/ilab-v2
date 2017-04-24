@@ -1,14 +1,14 @@
-<section id="inicio-aliados" class="columns h-100-v p-top rel">
+<section id="aliados" class="section columns h-100-v p-top rel">
 
   <div class="columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
 
-    <img src="http://fakeimg.pl/1220?text=fondo-aliados" alt="" />
+    <img src="http://fakeimg.pl/1220?text=aliados" alt="" />
 
   </div>
 
   <?php
 
-  for ($i=0; $i < 35 ; $i++):
+  for ($i=0; $i < 2 ; $i++):
 
     ?>
     <div class="columns text-justify h-a w-a">

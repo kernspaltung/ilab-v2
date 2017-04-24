@@ -5,6 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ilab v2.0</title>
+  <link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.css">
   <link rel="stylesheet" href="submodulos/js_utils/dist/stylesheet/js_utils.css">
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
@@ -39,7 +40,7 @@
 
                 <a class="columns p-0 h-100" href="http://www.facebook.com/" target="_blank">
 
-                  <i class="fa fa-<?php echo $redes[$i];?> text-shadow"></i>
+                  <i class="fa fa-<?php echo $redes[$i];?>"></i>
 
                 </a>
 
@@ -54,15 +55,19 @@
         </div><!-- fin top social -->
 
         <!-- boton login  -->
-        <div class="columns small-3 p-l-0 p-r-0 v-center">
+        <div class="columns small-3 p-0">
+          <a href="#" class="columns p-0 h-100">
+            <div class="columns p-0 v-center">
 
-          <div class="columns h-a p-0 text-center font-xs font-sm-s font-lg-m">
-            <a href="columns p-0 h-100">
-              Login
-            </a>
-          </div>
+              <div class="columns h-a p-0 text-center font-xs font-sm-s font-lg-m">
+                Login
+              </div>
 
+            </div>
+          </a>
         </div>
+
+
 
       </div>
 

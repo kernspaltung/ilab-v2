@@ -1,4 +1,4 @@
-<section id="inicio-heroscreen" class="columns h-100-v p-top p-l-0 p-r-0">
+<section id="heroscreen" class="section columns h-100-v p-top p-l-0 p-r-0">
 
 
   <div id="inicio-heroscreen-slider" class="columns p-0">
@@ -10,7 +10,7 @@
 
       <div class="columns p-0 imgLiquid imgLiquidFill">
 
-        <img src="http://fakeimg.pl/1920?text=Slider-<?php echo $i;?>" alt="" />
+        <img src="http://fakeimg.pl/1920?text=Slide-<?php echo $i;?>" alt="" />
 
       </div>
 

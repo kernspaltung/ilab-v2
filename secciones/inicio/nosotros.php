@@ -1,14 +1,14 @@
-<section id="inicio-que-es" class="columns h-100-v p-top rel">
+<section id="nosotros" class="section columns h-100-v p-top rel">
 
 <div class="columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
 
-  <img src="http://fakeimg.pl/1220?text=fondo-nosotros" alt="" />
+  <img src="http://fakeimg.pl/1220?text=nosotros" alt="" />
 
 </div>
 
   <?php
 
-  for ($i=0; $i < 20 ; $i++):
+  for ($i=0; $i < 1 ; $i++):
 
     ?>
     <div class="columns text-justify h-a w-a">

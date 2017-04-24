@@ -7,6 +7,7 @@ $(document).ready(function() {
   //
   setupResize()
   img_liquid()
+  fullpage()
   slider_heroscreen()
   menu_movil()
   mueve_menu()
@@ -192,4 +193,61 @@ function mueve_menu() {
 
   }
 
+}
+
+function fullpage() {
+  // $('#fullpage').fullpage();
+  $('#fullpage').fullpage({
+		//Navigation
+		menu: '#lista-menu',
+		lockAnchors: false,
+		anchors:['inicio-heroscreen', 'inicio-nosotros','inicio-bootcamp','inicio-incuba','inicio-startups','inicio-aliados','inicio-eventos-ac'],
+		navigation: false,
+		navigationPosition: 'left',
+		// navigationTooltips: ['firstSlide', 'secondSlide'],
+		// showActiveTooltip: false,
+		// slidesNavigation: false,
+		// slidesNavPosition: 'bottom',
+
+		//Scrolling
+		css3: true,
+		scrollingSpeed: 1000,
+		autoScrolling: false,
+		fitToSection: true,
+		fitToSectionDelay: 1000,
+		scrollBar: false,
+		easing: 'easeInOutCubic',
+		easingcss3: 'ease',
+
+
+		//Accessibility
+		keyboardScrolling: true,
+		animateAnchor: true,
+		recordHistory: true,
+
+		//Design
+		// controlArrows: true,
+		verticalCentered: false,
+		paddingTop: '10vh',
+		paddingBottom: '0vh',
+		fixedElements: false,
+		responsiveWidth: 0,
+		responsiveHeight: 0,
+		responsiveSlides: false,
+
+		//Custom selectors
+		sectionSelector: '.section',
+		slideSelector: '.slide',
+
+		lazyLoading: true,
+
+		//events
+		onLeave: function(index, nextIndex, direction){},
+		afterLoad: function(anchorLink, index){},
+		afterRender: function(){},
+		afterResize: function(){},
+		afterResponsive: function(isResponsive){},
+		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+	});
 }

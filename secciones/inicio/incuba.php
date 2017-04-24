@@ -1,14 +1,14 @@
-<section id="inicio-industrias" class="columns h-100-v p-top rel">
+<section id="incuba" class="section columns h-100-v p-top rel">
 
   <div class="columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
 
-    <img src="http://fakeimg.pl/1220?text=fondo-incuba" alt="" />
+    <img src="http://fakeimg.pl/1220?text=incuba" alt="" />
 
   </div>
 
   <?php
 
-  for ($i=0; $i < 35 ; $i++):
+  for ($i=0; $i < 5 ; $i++):
 
     ?>
     <div class="columns text-justify h-a w-a">
