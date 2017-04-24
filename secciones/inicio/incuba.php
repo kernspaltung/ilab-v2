@@ -1,8 +1,8 @@
-<section id="inicio-aliados" class="columns h-100-v p-top rel">
+<section id="inicio-industrias" class="columns h-100-v p-top rel">
 
   <div class="columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
 
-    <img src="http://fakeimg.pl/1220?text=fondo-aliados" alt="" />
+    <img src="http://fakeimg.pl/1220?text=fondo-incuba" alt="" />
 
   </div>
 
@@ -13,13 +13,16 @@
     ?>
     <div class="columns text-justify h-a w-a">
 
-      <h1 class="columns p-0 text-left h-a">Aliados</h1>
+      <h1 class="columns p-0 text-left h-a">Incuba</h1>
 
     </div>
 
     <?php
   endfor;
   ?>
+
+
+
 
 
 </section>

@@ -13,14 +13,17 @@
 
 <body>
 
-    <header id="header" class="columns h-15-v shadow fixed top left z1k1">
+  <header id="header" class="altura-header columns shadow fixed top left z1k1 color-blanco-bg">
 
-      <div id="header-top" class="columns p-0 h-35">
+    <div id="header-top" class="columns p-0 h-35">
 
-        <!-- Este div vacio desaparece en movil para que no mueva las redes -->
-        <div class="columns medium-6 hide-for-small-only"></div>
+      <!-- Este div vacio desaparece en movil para que no mueva las redes -->
+      <div class="columns medium-6 hide-for-small-only"></div>
 
-        <div id="header-top-social" class="columns small-12 medium-6">
+      <div class="columns p-0 medium-6">
+
+
+        <div id="header-top-social" class="columns p-0 small-9">
 
           <?php
 
@@ -28,25 +31,38 @@
 
           for ($i=0; $i < 6 ; $i++):
 
-          ?>
+            ?>
 
-          <div class="columns small-2 v-center">
+            <div class="columns small-2 p-l-0 p-r-0 v-center">
 
-            <div class="columns p-0 h-a text-center">
+              <div class="columns p-0 h-a text-center">
 
-              <a class="columns p-0 h-100" href="http://www.facebook.com/" target="_blank">
+                <a class="columns p-0 h-100" href="http://www.facebook.com/" target="_blank">
 
-                <i class="fa fa-<?php echo $redes[$i];?> text-shadow"></i>
+                  <i class="fa fa-<?php echo $redes[$i];?> text-shadow"></i>
 
-              </a>
+                </a>
+
+              </div>
 
             </div>
 
+
+
+          <?php endfor; ?>
+
+        </div><!-- fin top social -->
+
+        <!-- boton login  -->
+        <div class="columns small-3 p-l-0 p-r-0 v-center">
+
+          <div class="columns h-a p-0 text-center font-xs font-sm-s font-lg-m">
+            <a href="columns p-0 h-100">
+              Login
+            </a>
           </div>
 
-
-
-        <?php endfor; ?>
+        </div>
 
       </div>
 
@@ -64,7 +80,7 @@
 
 
       <!-- seccion header escritorio-->
-      <nav id="menu-escritorio" class="columns medium-8 large-10 show-for-large">
+      <nav id="menu-escritorio" class="columns medium-8 large-10 p-0 show-for-large">
 
         <?php
 

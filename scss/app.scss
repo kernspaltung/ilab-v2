@@ -62,8 +62,8 @@
 // fonts
 @font-face {
     font-family: 'dinregular';
-    src: url('fonts/dinregular-webfont.woff2') format('woff2'),
-         url('fonts/dinregular-webfont.woff') format('woff');
+    src: url('../fonts/dinregular-webfont.woff2') format('woff2'),
+         url('../fonts/dinregular-webfont.woff') format('woff');
     // font-weight: normal;
     font-style: normal;
 
@@ -81,6 +81,9 @@ h1, h2, h3, h4, h5, h6 {
   @extend .color-texto;
 }
 // generales
+.altura-header {
+  height: 15vh;
+}
 .p-top {
   padding-top: 15vh;
 }
