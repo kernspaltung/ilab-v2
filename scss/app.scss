@@ -54,18 +54,32 @@
 // Dependencias
 @import "bower_components/font-awesome/scss/font-awesome";
 @import "submodulos/style_utils/scss/style_utils";
+@import "colores";
 //
 
 // wires
 * { outline: 1px solid rgba(0,0,0,0.5);}
-//
+// fonts
+@font-face {
+    font-family: 'dinregular';
+    src: url('fonts/dinregular-webfont.woff2') format('woff2'),
+         url('fonts/dinregular-webfont.woff') format('woff');
+    // font-weight: normal;
+    font-style: normal;
 
+}
 // resets
 div, section, nav, article, ul {
   @extend .h-100;
+  font-family: 'dinregular';
+  font-weight: normal;
+  @extend .color-texto;
 }
-//
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'dinregular';
+  font-weight: bold;
+  @extend .color-texto;
+}
 // generales
 .p-top {
   padding-top: 15vh;

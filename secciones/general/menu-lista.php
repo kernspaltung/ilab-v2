@@ -2,9 +2,9 @@
 
 
   <?php
-  $menu = array('Inicio', 'Nosotros','Bootcamp','Graduados','Ailados','Eventos', 'AC');
+  $menu = array('Inicio', 'Nosotros','Bootcamp','Incuba','Ailados','Eventos', 'AC');
   // '¿Quiénes somos?'
-  
+
   for ($i=0; $i < count($menu) ; $i++):
 
     ?>

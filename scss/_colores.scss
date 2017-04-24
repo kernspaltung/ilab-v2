@@ -1,0 +1,97 @@
+// Paleta de color con SASS
+$blanco: white;
+$negro: #000;
+$texto: #5e5e5e;
+
+$color-primary-0: #1a4269;
+$color-primary-1: #1779BA;//#3c6489;
+
+$color-secondary-0: #63b5e2;
+$color-secondary-1: #DFF069;
+
+$color-tertiary-0: #81b900;
+$color-tertiary-1: #BF5399;
+
+$color-complement-0: #fba000;
+$color-complement-1: #FFEEAC;
+
+$color-accent-0: #870058;
+$color-accent-1: #BF5399;
+
+$color-neutral-0: #393F4B;
+$color-neutral-1: #C0C0C0;
+
+// array de colores
+$lista-colores: (
+
+blanco   $blanco,
+negro   $negro,
+texto    $texto,
+
+primary-0 $color-primary-0,
+primary-1 $color-primary-1,
+
+secondary-0 $color-secondary-0,
+secondary-1 $color-secondary-1,
+
+tertiary-0 $color-tertiary-0,
+tertiary-1 $color-tertiary-1,
+
+complement-0 $color-complement-0,
+complement-1 $color-complement-1,
+
+neutral-0 $color-neutral-0,
+neutral-1 $color-neutral-1,
+
+accent-0 $color-accent-0
+accent-1 $color-accent-1
+
+);
+// Crea las clases
+@each $value in $lista-colores {
+
+  .color-#{nth($value, 1)} {
+    & {
+      color: nth($value, 2) !important;
+    }
+  }
+  .color-#{nth($value, 1)}-bg {
+    & {
+      background-color: nth($value, 2) !important;
+    }
+  }
+  .color-#{nth($value, 1)}-bd {
+    & {
+      border: 1px solid white;
+      border-color: nth($value, 2) !important;
+    }
+  }
+
+  .color-#{nth($value, 1)}-hover:hover {
+    & {
+      color: nth($value, 2) !important;
+    }
+  }
+  .color-#{nth($value, 1)}-hover-bg:hover {
+    & {
+      background-color: nth($value, 2) !important;
+    }
+  }
+  .color-#{nth($value, 1)}-hover-bd:hover {
+    & {
+      border: 1px solid white;
+      border-color: nth($value, 2) !important;
+    }
+  }
+  .cortina-#{nth($value, 1)} {
+    & {
+      background-color: nth($value, 2) !important;
+      opacity: 0.5;
+
+    }
+  }
+
+
+}
+
+// DEBUG: "Carga colores ILab";

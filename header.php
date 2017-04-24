@@ -115,4 +115,4 @@
   </header> <!-- header escritorio -->
 
 
-  <div id="main" class="main columns">
+  <div id="main" class="main columns p-0">
