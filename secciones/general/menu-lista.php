@@ -1,4 +1,4 @@
-<ul id="lista-menu" class="p-0">
+<ul id="lista-menu" class="columns p-0">
 
 
   <?php

@@ -11,6 +11,8 @@ $(document).ready(function() {
   slider_heroscreen()
   menu_movil()
   mueve_menu()
+  svgs()
+  paralax()
 
 })
 //
@@ -64,7 +66,7 @@ function slider_heroscreen() {
 var menumovil = $("#menu-movil");//
 function menu_movil() {
   // registra su posicion actual, fuera de la pantalla
-  var anchomenumovil = menumovil.width()
+  var anchomenumovil = menumovil.width() + 40
   var posicioninicial = menumovil.css({
     'transition': '0.01s',
     '-webkit-transform': 'translateX(' + anchomenumovil + 'px)',
@@ -94,14 +96,14 @@ function menu_movil() {
   // abre menu movil
   $('#header-movil-boton-menu').on('click', function() {
 
+
     var posicion = menumovil.position();
 
     // debug
-    console.log(posicion);
+    // console.log(posicion);
 
     if(posicion.left >= $(document).width()) {
       // entra menu
-      alert('entra?')
       menumovil.css({
         'transition': '0.25s',
         '-webkit-transform': 'translateX(0px)',
@@ -198,56 +200,70 @@ function mueve_menu() {
 function fullpage() {
   // $('#fullpage').fullpage();
   $('#fullpage').fullpage({
-		//Navigation
-		menu: '#lista-menu',
-		lockAnchors: false,
-		anchors:['inicio-heroscreen', 'inicio-nosotros','inicio-bootcamp','inicio-incuba','inicio-startups','inicio-aliados','inicio-eventos-ac'],
-		navigation: false,
-		navigationPosition: 'left',
-		// navigationTooltips: ['firstSlide', 'secondSlide'],
-		// showActiveTooltip: false,
-		// slidesNavigation: false,
-		// slidesNavPosition: 'bottom',
+    //Navigation
+    menu: '#lista-menu',
+    lockAnchors: false,
+    anchors:['inicio-heroscreen', 'inicio-nosotros','inicio-bootcamp','inicio-incuba','inicio-startups','inicio-aliados','inicio-eventos-ac'],
+    navigation: false,
+    navigationPosition: 'left',
+    // navigationTooltips: ['firstSlide', 'secondSlide'],
+    // showActiveTooltip: false,
+    // slidesNavigation: false,
+    // slidesNavPosition: 'bottom',
 
-		//Scrolling
-		css3: true,
-		scrollingSpeed: 1000,
-		autoScrolling: false,
-		fitToSection: true,
-		fitToSectionDelay: 1000,
-		scrollBar: false,
-		easing: 'easeInOutCubic',
-		easingcss3: 'ease',
+    //Scrolling
+    css3: true,
+    scrollingSpeed: 900,
+    autoScrolling: true,
+    fitToSection: true,
+    fitToSectionDelay: 500,
+    scrollBar: true,
+    easing: 'easeInOutCubic',
+    easingcss3: 'ease',
 
 
-		//Accessibility
-		keyboardScrolling: true,
-		animateAnchor: true,
-		recordHistory: true,
+    //Accessibility
+    keyboardScrolling: true,
+    animateAnchor: true,
+    recordHistory: true,
 
-		//Design
-		// controlArrows: true,
-		verticalCentered: false,
-		paddingTop: '10vh',
-		paddingBottom: '0vh',
-		fixedElements: false,
-		responsiveWidth: 0,
-		responsiveHeight: 0,
-		responsiveSlides: false,
+    //Design
+    // controlArrows: true,
+    verticalCentered: false,
+    paddingTop: '10vh',
+    paddingBottom: '0vh',
+    fixedElements: false,
+    responsiveWidth: 0,
+    responsiveHeight: 0,
+    responsiveSlides: false,
 
-		//Custom selectors
-		sectionSelector: '.section',
-		slideSelector: '.slide',
+    //Custom selectors
+    sectionSelector: '.section',
+    slideSelector: '.slide',
 
-		lazyLoading: true,
+    lazyLoading: false,
 
-		//events
-		onLeave: function(index, nextIndex, direction){},
-		afterLoad: function(anchorLink, index){},
-		afterRender: function(){},
-		afterResize: function(){},
-		afterResponsive: function(isResponsive){},
-		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-	});
+    //events
+    onLeave: function(index, nextIndex, direction){},
+    afterLoad: function(anchorLink, index){},
+    afterRender: function(){},
+    afterResize: function(){},
+    afterResponsive: function(isResponsive){},
+    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+    onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+  });
 }
+
+function svgs() {
+
+  new Vivus('nosotros-svg', {
+    type: 'oneByOne',
+    duration: 1500,
+    animTimingFunction: Vivus.EASE
+  })
+
+}
+
+// paralax
+
+// termina paralax

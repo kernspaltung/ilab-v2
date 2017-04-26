@@ -78,9 +78,12 @@
 
     <div id="header-bottom" class="columns p-0 h-65">
 
-      <div id="header-escritorio-logo" class="columns small-4 large-2 imgLiquid imgLiquidNoFillLeft">
+      <div id="header-escritorio-logo" class="columns small-4 large-2 p-0-1">
+        <div id="header-escritorio-logo" class="columns p-0 imgLiquid imgLiquidNoFillLeft">
 
-        <img src="http://fakeimg.pl/340?text=Ilab-Logo" alt="">
+          <img src="http://fakeimg.pl/340?text=Ilab-Logo" alt="">
+
+        </div>
       </div>
 
 
@@ -104,28 +107,21 @@
 
         <div class="columns small-3 medium-2">
 
-          <a id="header-movil-boton-menu" href="#" class="columns p-0 h-100 v-center">
+          <div id="header-movil-boton-menu" class="columns p-0 h-100 pointer color-primary-0 v-center">
 
             <div class="columns p-0 h-a text-center">
 
-              <i id="header-movil-boton-icono" class="fa fa-bars font-l"></i>
+              <i id="header-movil-boton-icono" class="fa fa-bars font-xl"></i>
 
             </div>
 
-          </a>
+          </div>
 
         </div>
 
       </div>
 
-      <nav id="menu-movil" class="columns small-7 medium-4 h-100-v posicion-menu-fuera fixed top right z1k hide-for-large">
-        <!-- el menu se pasa aqui en movil -->
-        <?php
 
-        //include_once "secciones/general/menu-movil.php";
-
-        ?>
-      </nav>
       <!-- fin seccion header movil -->
 
 
@@ -134,6 +130,13 @@
 
 
   </header> <!-- header escritorio -->
+  <nav id="menu-movil" class="columns small-7 medium-4 h-100-v posicion-menu-fuera p-top fixed top right z1k color-blanco-bg hide-for-large">
+    <!-- el menu se pasa aqui en movil -->
+    <?php
 
+    include_once "secciones/general/menu-movil.php";
+
+    ?>
+  </nav>
 
   <div id="main" class="main columns p-0">

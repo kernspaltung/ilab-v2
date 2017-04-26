@@ -93,7 +93,9 @@ h1, h2, h3, h4, h5, h6 {
 .text-shadow {
   text-shadow: 2px 2px 2px rgba(0,0,0,0.35);
 }
-
+.pointer {
+  cursor: pointer;
+}
 //override fullpage styles
 .section {
   @extend .p-top;
@@ -132,6 +134,85 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 }
+
+// Parallax
+// ------------- MIXINS ------------- //
+@mixin transition($time, $property: all, $easing: ease-in) {
+    transition: $property $time $easing;
+}
+// ------------- VARIABLES ------------- //
+
+body {
+  // margin:0;
+  // padding:0;
+	// perspective: 1px;
+	// transform-style: preserve-3d;
+  // height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  // font-family: Nunito;
+}
+
+.paralax-bg {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.paralax-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.paralax-bg, .paralax-bg:before {
+  background: 50% 50% / cover;
+}
+
+#nosotros:before {
+  background-image: url("http://lorempixel.com/640/480/abstract/4/");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#bootcamp {
+  background-image: url("http://lorempixel.com/640/480/abstract/3/");
+  background-attachment: fixed;
+}
+
+#incuba:before {
+  background-image: url("http://lorempixel.com/640/480/abstract/5/");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+//
+
+
+
 
 // responsivos
 @media screen and (max-width:640px) {

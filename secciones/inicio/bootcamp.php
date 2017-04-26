@@ -1,4 +1,4 @@
-<section id="bootcamp" class="section columns h-100-v p-top rel">
+<section id="bootcamp" class="paralax-bg section columns h-100-v p-top rel">
 
 
   <div class="columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
