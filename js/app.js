@@ -12,7 +12,6 @@ $(document).ready(function() {
   menu_movil()
   mueve_menu()
   svgs()
-  paralax()
 
 })
 //
@@ -258,12 +257,28 @@ function svgs() {
 
   new Vivus('nosotros-svg', {
     type: 'oneByOne',
-    duration: 1500,
+    duration: 900,
+    animTimingFunction: Vivus.EASE
+  })
+  new Vivus('bootcamp-svg', {
+    type: 'oneByOne',
+    duration: 900,
+    animTimingFunction: Vivus.EASE
+  })
+  new Vivus('incuba-svg', {
+    type: 'oneByOne',
+    duration: 900,
+    animTimingFunction: Vivus.EASE
+  })
+  new Vivus('startups-svg', {
+    type: 'oneByOne',
+    duration: 900,
+    animTimingFunction: Vivus.EASE
+  })
+  new Vivus('aliados-svg', {
+    type: 'oneByOne',
+    duration: 900,
     animTimingFunction: Vivus.EASE
   })
 
 }
-
-// paralax
-
-// termina paralax

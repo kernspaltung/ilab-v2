@@ -1,28 +1,47 @@
-<section id="bootcamp" class="paralax-bg section columns h-100-v p-top rel">
+<section id="bootcamp" class="paralax-bg section columns h-100-v p-top">
 
+  <div class="content-wrapper">
 
-  <div class="columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
+    <div class="columns h-15 v-center">
 
-    <img src="http://fakeimg.pl/1220?text=bootcamp" alt="" />
+      <h1 class="columns p-0 text-left color-blanco">Bootcamp</h1>
 
-  </div>
+    </div>
+    <!-- svg -->
+    <div class="columns h-85 v-center">
 
-  <?php
+      <div class="columns p-0 small-8 medium-6 large-4 h-50 small-centered v-center">
 
-  for ($i=0; $i < 4 ; $i++):
+        <object id="bootcamp-svg" class="columns p-0 h-100" type="image/svg+xml" data="img/inicio-svgs/test2.svg"></object>
 
-    ?>
-    <div class="columns text-justify h-a w-a">
+      </div>
 
-      <h1 class="columns p-0 text-left h-a">Bootcamp</h1>
+      <!--  -->
+      <a href="#" class="link-seccion columns p-0 h-50">
+
+        <div class="columns p-0 small-11 medium-9 large-7 small-centered v-center">
+
+          <div class="columns p-0 h-a font-s font-sm-m font-md-l">
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minus officiis magni velit consectetur natus sapiente hic reprehenderit aliquam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur natus sapiente hic reprehenderit aliquam!
+
+          </div>
+
+          <div class="columns small-8 medium-6 large-4 h-a p-0-2 m-t-1 font-s font-sm-m font-lg-l ">
+
+            Click para conocer más
+
+          </div>
+
+        </div>
+
+      </a>
 
     </div>
 
-    <?php
-  endfor;
-  ?>
 
-
+  </div>
 
 
 </section>
