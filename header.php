@@ -79,11 +79,17 @@
     <div id="header-bottom" class="columns p-0 h-65">
 
       <div id="header-escritorio-logo" class="columns small-4 large-2 p-0-1">
-        <div id="header-escritorio-logo" class="columns p-0 imgLiquid imgLiquidNoFillLeft">
 
-          <img src="http://fakeimg.pl/340?text=Ilab-Logo" alt="">
+        <a class="columns p-0 h-100" href="index.php">
 
-        </div>
+          <div id="header-escritorio-logo" class="columns p-0 imgLiquid imgLiquidNoFillLeft">
+
+            <img src="http://fakeimg.pl/340?text=Ilab-Logo" alt="">
+
+          </div>
+
+        </a>
+
       </div>
 
 

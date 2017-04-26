@@ -1,11 +1,11 @@
-<section id="startups" class="section columns h-100-v p-top rel">
+<section id="startups" class="paralax-bg section columns h-100-v p-top rel">
 
 
-  <div class="columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
+  <!-- <div class="columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
 
     <img src="http://fakeimg.pl/1220?text=startups" alt="" />
 
-  </div>
+  </div> -->
 
   <?php
 

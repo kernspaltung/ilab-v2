@@ -5,6 +5,7 @@
   <img src="http://fakeimg.pl/1220?text=nosotros" alt="" />
 
 </div> -->
+
 <div class="content-wrapper">
 
   <div class="columns h-15 v-center">
