@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ilab v2.0</title>
-  <link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.css">
-  <link rel="stylesheet" href="submodulos/js_utils/dist/stylesheet/js_utils.css">
-  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
-  <link rel="stylesheet" href="css/app.css">
+
+  <title>
+    <?php wp_title('&raquo;',true,'right'); ?>
+    <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>
+  </title>
+
 </head>
 
 <body>
