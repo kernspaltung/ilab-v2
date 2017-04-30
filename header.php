@@ -10,6 +10,12 @@
     <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>
   </title>
 
+<!-- codigo analytics -->
+
+<!--  -->
+
+<?php wp_head(); ?>
+
 </head>
 
 <body>
@@ -98,7 +104,8 @@
 
         <?php
 
-        include "secciones/general/menu-lista.php";
+        // include "secciones/general/menu-lista.php";
+        get_template_part("secciones/general/menu-lista.php");
 
         ?>
 

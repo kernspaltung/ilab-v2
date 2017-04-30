@@ -11,7 +11,7 @@ $(document).ready(function() {
   slider_heroscreen()
   menu_movil()
   mueve_menu()
-  svgs()
+  // svgs()
 
 })
 //
