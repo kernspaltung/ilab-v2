@@ -5,12 +5,12 @@ u = new Utils()
 $(document).ready(function() {
 
 
+  mueve_menu()
   setupResize()
+  slider_portada()
   img_liquid()
   fullpage()
-  slider_heroscreen()
   menu_movil()
-  mueve_menu()
   svgs()
 
 })
@@ -23,6 +23,7 @@ function setupResize() {
   u.addWindowResizeFunction( u.shareH )
   u.addWindowResizeFunction( mueve_menu )
   u.addWindowResizeFunction( menu_movil )
+  u.addWindowResizeFunction( svgs )
   //
   setTimeout(function(){
 
@@ -51,9 +52,9 @@ function img_liquid() {
 }
 //
 
-function slider_heroscreen() {
+function slider_portada() {
 
-  $('#inicio-heroscreen-slider').slick({
+  $('.slick').slick({
     autoplay: true,
     autoPlaySpeed: 5000,
     arrows: false,
@@ -69,7 +70,6 @@ function menu_movil() {
 var menumovil = $("#menu-movil")
   // registra su posicion inicial, fuera de la pantalla
   var anchomenumovil = menumovil.width() + 40
-  console.log(anchomenumovil)
 
   var posicioninicial = menumovil.css({
     'transition': '0.01s',
@@ -102,9 +102,6 @@ var menumovil = $("#menu-movil")
 
 
     var posicion = menumovil.position();
-
-    // debug
-    // console.log(posicion);
 
     if(posicion.left >= $(document).width()) {
       // entra menu
@@ -163,40 +160,31 @@ var menumovil = $("#menu-movil")
 
 function mueve_menu() {
 
-  var mobile = $("#menu-movil");
-  var mobilelist = $("#menu-movil ul");
-  var mobileelement = $("#menu-movil ul li");
-  var desk = $('#menu-escritorio');
-  var desklist = $('#menu-escritorio ul');
-  var deskelement = $('#menu-escritorio ul li');
+  var mobile = $("#menu-movil")
+  var mobilelist = $("#menu-movil ul")
+  var mobileelement = $("#menu-movil ul li")
+  var desk = $('#menu-escritorio')
+  var desklist = $('#menu-escritorio ul')
+  var deskelement = $('#menu-escritorio ul li')
   var menor, mayor;
 
   if ($(window).width() >= 1024) {
 
+    mobileelement.removeClass('shareH text-left');
+    mobileelement.addClass('shareW h-100 text-center');
     mayor = mobilelist.detach();
-    mobilelist.removeClass('h-100-v text-left top-movil p-l-1 color-primary-4-bg');
+    mobilelist.removeClass('h-100-v text-left p-l-1 color-primary-4-bg');
     mobilelist.addClass('h-100 text-center');
-    mobileelement.removeClass('shareH');
-    mobileelement.addClass('shareW h-100');
     desk.append(mayor);
-    deskelement.eq(0).removeClass('hidden');
-
-    mobile.removeClass('current-menu')
-    desk.addClass('current-menu')
 
   } else {
 
+    deskelement.removeClass('shareW h-100 text-center');
+    deskelement.addClass('shareH text-left');
     menor = desklist.detach();
     mobilelist.removeClass('h-100 text-center color-neutral-1-3');
-    mobilelist.addClass('h-100-v text-left top-movil p-l-1 color-primary-4-bg');
-    deskelement.removeClass('shareW h-100');
-    deskelement.addClass('shareH');
+    mobilelist.addClass('h-100-v text-left p-l-1 color-primary-4-bg');
     mobile.append(menor);
-    deskelement.eq(0).addClass('hidden')
-
-    desk.removeClass('current-menu')
-    mobile.addClass('current-menu')
-
   }
 
 }
@@ -207,7 +195,7 @@ function fullpage() {
     //Navigation
     menu: '#lista-menu',
     lockAnchors: false,
-    anchors:['inicio-heroscreen', 'inicio-nosotros','inicio-bootcamp','inicio-incuba','inicio-startups','inicio-aliados','inicio-eventos-ac'],
+    anchors:['portada', 'quien-somos','bootcamp','incuba','startups','aliados','eventos-ac'],
     navigation: false,
     navigationPosition: 'left',
     // navigationTooltips: ['firstSlide', 'secondSlide'],

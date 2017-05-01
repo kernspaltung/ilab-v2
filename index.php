@@ -1,12 +1,13 @@
 <?php
 
+
+
 get_header();
 
 ?>
 <div id="fullpage">
 
   <?php
-
   get_template_part("secciones/inicio/heroscreen");
 
   get_template_part("secciones/inicio/nosotros");
