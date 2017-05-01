@@ -23,7 +23,7 @@
 
 <body>
 
-  <header id="header" class="altura-header columns shadow fixed top left z1k1 color-blanco-bg">
+  <header id="header" class="altura-header columns shadow fixed top left z1k1 ovH color-blanco-bg">
 
     <div id="header-top" class="columns p-0 h-35">
 
@@ -43,11 +43,11 @@
 
             ?>
 
-            <div class="columns small-2 p-l-0 p-r-0 v-center">
+            <div class="columns small-2 p-l-0 p-r-0 h-100 v-center">
 
               <div class="columns p-0 h-a text-center">
 
-                <a class="columns p-0 h-100" href="http://www.facebook.com/" target="_blank">
+                <a class="columns p-0" href="http://www.facebook.com/" target="_blank">
 
                   <i class="fa fa-<?php echo $redes[$i];?>"></i>
 

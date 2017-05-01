@@ -105,6 +105,18 @@ object {
 .altura-header-scroll {
   height: 10vh;
 }
+.altura-header-top {
+  height: 35%;
+}
+.altura-header-top-scroll {
+  height: 0%;
+}
+.altura-header-bottom {
+  height: 65%;
+}
+.altura-header-bottom-scroll {
+  height: 100%;
+}
 .p-top {
   padding-top: 15vh !important;
 }
@@ -128,6 +140,18 @@ object {
     }
   }
 }
+#header {
+
+  transition: 1s;
+
+  #header-top {
+
+    transition: 1s;
+    @extend .ovH;
+
+  }
+}
+
 //override fullpage styles
 .section {
   @extend .p-top;

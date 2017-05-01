@@ -280,23 +280,37 @@ function svgs() {
 function menu_scroll() {
 
   var head = $("#header")
+  var headTop = $("#header-top")
   var headBottom = $("#header-bottom")
 
+  // default
+  if ($(document).scrollTop() > 150) {
+    head.removeClass('altura-header')
+    head.addClass('altura-header-scroll')
+    headTop.removeClass('altura-header-top')
+    headBottom.addClass('altura-header-bottom-scroll')
+  }
+  // al scroll
   $(window).on('scroll', function() {
 
-    if ($(document).scrollTop() > 150) {
-      console.log('Mayor que');
-      $("#header-top").css({'transition':'1000','display':'none'})
+    if ($(document).scrollTop() > 480) {
+      setTimeout(function() {
+      headTop.removeClass('altura-header-top')
+      headTop.addClass('altura-header-top-scroll')
+      headBottom.removeClass('altura-header-bottom')
+      headBottom.addClass('altura-header-bottom-scroll')
       head.removeClass('altura-header')
       head.addClass('altura-header-scroll')
-      headBottom.removeClass('h-65')
+    },30)
     } else {
-      console.log('Tope');
-
-      $("#header-top").css({'transition':'1000','display':'block'})
+      setTimeout(function() {
+      headTop.addClass('altura-header-top')
+      headTop.removeClass('altura-header-top-scroll')
+      headBottom.addClass('altura-header-bottom')
+      headBottom.removeClass('altura-header-bottom-scroll')
       head.removeClass('altura-header-scroll')
       head.addClass('altura-header')
-      headBottom.addClass('h-65')
+    },30)
     }
 
   })
