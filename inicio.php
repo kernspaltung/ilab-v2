@@ -5,25 +5,25 @@ Template Name: Inicio
 get_header();
 
 ?>
-<div id="fullpage">
+<div id="">
 
   <?php
-
-  get_template_part("secciones/inicio/heroscreen.php");
-
-  get_template_part("secciones/inicio/nosotros.php");
+echo "algo";
+  // get_template_part("secciones/inicio/heroscreen");
   //
-  get_template_part("secciones/inicio/bootcamp.php");
+  // get_template_part("secciones/inicio/nosotros");
+  // //
+  // get_template_part("secciones/inicio/bootcamp");
+  // //
+  // get_template_part("secciones/inicio/incuba");
   //
-  get_template_part("secciones/inicio/incuba.php");
-
-  get_template_part("secciones/inicio/startups.php");
-
-  get_template_part("secciones/inicio/aliados.php");
-
-  get_template_part("secciones/inicio/eventos-ac.php");
-
-  get_template_part("secciones/general/footer-widgets.php");
+  // get_template_part("secciones/inicio/startups");
+  //
+  // get_template_part("secciones/inicio/aliados");
+  //
+  // get_template_part("secciones/inicio/eventos-ac");
+  //
+  // get_template_part("secciones/general/footer-widgets");
 
   ?>
 

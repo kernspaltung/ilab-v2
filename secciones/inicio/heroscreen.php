@@ -29,7 +29,7 @@
             ?>
 
           </h1>
-          <div class="columns p-1 h-a text-center font-s font-sm-m font-lg-l">
+          <div class="columns p-1 h-a text-center font-m font-sm-m font-lg-l">
 
             <?php
 

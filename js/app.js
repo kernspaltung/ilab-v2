@@ -1,17 +1,17 @@
-$(document).foundation();
+$(document).foundation()
 
-u = new Utils();
+u = new Utils()
 //
 $(document).ready(function() {
 
-  //
+
   setupResize()
   img_liquid()
   fullpage()
   slider_heroscreen()
   menu_movil()
   mueve_menu()
-  // svgs()
+  svgs()
 
 })
 //
@@ -21,6 +21,8 @@ function setupResize() {
   u.addWindowResizeFunction( u.verticalCenter )
   u.addWindowResizeFunction( u.shareW )
   u.addWindowResizeFunction( u.shareH )
+  u.addWindowResizeFunction( mueve_menu )
+  u.addWindowResizeFunction( menu_movil )
   //
   setTimeout(function(){
 
@@ -62,10 +64,13 @@ function slider_heroscreen() {
 
 }
 
-var menumovil = $("#menu-movil");//
+
 function menu_movil() {
-  // registra su posicion actual, fuera de la pantalla
+var menumovil = $("#menu-movil")
+  // registra su posicion inicial, fuera de la pantalla
   var anchomenumovil = menumovil.width() + 40
+  console.log(anchomenumovil)
+
   var posicioninicial = menumovil.css({
     'transition': '0.01s',
     '-webkit-transform': 'translateX(' + anchomenumovil + 'px)',
@@ -158,12 +163,12 @@ function menu_movil() {
 
 function mueve_menu() {
 
-  var mobile = $("#level-menu");
-  var mobilelist = $("#level-menu ul");
-  var mobileelement = $("#level-menu ul li");
-  var desk = $('#level-menu-desk');
-  var desklist = $('#level-menu-desk ul');
-  var deskelement = $('#level-menu-desk ul li');
+  var mobile = $("#menu-movil");
+  var mobilelist = $("#menu-movil ul");
+  var mobileelement = $("#menu-movil ul li");
+  var desk = $('#menu-escritorio');
+  var desklist = $('#menu-escritorio ul');
+  var deskelement = $('#menu-escritorio ul li');
   var menor, mayor;
 
   if ($(window).width() >= 1024) {
@@ -219,7 +224,6 @@ function fullpage() {
     scrollBar: true,
     easing: 'easeInOutCubic',
     easingcss3: 'ease',
-
 
     //Accessibility
     keyboardScrolling: true,

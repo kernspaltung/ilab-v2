@@ -5,10 +5,13 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" href="<?php echo get_stylesheet_directory_uri();?>/img/favicon.png" type="image/png" />
+
   <title>
     <?php wp_title('&raquo;',true,'right'); ?>
     <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>
   </title>
+  <!--  -->
 
 <!-- codigo analytics -->
 
@@ -90,7 +93,7 @@
 
           <div id="header-escritorio-logo" class="columns p-0 imgLiquid imgLiquidNoFillLeft">
 
-            <img src="http://fakeimg.pl/340?text=Ilab-Logo" alt="">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/img/logo-ilab.png" alt="">
 
           </div>
 
@@ -105,7 +108,7 @@
         <?php
 
         // include "secciones/general/menu-lista.php";
-        get_template_part("secciones/general/menu-lista.php");
+        get_template_part("secciones/general/menu-lista");
 
         ?>
 
@@ -147,7 +150,8 @@
     <!-- el menu se pasa aqui en movil -->
     <?php
 
-    include_once "secciones/general/menu-movil.php";
+    // include_once "secciones/general/menu-movil.php";
+    get_template_part("secciones/general/menu-movil");
 
     ?>
   </nav>
