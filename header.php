@@ -146,7 +146,7 @@
 
 
   </header> <!-- header escritorio -->
-  <nav id="menu-movil" class="columns small-7 medium-4 h-100-v posicion-menu-fuera p-top fixed top right z1k color-blanco-bg hide-for-large">
+  <nav id="menu-movil" class="columns small-7 medium-4 h-100-v posicion-menu-fuera p-top fixed top right z1k shadow-up color-blanco-bg hide-for-large">
     <!-- el menu se pasa aqui en movil -->
     <?php
 

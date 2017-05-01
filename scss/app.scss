@@ -123,6 +123,9 @@ object {
 .shadow {
   box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
+.shadow-up {
+  box-shadow: -1px -1px 1px rgba(0,0,0,0.2);
+}
 .text-shadow {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
@@ -159,7 +162,9 @@ object {
 .section {
   @extend .p-top;
 }
-
+.p-t-footer {
+   padding-top: 8vh !important;
+}
 //
 
 // movimiento de menu movil
