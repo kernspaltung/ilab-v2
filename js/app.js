@@ -293,24 +293,32 @@ function menu_scroll() {
   // al scroll
   $(window).on('scroll', function() {
 
-    if ($(document).scrollTop() > 480) {
-      setTimeout(function() {
-      headTop.removeClass('altura-header-top')
-      headTop.addClass('altura-header-top-scroll')
-      headBottom.removeClass('altura-header-bottom')
-      headBottom.addClass('altura-header-bottom-scroll')
-      head.removeClass('altura-header')
-      head.addClass('altura-header-scroll')
-    },30)
+    if ($(document).scrollTop() > 250) {
+        setTimeout(function() {
+          head.removeClass('altura-header')
+          head.addClass('altura-header-scroll')
+        },50)
+        setTimeout(function() {
+          headBottom.removeClass('altura-header-bottom')
+          headBottom.addClass('altura-header-bottom-scroll')
+        },50)
+        setTimeout(function() {
+          headTop.removeClass('altura-header-top')
+          headTop.addClass('altura-header-top-scroll')
+        },50)
     } else {
-      setTimeout(function() {
-      headTop.addClass('altura-header-top')
-      headTop.removeClass('altura-header-top-scroll')
-      headBottom.addClass('altura-header-bottom')
-      headBottom.removeClass('altura-header-bottom-scroll')
-      head.removeClass('altura-header-scroll')
-      head.addClass('altura-header')
-    },30)
+        setTimeout(function() {
+          headBottom.addClass('altura-header-bottom')
+          headBottom.removeClass('altura-header-bottom-scroll')
+        },50)
+        setTimeout(function() {
+          headTop.addClass('altura-header-top')
+          headTop.removeClass('altura-header-top-scroll')
+        },50)
+        setTimeout(function() {
+          head.removeClass('altura-header-scroll')
+          head.addClass('altura-header')
+        },50)
     }
 
   })

@@ -142,16 +142,19 @@ object {
 }
 #header {
 
-  transition: 1s;
+  transition: 0.5s;
 
   #header-top {
 
-    transition: 1s;
+    transition: 0.3s;
     @extend .ovH;
 
   }
 }
-
+.logo-header {
+  height: 100%;
+  width: auto;
+}
 //override fullpage styles
 .section {
   @extend .p-top;
