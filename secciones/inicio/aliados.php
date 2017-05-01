@@ -1,4 +1,4 @@
-<section id="aliados" class="paralax-bg section columns h-100-v p-top">
+<section id="inicio-aliados" class="paralax-bg section columns h-100-v p-top">
 
   <div class="content-wrapper">
 

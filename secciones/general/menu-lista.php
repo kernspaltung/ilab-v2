@@ -4,7 +4,6 @@
   <?php
   $menu = array('Inicio', 'Nosotros','Bootcamp','Incuba','Startups','Ailados','Eventos/AC');
   $ids = array('portada', 'quien-somos','bootcamp','incuba','startups','aliados','eventos-ac');
-  // '¿Quiénes somos?'
 
   for ($i=0; $i < count($menu) ; $i++):
 

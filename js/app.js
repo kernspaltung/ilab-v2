@@ -11,6 +11,7 @@ $(document).ready(function() {
   img_liquid()
   fullpage()
   menu_movil()
+  menu_scroll()
   svgs()
 
 })
@@ -67,7 +68,7 @@ function slider_portada() {
 
 
 function menu_movil() {
-var menumovil = $("#menu-movil")
+  var menumovil = $("#menu-movil")
   // registra su posicion inicial, fuera de la pantalla
   var anchomenumovil = menumovil.width() + 40
 
@@ -271,6 +272,33 @@ function svgs() {
     type: 'oneByOne',
     duration: 900,
     animTimingFunction: Vivus.EASE
+  })
+
+}
+
+
+function menu_scroll() {
+
+  var head = $("#header")
+  var headBottom = $("#header-bottom")
+
+  $(window).on('scroll', function() {
+
+    if ($(document).scrollTop() > 150) {
+      console.log('Mayor que');
+      $("#header-top").css({'transition':'1000','display':'none'})
+      head.removeClass('altura-header')
+      head.addClass('altura-header-scroll')
+      headBottom.removeClass('h-65')
+    } else {
+      console.log('Tope');
+
+      $("#header-top").css({'transition':'1000','display':'block'})
+      head.removeClass('altura-header-scroll')
+      head.addClass('altura-header')
+      headBottom.addClass('h-65')
+    }
+
   })
 
 }

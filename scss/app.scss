@@ -102,6 +102,9 @@ object {
 .altura-header {
   height: 15vh;
 }
+.altura-header-scroll {
+  height: 10vh;
+}
 .p-top {
   padding-top: 15vh !important;
 }
@@ -210,35 +213,35 @@ img:last-of-type {
 
 }
 
-#nosotros {
+#inicio-nosotros {
   background-image: url("http://lorempixel.com/640/480/abstract/4/");
   background-attachment: fixed;
 }
 
-#bootcamp:before {
+#inicio-bootcamp:before {
   background-image: url("http://lorempixel.com/640/480/abstract/2/");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
 
-#incuba {
+#inicio-incuba {
   background-image: url("http://lorempixel.com/640/480/abstract/3/");
   background-attachment: fixed;
 }
 
-#startups:before {
+#inicio-startups:before {
   background-image: url("http://lorempixel.com/640/480/abstract/5/");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
 
-// #aliados:before {
+// #inicio-aliados:before {
 //   background-image: url("http://lorempixel.com/640/480/abstract/4/");
 //   transform: translateZ(-1px) scale(2);
 //   z-index:-1;
 // }
 
-#aliados {
+#inicio-aliados {
   background-image: url("http://lorempixel.com/640/480/abstract/3/");
   background-attachment: fixed;
 }

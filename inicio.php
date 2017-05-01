@@ -9,7 +9,7 @@ get_header();
 
   <?php
   get_template_part("secciones/inicio/heroscreen");
-  //
+
   get_template_part("secciones/inicio/nosotros");
   //
   get_template_part("secciones/inicio/bootcamp");

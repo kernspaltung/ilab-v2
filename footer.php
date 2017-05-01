@@ -6,8 +6,9 @@
 <footer id="footer" class="columns p-0">
 
 
+  <?php wp_footer(); ?>
+
 </footer>
-<?php wp_footer(); ?>
 
 
 

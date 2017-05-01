@@ -1,4 +1,4 @@
-<section id="eventos-ac" class="section columns p-top fp-auto-height">
+<section id="inicio-eventos-ac" class="section columns p-top fp-auto-height">
 
 
   <div class="columns h-35-v small-6 v-center">
