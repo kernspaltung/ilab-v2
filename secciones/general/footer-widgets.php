@@ -1,4 +1,4 @@
-<section id="footer-widgets" class="p-t-footer section columns p-0 color-claro-bg color-blanco">
+<section id="footer-widgets" class="p-t-footer section columns p-0 fp-auto-height color-claro-bg color-blanco">
 
   <div class="columns small-12 medium-6 large-4 h-footer-widget v-center">
 

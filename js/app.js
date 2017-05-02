@@ -4,7 +4,6 @@ u = new Utils()
 //
 $(document).ready(function() {
 
-
   mueve_menu()
   setupResize()
   slider_portada()
@@ -196,7 +195,7 @@ function fullpage() {
     //Navigation
     menu: '#lista-menu',
     lockAnchors: false,
-    anchors:['portada', 'quien-somos','bootcamp','incuba','startups','aliados','eventos-ac'],
+    anchors:['portada', 'quien-somos','bootcamp','incuba','startups','aliados','eventos-ac','contacto'],
     navigation: false,
     navigationPosition: 'left',
     // navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -294,31 +293,34 @@ function menu_scroll() {
   $(window).on('scroll', function() {
 
     if ($(document).scrollTop() > 250) {
-        setTimeout(function() {
-          head.removeClass('altura-header')
-          head.addClass('altura-header-scroll')
-        },50)
-        setTimeout(function() {
-          headBottom.removeClass('altura-header-bottom')
-          headBottom.addClass('altura-header-bottom-scroll')
-        },50)
-        setTimeout(function() {
-          headTop.removeClass('altura-header-top')
-          headTop.addClass('altura-header-top-scroll')
-        },50)
+
+      setTimeout(function() {
+        headBottom.removeClass('altura-header-bottom')
+        headBottom.addClass('altura-header-bottom-scroll')
+      },20)
+      setTimeout(function() {
+        headTop.removeClass('altura-header-top')
+        headTop.addClass('altura-header-top-scroll')
+      },10)
+      setTimeout(function() {
+        head.removeClass('altura-header')
+        head.addClass('altura-header-scroll')
+      },10)
     } else {
-        setTimeout(function() {
-          headBottom.addClass('altura-header-bottom')
-          headBottom.removeClass('altura-header-bottom-scroll')
-        },50)
-        setTimeout(function() {
-          headTop.addClass('altura-header-top')
-          headTop.removeClass('altura-header-top-scroll')
-        },50)
-        setTimeout(function() {
-          head.removeClass('altura-header-scroll')
-          head.addClass('altura-header')
-        },50)
+
+      setTimeout(function() {
+        head.removeClass('altura-header-scroll')
+        head.addClass('altura-header')
+      },10)
+      setTimeout(function() {
+        headBottom.addClass('altura-header-bottom')
+        headBottom.removeClass('altura-header-bottom-scroll')
+      },10)
+      setTimeout(function() {
+        headTop.addClass('altura-header-top')
+        headTop.removeClass('altura-header-top-scroll')
+      },10)
+
     }
 
   })
