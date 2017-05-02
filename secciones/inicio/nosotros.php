@@ -18,26 +18,23 @@
       </div>
 
       <!--  -->
-      <a href="#" class="link-seccion columns p-0 h-50">
+        <div class="columns p-0 small-11 medium-9 large-7 small-centered h-50 v-center">
 
-        <div class="columns p-0 small-11 medium-9 large-7 small-centered v-center">
-
-          <div class="columns p-0 h-a font-s font-sm-m font-md-l">
+          <div class="columns p-0 h-a font-s font-sm-m font-md-l text-justified">
 
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minus officiis magni velit consectetur natus sapiente hic reprehenderit aliquam!
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur natus sapiente hic reprehenderit aliquam!
 
           </div>
 
-          <div class="columns small-8 medium-6 large-4 h-a p-0-2 m-t-1 font-s font-sm-m font-lg-l ">
+          <a href="http://localhost/ilab.wp/index.php/nosotros/#quien-somos" class="link-seccion button columns small-8 medium-6 large-4 h-a p-1 m-t-0-2 font-s font-sm-m font-lg-l">
 
             Click para conocer más
 
-          </div>
+          </a>
 
         </div>
 
-      </a>
 
     </div>
 

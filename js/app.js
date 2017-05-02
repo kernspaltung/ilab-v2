@@ -289,7 +289,7 @@ function menu_scroll() {
     headTop.removeClass('altura-header-top')
     headBottom.addClass('altura-header-bottom-scroll')
   }
-  // al scroll
+  // al scrolear
   $(window).on('scroll', function() {
 
     if ($(document).scrollTop() > 250) {

@@ -2,7 +2,7 @@
 /*
 Template Name: Inicio
 */
-get_header();
+get_header('inicio');
 
 ?>
 <div id="fullpage">
@@ -30,4 +30,4 @@ get_header();
 
 <?php
 
-get_footer();
+get_footer('inicio');

@@ -7,6 +7,7 @@
     //ultimas noticias
     $titulos  = array('Titulo Ilab noticia destacada');
     $extractos  = array('Lorem spectrum patum ed vivenci consortum democretvs rip adversus penas oscvrum op sis');
+    $pic = array('workshop', 'coding', 'technology');
     $accion = 'Lee artículo';
 
     for ($i=0; $i < 3 ; $i++):
@@ -15,7 +16,7 @@
 
         <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidFill">
 
-          <img src="http://fakeimg.pl/1920?text=Slide-<?php echo $i;?>" alt="" />
+          <img src="http://loremflickr.com/1920/800/<?php echo $pic[$i];?>/all" alt="" />
 
         </div>
         <div class="textos-slider columns z1 absUpL p-0 color-white v-center">

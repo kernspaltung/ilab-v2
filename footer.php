@@ -6,10 +6,14 @@
 <footer id="footer" class="columns p-0">
 
 
-  <?php wp_footer(); ?>
+  <?php
+  get_template_part('secciones/general/footer-widgets');
+  ?>
+  
 
 </footer>
 
+<?php wp_footer(); ?>
 
 
 </body>
