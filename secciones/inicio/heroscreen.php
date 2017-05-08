@@ -12,7 +12,7 @@
 
     for ($i=0; $i < 3 ; $i++):
       ?>
-      <div class="columns p-0 rel">
+      <div class="columns p-0 rel color-blanco">
 
         <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidFill">
 

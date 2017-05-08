@@ -3,14 +3,14 @@ get_header();
 
 ?>
 
-<section class="columns h-100-v p-top">
+<section class="content columns small-12 medium-8 large-9">
 
-  <div class="columns p-l-0 p-r-0 v-center">
+  <div class="columns p-1">
 
-    <div class="columns h-a">
+    <div class="columns h-a p-t-1">
       <?php
-      for ($i=0; $i < 50 ; $i++) {
-        echo ' Esto es la pagina ';
+      for ($i=0; $i < 500 ; $i++) {
+        echo ' Esto es la pagina default ';
       }
       ?>
     </div>

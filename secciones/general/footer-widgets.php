@@ -66,4 +66,8 @@
 
   </div>
 
+  <?php
+  get_template_part('secciones/general/copyright');
+  ?>
+
 </section>

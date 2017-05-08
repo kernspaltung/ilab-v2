@@ -11,7 +11,13 @@ $(document).ready(function() {
   fullpage()
   menu_movil()
   menu_scroll()
-  svgs()
+
+  if ($('object').length > 0) {
+    // alert('inicio')
+    svgs()
+  } else {
+    // alert('page')
+  }
 
 })
 //

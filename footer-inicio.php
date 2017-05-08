@@ -5,7 +5,13 @@
 
 <footer id="footer" class="columns p-0">
 
-  <?php wp_footer(); ?>
+
+  <?php
+
+  // get_template_part('secciones/general/copyright');
+
+  wp_footer(); ?>
+
 </footer>
 
 
