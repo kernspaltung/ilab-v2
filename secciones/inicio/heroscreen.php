@@ -12,7 +12,7 @@
 
     for ($i=0; $i < 3 ; $i++):
       ?>
-      <div class="columns p-0 rel color-blanco">
+      <div class="columns p-0 rel text-shadow">
 
         <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidFill">
 
@@ -21,16 +21,16 @@
         </div>
         <div class="textos-slider columns z1 absUpL p-0 color-white v-center">
 
-          <h1 class="columns p-1 h-a text-center ">
+          <h1 class="columns p-1 h-a text-center color-blanco">
 
             <?php
 
-            echo $titulos[0];
+            echo $titulos[0] . ' ' . $i;
 
             ?>
 
           </h1>
-          <div class="columns p-1 h-a text-center font-m font-sm-m font-lg-l">
+          <div class="columns small-12 medium-8 p-1 h-a text-justify small-centered font-m font-sm-m font-lg-l color-blanco">
 
             <?php
 
@@ -41,7 +41,7 @@
           </div>
           <div class="columns small-8 medium-4 large-2 small-centered h-a">
 
-            <a href="#" class="columns p-2 font-s font-sm-m font-lg-l">
+            <a href="#" class="columns p-2 font-s font-sm-m font-lg-l text-center">
 
               <?php
 

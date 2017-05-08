@@ -4,32 +4,34 @@ u = new Utils()
 //
 $(document).ready(function() {
 
-  mueve_menu()
+  // mueve_menu()
   setupResize()
   slider_portada()
   img_liquid()
   fullpage()
-  menu_movil()
+  // menu_movil()
   menu_scroll()
 
-  if ($('object').length > 0) {
-    // alert('inicio')
-    svgs()
-  } else {
-    // alert('page')
-  }
+
 
 })
 //
 
 function setupResize() {
 
+  u.addWindowResizeFunction( mueve_menu )
   u.addWindowResizeFunction( u.verticalCenter )
   u.addWindowResizeFunction( u.shareW )
   u.addWindowResizeFunction( u.shareH )
-  u.addWindowResizeFunction( mueve_menu )
   u.addWindowResizeFunction( menu_movil )
-  u.addWindowResizeFunction( svgs )
+
+  if ($('object').length > 0) {
+    console.log('inicio')
+    // svgs()
+    u.addWindowResizeFunction( svgs )
+  } else {
+    console.log('page or archive or single, whatever')
+  }
   //
   setTimeout(function(){
 
@@ -269,11 +271,6 @@ function svgs() {
     animTimingFunction: Vivus.EASE
   })
   new Vivus('startups-svg', {
-    type: 'oneByOne',
-    duration: 900,
-    animTimingFunction: Vivus.EASE
-  })
-  new Vivus('aliados-svg', {
     type: 'oneByOne',
     duration: 900,
     animTimingFunction: Vivus.EASE

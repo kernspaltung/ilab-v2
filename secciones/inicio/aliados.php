@@ -11,37 +11,58 @@
     <div class="columns h-85 v-center">
 
 
-      <div class="columns p-0 small-8 medium-6 large-4 h-50 small-centered v-center">
 
-        <object id="aliados-svg" class="columns p-0 h-100" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri();?>/img/inicio-svgs/test2.svg"></object>
+      <!--  -->
+
+      <div id="inicio-aliados-slider" class="slick columns p-0">
+
+        <?php
+        //logo de aliados
+        $titulos  = array('Titulo de logo aliado');
+
+        // $accion = 'link';
+
+        for ($i=0; $i < 30 ; $i++):
+          ?>
+          <div class="columns p-0 rel">
+
+            <div class="columns p-4 z-1 absUpL">
+              <div class="columns p-0 imgLiquid imgLiquidFill">
+
+                <img src="http://fakeimg.pl/320x240/?text=Aliado<?php echo ' ' . $i;?>" alt="" />
+
+              </div>
+            </div>
+            <div class="textos-slider h-15 columns z1 absDownL p-0 color-white v-center">
+
+              <h4 class="columns p-1 h-a text-center text-shadow color-blanco">
+
+                <?php
+
+                echo $titulos[0] . ' ' . $i;
+
+                ?>
+
+              </h4>
+
+
+
+            </div>
+
+
+          </div>
+
+          <?php
+        endfor;
+        ?>
 
       </div>
 
+
       <!--  -->
-      <a href="#" class="link-seccion columns p-0 h-50">
 
-        <div class="columns p-0 small-11 medium-9 large-7 small-centered v-center">
 
-          <div class="columns p-0 h-a font-s font-sm-m font-md-l">
-
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minus officiis magni velit consectetur natus sapiente hic reprehenderit aliquam!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur natus sapiente hic reprehenderit aliquam!
-
-          </div>
-
-          <div class="columns small-8 medium-6 large-4 h-a p-0-2 m-t-1 font-s font-sm-m font-lg-l ">
-
-            Click para conocer más
-
-          </div>
-
-        </div>
-
-      </a>
 
     </div>
 
-
-  </div>
-
-</section>
+  </section>

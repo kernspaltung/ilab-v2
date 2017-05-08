@@ -13,7 +13,7 @@
 
       <div class="columns p-0 small-8 medium-6 large-4 h-50 small-centered v-center">
 
-        <object id="nosotros-svg" class="columns p-0 h-100" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri();?>/img/inicio-svgs/test.svg"></object>
+        <object id="nosotros-svg" class="columns p-0 h-100 text-shadow" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri();?>/img/inicio-svgs/test.svg"></object>
 
       </div>
 
