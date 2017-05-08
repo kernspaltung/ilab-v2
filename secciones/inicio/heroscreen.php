@@ -1,7 +1,7 @@
 <section id="inicio-portada" class="section columns h-100-v p-top p-l-0 p-r-0">
 
 
-  <div id="inicio-heroscreen-slider" class="slick columns p-0">
+  <div id="inicio-heroscreen-slider" class="slick-portada columns p-0">
 
     <?php
     //ultimas noticias

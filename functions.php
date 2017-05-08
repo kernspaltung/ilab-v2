@@ -2,6 +2,7 @@
 
 add_filter( 'show_admin_bar', '__return_false' );
 
+add_theme_support( 'menus' );
 add_theme_support('post-thumbnails');
 
 // Dependencias
@@ -19,6 +20,7 @@ function dependencias() {
   wp_enqueue_script( 'what-input', get_stylesheet_directory_uri() . '/bower_components/what-input/dist/what-input.js' );
   wp_enqueue_script( 'foundation', get_stylesheet_directory_uri() . '/bower_components/foundation-sites/dist/js/foundation.js' );
   wp_enqueue_script( 'fullpage', get_stylesheet_directory_uri() . '/bower_components/fullpage.js/dist/jquery.fullpage.js', array('jquery'));
+  wp_enqueue_script( 'sticky-kit', get_stylesheet_directory_uri() . '/bower_components/sticky-kit/jquery.sticky-kit.min.js', array('jquery'));
   wp_enqueue_script( 'slick-carousel', get_stylesheet_directory_uri() .'/bower_components/slick-carousel/slick/slick.js', array('jquery') );
   wp_enqueue_script( 'imgLiquid', get_stylesheet_directory_uri() . '/bower_components/imgLiquid/js/imgLiquid-min.js', array('jquery') );
   wp_enqueue_script( 'vivus-js', get_stylesheet_directory_uri() . '/bower_components/vivus/dist/vivus.js' );

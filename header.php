@@ -156,4 +156,4 @@
     ?>
   </nav>
 
-  <div id="main" class="main columns p-top" data-sticky-container>
+  <div id="main" class="main columns p-top">

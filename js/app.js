@@ -4,16 +4,11 @@ u = new Utils()
 //
 $(document).ready(function() {
 
-  // mueve_menu()
+  // defaults todas las secciones
   setupResize()
-  slider_portada()
   img_liquid()
   fullpage()
-  // menu_movil()
   menu_scroll()
-
-
-
 })
 //
 
@@ -25,12 +20,20 @@ function setupResize() {
   u.addWindowResizeFunction( u.shareH )
   u.addWindowResizeFunction( menu_movil )
 
+  //Carga especifica si es INICIO: si existen los svg es true
   if ($('object').length > 0) {
+
     console.log('inicio')
     // svgs()
     u.addWindowResizeFunction( svgs )
+    u.addWindowResizeFunction( slider_portada )
+    u.addWindowResizeFunction( slider_aliados )
+
   } else {
-    console.log('page or archive or single, whatever')
+
+    console.log('page or archive or single, or whatever')
+    u.addWindowResizeFunction( sticky_sidebar )
+    u.addWindowResizeFunction( slider_sidebar )
   }
   //
   setTimeout(function(){
@@ -59,20 +62,75 @@ function img_liquid() {
 
 }
 //
-
+// sliders
 function slider_portada() {
 
-  $('.slick').slick({
+  $('.slick-portada').slick({
     autoplay: true,
     autoPlaySpeed: 5000,
     arrows: false,
-    dots: false,
+    dots: true,
     // vertical: true,
     // verticalSwiping: true,
   })
-
 }
 
+function slider_sidebar() {
+  $('.slick-sidebar').slick({
+    autoplay: true,
+    autoPlaySpeed: 7000,
+    arrows: false,
+    dots: true,
+    // vertical: true,
+    // verticalSwiping: true
+  })
+}
+
+function slider_aliados() {
+
+  $('.slick-aliados').slick({
+    autoplay: true,
+    autoPlaySpeed: 5000,
+    arrows: false,
+    dots: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        autoPlaySpeed: 3500,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 640,
+        autoPlaySpeed: 2500,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        autoPlaySpeed: 2000,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  })
+
+}
+// terminan sliders
+
+//
+function sticky_sidebar() {
+  $("#sidebar-sticky").stick_in_parent();
+}
+//
 
 function menu_movil() {
   var menumovil = $("#menu-movil")
@@ -289,6 +347,7 @@ function menu_scroll() {
   if ($(document).scrollTop() > 150) {
     head.removeClass('altura-header')
     head.addClass('altura-header-scroll')
+    $('#sidebar-sticky').addClass('p-top-side')
     headTop.removeClass('altura-header-top')
     headBottom.addClass('altura-header-bottom-scroll')
   }
@@ -308,12 +367,14 @@ function menu_scroll() {
       setTimeout(function() {
         head.removeClass('altura-header')
         head.addClass('altura-header-scroll')
+        $('#sidebar-sticky').addClass('p-top-side')
       },10)
     } else {
 
       setTimeout(function() {
         head.removeClass('altura-header-scroll')
         head.addClass('altura-header')
+        $('#sidebar-sticky').removeClass('p-top-side')
       },10)
       setTimeout(function() {
         headBottom.addClass('altura-header-bottom')

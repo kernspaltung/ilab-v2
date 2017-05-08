@@ -34,7 +34,7 @@
 // @include foundation-progress-element;
 // @include foundation-meter-element;
 // @include foundation-slider;
-@include foundation-sticky;
+// @include foundation-sticky;
 @include foundation-reveal;
 @include foundation-switch;
 @include foundation-table;
@@ -119,6 +119,9 @@ object {
 }
 .p-top {
   padding-top: 15vh !important;
+}
+.p-top-side {
+  padding-top: 12vh !important;
 }
 .shadow {
   box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
@@ -278,6 +281,18 @@ img:last-of-type {
   background-attachment: fixed;
 }
 // fin parallax
+
+// sliders
+.slick-dots {
+  height: 10%;
+
+  li {
+    button::before {
+      color: orange !important;
+    }
+  }
+}
+//
 
 
 // responsivos

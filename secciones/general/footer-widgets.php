@@ -7,8 +7,7 @@
 
       <div class="columns h-a font-s font-sm-m p-t-0-2 p-b-0-2">
 
-        iLab es una empresa social que promueve el emprendimiento a través de la innovación. Como organización independiente, sin vínculo a ninguna entidad de Gobierno ni afiliación política, nuestros objetivos de movilidad social y desarrollo de capacidades de negocio nos permiten crear alianzas con entidades públicas y privadas.
-
+        iLab es una empresa social que promueve el emprendimiento a través de la innovación. Organización independiente, sin vínculo a ninguna entidad de Gobierno ni afiliación política, nuestros objetivos de movilidad social y desarrollo de capacidades de negocio nos permiten crear alianzas con entidades públicas y privadas.
 
       </div>
       <div class="columns h-a bold font-s font-sm-m p-t-0-2 p-b-0-2">
@@ -53,7 +52,15 @@
   <div class="columns small-12 medium-6 large-4 h-footer-widget v-center">
 
     <div class="columns h-a text-center">
-      Widget contacto
+
+      <h5 class="columns p-1 text-left">Escríbenos, participa</h5>
+
+
+      <div class="columns p-1">
+        <a href="#" class="columns small-6 large-3 small-centered h-100 p-2 color-primary-0-bg">Contacto</a>
+      </div>
+
+
     </div>
 
 

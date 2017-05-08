@@ -15,7 +15,8 @@
     "slick-carousel": "^1.6.0",
     "imgLiquid": "^0.9.944",
     "fullpage.js": "^2.9.4",
-    "vivus": "^0.4.0"
+    "vivus": "^0.4.0",
+    "sticky-kit": "^1.1.2"
   },
   "ignore": [
     "**/.*",
