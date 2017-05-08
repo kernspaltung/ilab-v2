@@ -1,0 +1,39 @@
+// estilos para formularios de contacto Ilabv2
+
+.wpcf7, .wpcf7-form {
+  height: 100%;
+  textarea {
+    border: 0px !important;
+  }
+  input {
+    border: 0px !important;
+
+  }
+  .wpcf7-submit {
+    @extend .color-primary-1;
+    border: 0px !important;
+  }
+}
+
+label {
+  @extend .color-texto;
+}
+// contacto general, footer, page
+#contacto-general {
+
+  input {
+    @extend .h-5;
+    @extend .p-0-1;
+    @extend .color-texto;
+  }
+  textarea {
+    @extend .p-0-1;
+    // @extend .h-20;
+    height: 12vh !important;
+    @extend .color-texto;
+  }
+
+  .wpcf7-submit {
+    @extend .p-0-2;
+  }
+}

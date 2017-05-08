@@ -54,6 +54,7 @@
 // Dependencias
 @import "bower_components/font-awesome/scss/font-awesome";
 @import "submodulos/style_utils/scss/style_utils";
+@import "forms";
 @import "colores";
 //
 
@@ -97,6 +98,9 @@ li.active a div {
 }
 object {
   @extend .color-white;
+}
+p {
+  @extend .color-texto;
 }
 // generales
 .altura-header {
@@ -299,7 +303,7 @@ img:last-of-type {
 @media screen and (max-width:640px) {
   footer {
     & .h-footer-widget {
-      height: 100vh !important;
+      height: 75vh !important;
     }
   }
 
