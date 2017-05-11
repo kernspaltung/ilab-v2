@@ -11,7 +11,7 @@ get_header();
     <div class="columns h-a p-t-1">
       <?php
       for ($i=0; $i < 500 ; $i++) {
-        echo ' Esto es  el contenedor de la pagina ';
+        echo ' Esto es  el contenedor del archivo';
       }
       ?>
     </div>

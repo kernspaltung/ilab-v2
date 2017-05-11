@@ -25,9 +25,9 @@ function setupResize() {
 
     console.log('inicio')
     // svgs()
-    u.addWindowResizeFunction( svgs )
     u.addWindowResizeFunction( slider_portada )
     u.addWindowResizeFunction( slider_aliados )
+    u.addWindowResizeFunction( svgs )
 
   } else {
 

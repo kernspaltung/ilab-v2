@@ -1,5 +1,4 @@
 <?php
-
 get_header();
 
 
@@ -12,7 +11,7 @@ get_header();
     <div class="columns h-a p-t-1">
       <?php
       for ($i=0; $i < 500 ; $i++) {
-        echo ' Esto es  el contenedor del single ';
+        echo ' Esto es  el contenedor de una categoria';
       }
       ?>
     </div>

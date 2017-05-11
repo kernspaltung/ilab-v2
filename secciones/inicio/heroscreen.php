@@ -45,11 +45,11 @@
           </div>
           <div class="columns small-8 medium-4 large-2 small-centered h-a">
 
-            <a href="#" class="columns p-2 font-s font-sm-m font-lg-l text-center">
+            <a href="<?php echo get_permalink();?>" class="button columns p-2 font-s font-sm-m font-lg-l text-center">
 
               <?php
 
-              echo $accion;
+              echo 'Conoce más';
 
               ?>
 

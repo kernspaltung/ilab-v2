@@ -252,33 +252,27 @@ img:last-of-type {
 
 }
 
-#inicio-nosotros {
-  background-image: url("http://loremflickr.com/1920/800/coop/all");
+#inicio-nosotros .fondo {
+  // background-image: url("http://loremflickr.com/1920/800/coop/all");
   background-attachment: fixed;
 }
 
-#inicio-bootcamp:before {
-  background-image: url("http://loremflickr.com/1920/800/peer/all");
+#inicio-bootcamp:before .fondo{
+  // background-image: url("http://loremflickr.com/1920/800/peer/all");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
 
-#inicio-incuba {
-  background-image: url("http://loremflickr.com/1920/800/okupa,girl/all");
+#inicio-incuba .fondo {
+  // background-image: url("http://loremflickr.com/1920/800/okupa,girl/all");
   background-attachment: fixed;
 }
 
-#inicio-startups:before {
-  background-image: url("http://loremflickr.com/1920/800/coop/all");
+#inicio-startups:before .fondo {
+  // background-image: url("http://loremflickr.com/1920/800/coop/all");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
-
-// #inicio-aliados:before {
-//   background-image: url("http://lorempixel.com/640/480/abstract/4/");
-//   transform: translateZ(-1px) scale(2);
-//   z-index:-1;
-// }
 
 #inicio-aliados {
   background-image: url("http://loremflickr.com/1920/800/okupa/all");

@@ -1,19 +1,25 @@
-<section id="inicio-nosotros" class="paralax-bg section columns h-100-v p-top">
+<section id="inicio-nosotros" class="paralax-bg section columns h-100-v p-top rel">
 
-  <div class="content-wrapper">
+  <?php
+  $args = page_id(26);
 
-    <?php
-    $args = page_id(26);
+  $query = new WP_Query( $args );
 
-    $query = new WP_Query( $args );
+  if ( $query->have_posts() ) :
+    while ( $query->have_posts() ) : $query->the_post();
+    ?>
 
-    if ( $query->have_posts() ) :
-      while ( $query->have_posts() ) : $query->the_post();
-      ?>
+    <div class="fondo columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
+      <!-- <img src="http://loremflickr.com/1920/800/coop/all" alt="" /> -->
+      <?php echo get_the_post_thumbnail();?>
+
+    </div>
+
+    <div class="content-wrapper">
 
       <div class="columns h-15 v-center">
 
-        <h1 class="columns p-0 text-left color-blanco">
+        <h1 class="columns p-0 text-left text-shadow color-blanco">
 
           <?php
           echo get_the_title();
@@ -41,12 +47,12 @@
             <?php
 
             echo get_the_content();
-            
+
             ?>
 
           </div>
 
-          <a href="<?php echo get_page_link(10);?>" class="link-seccion button columns small-8 medium-6 large-4 h-a p-1 m-t-0-2 font-s font-sm-m font-lg-l absDownR">
+          <a href="<?php echo get_page_link(10);?>" class="link-seccion button columns small-8 medium-6 large-4 h-a p-1 m-t-0-2 font-s font-sm-m font-lg-l absDownR shadow">
 
             Click para conocer más
 
@@ -57,11 +63,11 @@
 
       </div>
 
-      <?php
-    endwhile;
-  endif;
-  ?>
-
 </div>
+
+<?php
+endwhile;
+endif;
+?>
 
 </section>
