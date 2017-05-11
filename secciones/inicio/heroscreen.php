@@ -4,19 +4,23 @@
   <div id="inicio-heroscreen-slider" class="slick-portada columns p-0">
 
     <?php
-    //ultimas noticias
-    $titulos  = array('Titulo Ilab noticia destacada');
-    $extractos  = array('Lorem spectrum patum ed vivenci consortum democretvs rip adversus penas oscvrum op sis');
-    $pic = array('workshop', 'coding', 'technology');
-    $accion = 'Lee artículo';
 
-    for ($i=0; $i < 3 ; $i++):
+    $args = array(
+      'cat' => 7,
+      // 'category' => 'slider-destacadas'
+    );
+    $query = new WP_Query($args);
+
+    if($query->have_posts()):
+      while ($query->have_posts()): $query -> the_post();
       ?>
       <div class="columns p-0 rel text-shadow">
 
         <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidFill">
 
-          <img src="http://loremflickr.com/1920/800/<?php echo $pic[$i];?>/all" alt="" />
+          <?php
+          echo get_the_post_thumbnail();
+          ?>
 
         </div>
         <div class="textos-slider columns z1 absUpL p-0 color-white v-center">
@@ -25,7 +29,7 @@
 
             <?php
 
-            echo $titulos[0] . ' ' . $i;
+            echo get_the_title();
 
             ?>
 
@@ -34,7 +38,7 @@
 
             <?php
 
-            echo $extractos[0];
+            echo excerpt(26);
 
             ?>
 
@@ -51,7 +55,7 @@
 
             </a>
 
-            </div>
+          </div>
 
         </div>
 
@@ -59,10 +63,13 @@
       </div>
 
       <?php
-    endfor;
-    ?>
 
-  </div>
+    endwhile;
+  endif;
+
+  ?>
+
+</div>
 
 
 
