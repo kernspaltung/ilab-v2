@@ -37,6 +37,12 @@ function page_id($id) {
    return array( 'page_id' => $id );
 
 }
+//cpts
+function cpt($cpt_slug) {
+
+   return array( 'post_type' => $cpt_slug );
+
+}
 
 //delimita extracto
 function excerpt($limit) {

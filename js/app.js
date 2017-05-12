@@ -27,6 +27,7 @@ function setupResize() {
     // svgs()
     u.addWindowResizeFunction( slider_portada )
     u.addWindowResizeFunction( slider_aliados )
+    u.addWindowResizeFunction( slider_sidebar )
     u.addWindowResizeFunction( svgs )
 
   } else {
@@ -81,6 +82,7 @@ function slider_sidebar() {
     autoPlaySpeed: 7000,
     arrows: false,
     dots: true,
+    lazyLoad: 'ondemand',
     // vertical: true,
     // verticalSwiping: true
   })
@@ -95,6 +97,7 @@ function slider_aliados() {
     dots: true,
     slidesToShow: 4,
     slidesToScroll: 4,
+    lazyLoad: 'ondemand',
     responsive: [
       {
         breakpoint: 1024,
@@ -315,22 +318,22 @@ function svgs() {
 
   new Vivus('nosotros-svg', {
     type: 'oneByOne',
-    duration: 900,
+    duration: 1100,
     animTimingFunction: Vivus.EASE
   })
   new Vivus('bootcamp-svg', {
     type: 'oneByOne',
-    duration: 900,
+    duration: 1100,
     animTimingFunction: Vivus.EASE
   })
   new Vivus('incuba-svg', {
     type: 'oneByOne',
-    duration: 900,
+    duration: 1100,
     animTimingFunction: Vivus.EASE
   })
   new Vivus('startups-svg', {
     type: 'oneByOne',
-    duration: 900,
+    duration: 1100,
     animTimingFunction: Vivus.EASE
   })
 

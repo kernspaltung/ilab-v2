@@ -1,4 +1,4 @@
-<section id="inicio-incuba" class="paralax-bg section columns h-100-v p-top">
+<section id="inicio-incuba" class="paralax-bg section columns h-100-v p-top rel">
 
 
 
@@ -14,7 +14,6 @@
 
 
     <div class="fondo columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
-      <!-- <img src="http://loremflickr.com/1920/800/coop/all" alt="" /> -->
       <?php echo get_the_post_thumbnail();?>
 
     </div>
@@ -39,7 +38,7 @@
           <div class="columns p-0 small-8 medium-6 large-4 h-50 small-centered v-center">
 
             <!-- svg animado -->
-            <object id="nosotros-svg" class="columns p-0 h-100 text-shadow" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri();?>/img/inicio-svgs/test4.svg"></object>
+            <object id="incuba-svg" class="columns p-0 h-100 text-shadow" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri();?>/img/inicio-svgs/test4.svg"></object>
 
           </div>
 

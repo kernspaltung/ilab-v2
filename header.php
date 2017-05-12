@@ -38,6 +38,7 @@
           <?php
 
           $redes = array('facebook','twitter','linkedin-square','google-plus','instagram','youtube-play');
+          $links = array('http://facebook.com/','http://twitter.com/','http://linkedin.com/','http://plus.google.com','http://instagram.com','http://youtube.com');
 
           for ($i=0; $i < 6 ; $i++):
 
@@ -47,7 +48,7 @@
 
               <div class="columns p-0 h-a text-center">
 
-                <a class="columns p-0" href="http://www.facebook.com/" target="_blank">
+                <a class="columns p-0" href="<?php echo $links[$i];?>" target="_blank">
 
                   <i class="fa fa-<?php echo $redes[$i];?>"></i>
 
@@ -68,7 +69,7 @@
           <a href="#" class="columns p-0 h-100">
             <div class="columns p-0 v-center">
 
-              <div class="columns h-a p-0 text-center font-xs font-sm-s font-lg-m">
+              <div class="button columns h-a p-0-1 p-0 text-center color-blanco font-xs font-sm-s font-lg-m">
                 Login
               </div>
 

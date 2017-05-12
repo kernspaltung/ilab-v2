@@ -139,6 +139,9 @@ p {
 .pointer {
   cursor: pointer;
 }
+.texto-gigante {
+  font-size: 6.2em;
+}
 .link-seccion {
   & div {
     @extend .color-white;
@@ -274,8 +277,8 @@ img:last-of-type {
   z-index:-1;
 }
 
-#inicio-aliados {
-  background-image: url("http://loremflickr.com/1920/800/okupa/all");
+#inicio-aliados .fondo {
+  // background-image: url("http://loremflickr.com/1920/800/okupa/all");
   background-attachment: fixed;
 }
 // fin parallax
@@ -295,9 +298,9 @@ img:last-of-type {
 
 // responsivos
 @media screen and (max-width:640px) {
-  footer {
-    & .h-footer-widget {
-      height: 75vh !important;
+  #footer-widgets {
+    .h-footer-widget {
+      height: 80vh !important;
     }
   }
 

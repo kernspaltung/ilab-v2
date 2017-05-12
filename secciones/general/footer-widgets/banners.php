@@ -1,1 +1,3 @@
-Widget banners
+<?php
+
+get_template_part('sidebar');
