@@ -14,7 +14,7 @@
   </div>
 
 <!--  -->
-  <div class="columns small-12 medium-6 large-4 h-footer-widget v-center">
+  <div class="columns small-12 medium-6 large-4 h-widget-contacto v-center">
 
     <div class="columns h-90 text-left">
 
