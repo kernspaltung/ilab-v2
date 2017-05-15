@@ -28,9 +28,9 @@
     <div id="header-top" class="columns p-0 h-35">
 
       <!-- Este div vacio desaparece en movil para que no mueva las redes -->
-      <div class="columns medium-8 hide-for-small-only"></div>
+      <div class="columns medium-6 large-8 hide-for-small-only"></div>
 
-      <div class="columns p-0 medium-4">
+      <div class="columns p-0 medium-6 large-4">
 
 
         <div id="header-top-social" class="columns p-0 small-9">
@@ -84,8 +84,8 @@
 
         <?php
 
-        // include "secciones/general/menu-lista.php";
-        get_template_part("secciones/general/menu-lista");
+        // get_template_part("secciones/general/menu-lista");
+        wp_nav_menu( array( 'theme_location' => 'menu-paginas', 'menu_id' => 'lista-menu', 'container' => '' ));
 
         ?>
 

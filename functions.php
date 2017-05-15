@@ -31,6 +31,11 @@ function dependencias() {
 
 }
 
+function registro_menu() {
+  register_nav_menu('menu-paginas',__( 'Menú Header Páginas' ));
+}
+add_action( 'init', 'registro_menu' );
+
 //paginas
 function page_id($id) {
 

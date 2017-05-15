@@ -33,6 +33,7 @@ function setupResize() {
   } else {
 
     console.log('page or archive or single, or whatever')
+    u.addWindowResizeFunction( menu_paginas )
     u.addWindowResizeFunction( sticky_sidebar )
     u.addWindowResizeFunction( slider_sidebar )
   }
@@ -254,6 +255,25 @@ function mueve_menu() {
     mobilelist.removeClass('h-100 text-center color-neutral-1-3');
     mobilelist.addClass('h-100-v text-left p-l-1 color-primary-4-bg');
     mobile.append(menor);
+  }
+
+}
+
+function menu_paginas() {
+  var menupaginas = $('.menu')
+  var li = $('.menu-item')
+  var link = $('.menu-item a')
+
+  if ($(window).width() >= 1024) {
+
+    li.removeClass('shareH text-left');
+    li.addClass('shareW text-left');
+
+  } else {
+
+    li.removeClass('shareW  text-center');
+    li.addClass('shareH text-left');
+
   }
 
 }

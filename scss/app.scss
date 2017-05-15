@@ -218,6 +218,11 @@ p {
 .wpcf7-response-output {
   height: auto !important;
 }
+
+.menu, .menu-item {
+  // height: 100% !important;
+}
+
 // Parallax
 // ------------- MIXINS ------------- //
 @mixin transition($time, $property: all, $easing: ease-in) {
