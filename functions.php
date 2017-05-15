@@ -33,12 +33,13 @@ function dependencias() {
 
 function registro_menu() {
   register_nav_menu('menu-paginas'  ,__( 'Menú Header Páginas' ));
-  register_nav_menu('menu-bootcamp'  ,__( 'Menú Header Páginas' ));
-  register_nav_menu('menu-incuba'  ,__( 'Menú Header Páginas' ));
-  register_nav_menu('menu-aliados'  ,__( 'Menú Header Páginas' ));
-  register_nav_menu('menu-startups'  ,__( 'Menú Header Páginas' ));
-  register_nav_menu('menu-eventos'  ,__( 'Menú Header Páginas' ));
-  register_nav_menu('menu-ac'  ,__( 'Menú Header Páginas' ));
+  register_nav_menu('menu-about'  ,__( 'Menú Página Nosotros' ));
+  register_nav_menu('menu-bootcamp'  ,__( 'Menú Página Bootcamp' ));
+  register_nav_menu('menu-incuba'  ,__( 'Menú Página Incuba' ));
+  register_nav_menu('menu-aliados'  ,__( 'Menú Página Aliados' ));
+  register_nav_menu('menu-startups'  ,__( 'Menú Página Startups' ));
+  register_nav_menu('menu-eventos'  ,__( 'Menú Página Eventos' ));
+  register_nav_menu('menu-ac'  ,__( 'Menú Página AC' ));
 
 }
 add_action( 'init', 'registro_menu' );

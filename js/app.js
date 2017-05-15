@@ -268,8 +268,8 @@ function menu_paginas() {
 
   if ($(window).width() >= 1024) {
 
-    li.removeClass('shareH text-left');
-    li.addClass('shareW text-center');
+    li.removeClass('shareH h-a text-left');
+    li.addClass('shareW h-100 text-center');
 
     setTimeout(function() {//activa anchos
       u.shareW()
@@ -277,8 +277,8 @@ function menu_paginas() {
 
   } else {
 
-    li.removeClass('shareW text-center');
-    li.addClass('shareH text-left');
+    li.removeClass('shareW h-100 text-center');
+    li.addClass('shareH h-a text-left');
 
     setTimeout(function() {//activa alturas
       u.shareH()
