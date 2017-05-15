@@ -32,7 +32,14 @@ function dependencias() {
 }
 
 function registro_menu() {
-  register_nav_menu('menu-paginas',__( 'Menú Header Páginas' ));
+  register_nav_menu('menu-paginas'  ,__( 'Menú Header Páginas' ));
+  register_nav_menu('menu-bootcamp'  ,__( 'Menú Header Páginas' ));
+  register_nav_menu('menu-incuba'  ,__( 'Menú Header Páginas' ));
+  register_nav_menu('menu-aliados'  ,__( 'Menú Header Páginas' ));
+  register_nav_menu('menu-startups'  ,__( 'Menú Header Páginas' ));
+  register_nav_menu('menu-eventos'  ,__( 'Menú Header Páginas' ));
+  register_nav_menu('menu-ac'  ,__( 'Menú Header Páginas' ));
+
 }
 add_action( 'init', 'registro_menu' );
 

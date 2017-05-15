@@ -1,5 +1,5 @@
 
-<aside id="sidebar-sticky" class="columns small-12 medium-4 large-3 p-1 p-top-side h-100-v">
+<aside id="sidebar-sticky" class="columns small-12 medium-4 large-3 p-1 h-100-v">
 
   <?php get_template_part('sidebar'); ?>
 
