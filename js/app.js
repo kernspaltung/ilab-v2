@@ -267,12 +267,20 @@ function menu_paginas() {
   if ($(window).width() >= 1024) {
 
     li.removeClass('shareH text-left');
-    li.addClass('shareW text-left');
+    li.addClass('shareW text-center');
+
+    setTimeout(function() {//activa anchos
+      u.shareW()
+    },250)
 
   } else {
 
-    li.removeClass('shareW  text-center');
+    li.removeClass('shareW text-center');
     li.addClass('shareH text-left');
+
+    setTimeout(function() {//activa alturas
+      u.shareH()
+    },250)
 
   }
 

@@ -16,7 +16,7 @@
 
             <div class="columns p-0 absUpL imgLiquid imgLiquidFill">
 
-              <img src="http://loremflickr.com/1920/800/team/all" alt="" />
+              <img src="http://loremflickr.com/980/600/coop/all" alt="" />
 
             </div>
 
