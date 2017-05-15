@@ -273,7 +273,7 @@ function menu_paginas() {
 
     setTimeout(function() {//activa anchos
       u.shareW()
-    },250)
+    },100)
 
   } else {
 
@@ -282,11 +282,13 @@ function menu_paginas() {
 
     setTimeout(function() {//activa alturas
       u.shareH()
-    },250)
+    },100)
 
   }
 
-  u.verticalCenter()
+  setTimeout(function() {//activa alturas
+    u.verticalCenter()
+  },200)
 }
 
 function fullpage() {
