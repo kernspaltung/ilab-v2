@@ -10,5 +10,8 @@
     + 01 228 841 2397
   </a>
 </div>
+<div class="columns h-a">
 
-<?php echo get_template_part('secciones/general/social'); ?>
+  <?php echo get_template_part('secciones/general/social'); ?>
+
+</div>

@@ -28,9 +28,9 @@
     <div id="header-top" class="columns p-0 h-35">
 
       <!-- Este div vacio desaparece en movil para que no mueva las redes -->
-      <div class="columns medium-6 hide-for-small-only"></div>
+      <div class="columns medium-8 hide-for-small-only"></div>
 
-      <div class="columns p-0 medium-6">
+      <div class="columns p-0 medium-4">
 
 
         <div id="header-top-social" class="columns p-0 small-9">
