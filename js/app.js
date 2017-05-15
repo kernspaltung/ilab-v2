@@ -264,6 +264,8 @@ function menu_paginas() {
   var li = $('.menu-item')
   var link = $('.menu-item a')
 
+  li.addClass('v-center')
+
   if ($(window).width() >= 1024) {
 
     li.removeClass('shareH text-left');
@@ -284,6 +286,7 @@ function menu_paginas() {
 
   }
 
+  u.verticalCenter()
 }
 
 function fullpage() {

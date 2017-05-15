@@ -219,7 +219,11 @@ p {
   height: auto !important;
 }
 
+.menu-item {
+  height: 100% !important;
+}
 .menu-item a {
+
   @extend .color-texto;
 }
 
