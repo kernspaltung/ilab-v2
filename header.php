@@ -35,32 +35,8 @@
 
         <div id="header-top-social" class="columns p-0 small-9">
 
-          <?php
+          <?php echo get_template_part('secciones/general/social'); ?>
 
-          $redes = array('facebook','twitter','linkedin-square','google-plus','instagram','youtube-play');
-          $links = array('http://facebook.com/','http://twitter.com/','http://linkedin.com/','http://plus.google.com','http://instagram.com','http://youtube.com');
-
-          for ($i=0; $i < 6 ; $i++):
-
-            ?>
-
-            <div class="columns small-2 p-l-0 p-r-0 h-100 v-center">
-
-              <div class="columns p-0 h-a text-center">
-
-                <a class="columns p-0" href="<?php echo $links[$i];?>" target="_blank">
-
-                  <i class="fa fa-<?php echo $redes[$i];?>"></i>
-
-                </a>
-
-              </div>
-
-            </div>
-
-
-
-          <?php endfor; ?>
 
         </div><!-- fin top social -->
 
