@@ -143,8 +143,16 @@ p {
 .pointer {
   cursor: pointer;
 }
+.font-light {
+  font-weight: lighter !important;
+}
 .texto-gigante {
   font-size: 6.2em;
+}
+#header-movil-boton-icono {
+  // @extend .button;
+  // @extend .p-0;
+  // background-color: transparent !important;
 }
 .link-seccion {
   & div {

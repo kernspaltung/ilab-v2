@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: About
+Template Name: Bootcamp
 */
 get_header();
 ?>
@@ -24,14 +24,7 @@ get_header();
 
       <div class="columns small-12 medium-8 h-80 h-md-70 v-center">
 
-
-              <h3 class="columns text-left font-light">
-                <?php
-                echo get_the_title();
-                ?>
-              </h3>
-
-        <div class="columns h-a p-1 font-s font-md-s text-justify">
+        <div class="columns h-a p-1 font-s font-md-s">
 
           <?php echo get_the_content(); ?>
 
@@ -47,11 +40,17 @@ get_header();
   <!-- inicia menu de paginas -->
   <div class="columns small-12 medium-4 h-80 h-md-70 v-center">
 
+    <h3 class="columns p-b-1 text-left">
+      <?php
+      echo get_the_title();
+      ?>
+    </h3>
+
     <div class="menu-pagina columns h-a text-center">
 
       <?php
       // wp_nav_menu( array( 'theme_location' => 'menu-bootcamp', 'menu_id' => 'menu-bootcamp', 'container' => '', 'menu_class' => 'menu-page columns text-justify p-1' ));
-      menu_paginas('menu-about', 'menu-about' )
+      menu_paginas('menu-bootcamp', 'menu-bootcamp' )
       ?>
 
     </div>

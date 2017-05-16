@@ -261,13 +261,14 @@ function mueve_menu() {
 
 function menu_paginas() {
   var menupaginas = $('#lista-menu.menu')
-  var li = $('#lista-menu.menu-item')
-  var link = $('#lista-menu.menu-item a')
+  var li = $('#lista-menu.menu .menu-item')
+  var link = $('#lista-menu.menu .menu-item a')
 
   li.addClass('v-center')
 
   if ($(window).width() >= 1024) {
 
+console.log('grande');
     li.removeClass('shareH h-a text-left');
     li.addClass('shareW h-100 text-center');
 
@@ -277,6 +278,7 @@ function menu_paginas() {
 
   } else {
 
+    console.log('pequeno');
     li.removeClass('shareW h-100 text-center');
     li.addClass('shareH h-a text-left');
 
