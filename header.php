@@ -84,7 +84,6 @@
 
         <?php
 
-        // get_template_part("secciones/general/menu-lista");
         wp_nav_menu( array( 'theme_location' => 'menu-paginas', 'menu_id' => 'lista-menu', 'container' => '' ));
 
         ?>

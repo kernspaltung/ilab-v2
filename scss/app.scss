@@ -218,10 +218,29 @@ p {
 .wpcf7-response-output {
   height: auto !important;
 }
+//menus paginas
+.menu-pagina {
 
-.menu-item {
-  // height: 100% !important;
+  .menu-page {
+
+    li {
+      width: 100% !important;
+      background-color: green;
+      padding: 10px 0 !important;
+      margin: 5px 0;
+      text-transform: uppercase;
+
+      &>a {
+        height: 100%;
+        color: whitesmoke !important;
+        @extend .color-primary-0-bg-hover !optional;
+      }
+    }
+
+  }
+
 }
+
 .menu-item a {
 
   @extend .color-texto;
