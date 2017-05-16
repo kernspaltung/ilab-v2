@@ -227,6 +227,12 @@ p {
   @extend .color-texto;
 }
 
+li.current-menu-item a {
+  text-decoration: underline;
+  @extend .button;
+  @extend .color-blanco;
+}
+//
 // Parallax
 // ------------- MIXINS ------------- //
 @mixin transition($time, $property: all, $easing: ease-in) {
