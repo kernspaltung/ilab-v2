@@ -260,9 +260,9 @@ function mueve_menu() {
 }
 
 function menu_paginas() {
-  var menupaginas = $('.menu')
-  var li = $('.menu-item')
-  var link = $('.menu-item a')
+  var menupaginas = $('#lista-menu.menu')
+  var li = $('#lista-menu.menu-item')
+  var link = $('#lista-menu.menu-item a')
 
   li.addClass('v-center')
 

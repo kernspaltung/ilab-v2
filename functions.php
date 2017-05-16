@@ -56,7 +56,11 @@ function cpt($cpt_slug) {
    return array( 'post_type' => $cpt_slug );
 
 }
+//menus para paginas
+function menu_paginas($lugar = '', $ul_ID = '' ) {
+  wp_nav_menu( array( 'theme_location' => $lugar, 'menu_id' => $ul_ID, 'container' => '', 'menu_class' => 'menu-page columns text-justify p-1' ));
 
+}
 //delimita extracto
 function excerpt($limit) {
    $excerpt = explode(' ', get_the_excerpt(), $limit);

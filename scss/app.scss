@@ -177,7 +177,7 @@ p {
   @extend .p-top;
 }
 .p-t-footer {
-   padding-top: 8vh !important;
+  padding-top: 8vh !important;
 }
 //
 
@@ -215,42 +215,7 @@ p {
 .h-widget-contacto {
   height: 50vh;
 }
-.wpcf7-response-output {
-  height: auto !important;
-}
-//menus paginas
-.menu-pagina {
 
-  .menu-page {
-
-    li {
-      width: 100% !important;
-      background-color: green;
-      padding: 10px 0 !important;
-      margin: 5px 0;
-      text-transform: uppercase;
-
-      &>a {
-        height: 100%;
-        color: whitesmoke !important;
-        @extend .color-primary-0-bg-hover !optional;
-      }
-    }
-
-  }
-
-}
-
-.menu-item a {
-
-  @extend .color-texto;
-}
-
-li.current-menu-item a {
-  text-decoration: underline;
-  @extend .button;
-  @extend .color-blanco;
-}
 //
 // Parallax
 // ------------- MIXINS ------------- //
@@ -348,6 +313,15 @@ img:last-of-type {
     .h-widget-contacto {
       height: auto !important;
     }
+  }
+}
+@media screen and (min-width:640px) {
+
+  .h-md-70 {
+    height: 70%;
+  }
+  .h-md-100-v {
+    height: 100vh;
   }
 
 }

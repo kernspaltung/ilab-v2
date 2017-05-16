@@ -5,12 +5,12 @@ Template Name: About
 get_header();
 ?>
 
-<section id="content" class="content columns small-12 medium-8 large-9 p-0 h-100-v">
+<section id="content" class="content columns small-12 large-9 p-0 h-a h-md-100-v">
 
   <div class="columns p-1">
 
     <!--  -->
-    <div class="bread columns p-0-2 h-a">
+    <div class="bread columns p-0-2 h-10">
       <?php echo do_shortcode('[breadcrumb]'); ?>
     </div>
     <!--  -->
@@ -22,7 +22,7 @@ get_header();
       while (have_posts()): the_post();
       ?>
 
-      <div class="columns small-12 medium-8 v-center">
+      <div class="columns small-12 medium-8 h-80 h-md-70 v-center">
 
         <div class="columns h-a p-1 font-s font-md-s">
 
@@ -37,18 +37,20 @@ get_header();
   endif;
   ?>
 
-  <div class="columns small-12 medium-4 h-85 v-center">
+<!-- inicia menu de paginas -->
+  <div class="columns small-12 medium-4 h-80 h-md-70 v-center">
 
-    <div class="menu-pagina columns h-a ">
+    <div class="menu-pagina columns h-a text-center">
 
       <?php
-      wp_nav_menu( array( 'theme_location' => 'menu-bootcamp', 'menu_id' => 'menu-bootcamp', 'container' => '', 'menu_class' => 'menu-page columns text-justify p-1' ));
+      // wp_nav_menu( array( 'theme_location' => 'menu-bootcamp', 'menu_id' => 'menu-bootcamp', 'container' => '', 'menu_class' => 'menu-page columns text-justify p-1' ));
+      menu_paginas('menu-bootcamp', 'menu-bootcamp' )
       ?>
 
     </div>
 
   </div>
-
+<!-- fin menu de paginas -->
 
 
 </div>
