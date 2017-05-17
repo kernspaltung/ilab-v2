@@ -9,6 +9,7 @@ $(document).ready(function() {
   img_liquid()
   fullpage()
   menu_scroll()
+  slider_footer()
 })
 //
 
@@ -81,6 +82,17 @@ function slider_sidebar() {
   $('.slick-sidebar').slick({
     autoplay: true,
     autoPlaySpeed: 7000,
+    arrows: false,
+    dots: true,
+    lazyLoad: 'ondemand',
+    // vertical: true,
+    // verticalSwiping: true
+  })
+}
+function slider_footer() {
+  $('.slick-footer').slick({
+    autoplay: true,
+    autoPlaySpeed: 5000,
     arrows: false,
     dots: true,
     lazyLoad: 'ondemand',

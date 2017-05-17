@@ -24,7 +24,14 @@ get_header();
 
       <div class="columns small-12 medium-8 h-80 h-md-70 v-center">
 
-        <div class="columns h-a p-1 font-s font-md-s">
+
+              <h3 class="columns text-left font-light">
+                <?php
+                echo get_the_title();
+                ?>
+              </h3>
+
+        <div class="columns h-a p-1 font-s font-md-s text-justify">
 
           <?php echo get_the_content(); ?>
 
@@ -39,12 +46,6 @@ get_header();
 
   <!-- inicia menu de paginas -->
   <div class="columns small-12 medium-4 h-80 h-md-70 v-center">
-
-    <h3 class="columns p-b-1 text-left">
-      <?php
-      echo get_the_title();
-      ?>
-    </h3>
 
     <div class="menu-pagina columns h-a text-center">
 

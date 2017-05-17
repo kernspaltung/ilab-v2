@@ -1,11 +1,11 @@
 
 <?php
-$args_social = array(
-  'post_type' => 'social',
-  'orderby' => 'ID',
-	'order'   => 'ASC',
-  'posts_per_page' => 6, //maximo 6 redes
-);
+  $args_social = array(
+    'post_type' => 'social',
+    'orderby' => 'ID',
+  	'order'   => 'ASC',
+    'posts_per_page' => 6, //maximo 6 redes
+  );
 // $args_social = array('p' => $id, 'post_type' => 'social');
 
 $query_social = new WP_Query( $args_social );
