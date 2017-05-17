@@ -10,7 +10,7 @@
       'post_type' => 'banner-sidebar',
       // 'orderby' => 'ID',
     	// 'order'   => 'ASC',
-      'posts_per_page' => 4
+      'posts_per_page' => 6
     );
     $q = new WP_Query($args);
     // $imagen = get_the_post_thumbnail();

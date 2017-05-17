@@ -46,7 +46,7 @@ get_header();
   <!-- inicia menu de paginas -->
   <div class="columns small-12 medium-4 h-80 h-md-70 v-center">
 
-    <div class="menu-pagina columns h-a text-center">
+    <div class="menu-pagina columns h-a p-0 text-center">
 
       <?php
 

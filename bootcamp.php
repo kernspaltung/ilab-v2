@@ -47,7 +47,7 @@ get_header();
   <!-- inicia menu de paginas -->
   <div class="columns small-12 medium-4 h-80 h-md-70 v-center">
 
-    <div class="menu-pagina columns h-a text-center">
+    <div class="menu-pagina columns p-0 h-a text-center">
 
       <?php
       // wp_nav_menu( array( 'theme_location' => 'menu-bootcamp', 'menu_id' => 'menu-bootcamp', 'container' => '', 'menu_class' => 'menu-page columns text-justify p-1' ));
