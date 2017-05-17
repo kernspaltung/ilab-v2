@@ -16,7 +16,7 @@ get_header('inicio');
   //
   get_template_part("secciones/inicio/incuba");
 
-  get_template_part("secciones/inicio/startups");
+  // get_template_part("secciones/inicio/startups");
 
   get_template_part("secciones/inicio/aliados");
 

@@ -311,7 +311,7 @@ function fullpage() {
     //Navigation
     menu: '#lista-menu',
     lockAnchors: false,
-    anchors:['portada', 'quien-somos','bootcamp','incuba','startups','aliados','eventos-ac','contacto'],
+    anchors:['portada', 'quien-somos','bootcamp','incuba',/*'startups',*/'aliados','eventos-ac','contacto'],
     navigation: false,
     navigationPosition: 'left',
     // navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -378,11 +378,11 @@ function svgs() {
     duration: 1100,
     animTimingFunction: Vivus.EASE
   })
-  new Vivus('startups-svg', {
-    type: 'oneByOne',
-    duration: 1100,
-    animTimingFunction: Vivus.EASE
-  })
+  // new Vivus('startups-svg', {
+  //   type: 'oneByOne',
+  //   duration: 1100,
+  //   animTimingFunction: Vivus.EASE
+  // })
 
 }
 

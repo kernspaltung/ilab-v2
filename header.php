@@ -64,7 +64,7 @@
 
     <div id="header-bottom" class="columns p-0 h-65">
 
-      <div id="header-escritorio-logo" class="columns small-4 large-2 p-0-1">
+      <div id="header-escritorio-logo" class="columns small-4 p-0-1">
 
         <a class="columns p-0 h-100" href="index.php">
 
@@ -80,7 +80,7 @@
 
 
       <!-- seccion header escritorio-->
-      <nav id="menu-escritorio" class="columns medium-8 large-10 p-0 show-for-large">
+      <nav id="menu-escritorio" class="columns medium-8 p-0 show-for-large">
 
         <?php
 

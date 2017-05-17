@@ -287,13 +287,13 @@ img:last-of-type {
   background-attachment: fixed;
 }
 
-#inicio-startups:before .fondo {
-  // background-image: url("http://loremflickr.com/1920/800/coop/all");
-  transform: translateZ(-1px) scale(2);
-  z-index:-1;
-}
+// #inicio-startups:before .fondo {
+//   // background-image: url("http://loremflickr.com/1920/800/coop/all");
+//   transform: translateZ(-1px) scale(2);
+//   z-index:-1;
+// }
 
-#inicio-aliados .fondo {
+#inicio-aliados:before .fondo {
   // background-image: url("http://loremflickr.com/1920/800/okupa/all");
   background-attachment: fixed;
 }
