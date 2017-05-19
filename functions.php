@@ -62,7 +62,7 @@ function menu_paginas($lugar = '', $ul_ID = '' ) {
 
 }
 //delimita extracto
-function excerpt($limit) {
+function excerpt($limit, $string) {
    $excerpt = explode(' ', get_the_excerpt(), $limit);
    if (count($excerpt)>=$limit) {
       array_pop($excerpt);
@@ -71,7 +71,9 @@ function excerpt($limit) {
       $excerpt = implode(" ",$excerpt);
    }
    $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
-   return $excerpt;
+
+
+   return $excerpt . " " . $string;
 }
 
 
