@@ -217,6 +217,9 @@ p {
 .color-abierto {
   color: black;
 }
+.rounded {
+  border-radius: 50px !important; 
+}
 //
 #footer-widgets {
   & .h-footer-widget {

@@ -52,9 +52,20 @@ get_header();
   if ( $q->have_posts()):
     while ( $q->have_posts()):  $q->the_post();
     ?>
+    <div class="columns small-12 medium-6 large-4 text-center font-light font-m font-md-s">
 
-    <div class="columns small-12 medium-6 large-4">
-      <?php echo get_the_title(); ?>
+      <div class="columns p-0 h-40-v rounded">
+        <div class="columns p-0 imgLiquid imgLiquidFill">
+          <?php echo get_the_post_thumbnail(); ?>
+        </div>
+      </div>
+      <div class="columns p-0-1 h-a">
+        <?php echo get_the_title(); ?>
+      </div>
+      <div class="columns p-0-1 h-a">
+        <?php echo get_post_meta(get_the_ID(),"staff-puesto",true); ?>
+      </div>
+
     </div>
 
     <?php
