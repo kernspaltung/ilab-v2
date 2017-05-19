@@ -217,8 +217,11 @@ p {
 .color-abierto {
   color: black;
 }
-.rounded {
-  border-radius: 50px !important; 
+.round {
+  border-collapse: separate;
+  -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 //
 #footer-widgets {

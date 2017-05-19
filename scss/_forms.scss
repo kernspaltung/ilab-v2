@@ -1,4 +1,8 @@
-// estilos para formularios de contacto Ilabv2
+// estilos para formularios Ilabv2
+
+input#searchsubmit {
+  @extend .button;
+}
 
 .wpcf7, .wpcf7-form {
   height: 100%;
