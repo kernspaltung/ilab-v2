@@ -36,13 +36,25 @@ get_header();
               <div class="columns p-0 h-a font-light">
                 <label for="">Nombre: </label>
                 <?php
-                  echo get_post_meta(get_the_ID(),"staff-nombre",true);
+                  echo get_post_meta(get_the_ID(),"roockie-nombre",true);
                 ?>
               </div>
               <div class="columns p-0 h-a font-light">
-                <label for="">Puesto: </label>
+                <label for="">Generación: </label>
                 <?php
-                  echo get_post_meta(get_the_ID(),"staff-puesto",true);
+                  echo get_post_meta(get_the_ID(),"roockie-generacion",true);
+                ?>
+              </div>
+              <div class="columns p-0 h-a font-light">
+                <label for="">Universidad: </label>
+                <?php
+                  echo get_post_meta(get_the_ID(),"roockie-universidad",true);
+                ?>
+              </div>
+              <div class="columns p-0 h-a font-light">
+                <label for="">Carrera: </label>
+                <?php
+                  echo get_post_meta(get_the_ID(),"roockie-carrera",true);
                 ?>
               </div>
 
@@ -51,9 +63,15 @@ get_header();
           </div>
           <hr>
           <div class="columns p-0 p-t-1 h-a font-s font-sm-m font-md-s">
+            <label for="">Proyectos: </label>
+            <?php
+              echo get_post_meta(get_the_ID(),"roockie-proyectos",true);
+            ?>
+          </div>
+          <div class="columns p-0 p-t-1 h-a font-s font-sm-m font-md-s">
             <label for="">Biografía: </label>
             <?php
-              echo get_post_meta(get_the_ID(),"staff-bio",true);
+              echo get_post_meta(get_the_ID(),"roockie-bio",true);
             ?>
           </div>
 

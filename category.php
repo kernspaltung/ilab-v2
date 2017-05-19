@@ -3,7 +3,7 @@ get_header();
 
 ?>
 
-<section id="content" class="content columns small-12 medium-8 large-9">
+<section id="content" class="content columns small-12 large-9">
 
   <div class="columns p-1">
 
