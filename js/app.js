@@ -280,7 +280,6 @@ function menu_paginas() {
 
   if ($(window).width() >= 1024) {
 
-console.log('grande');
     li.removeClass('shareH h-a text-left');
     li.addClass('shareW h-100 text-center');
 
@@ -290,7 +289,6 @@ console.log('grande');
 
   } else {
 
-    console.log('pequeno');
     li.removeClass('shareW h-100 text-center');
     li.addClass('shareH h-a text-left');
 

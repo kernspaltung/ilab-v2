@@ -31,30 +31,18 @@ get_header();
 
           <div class="columns small-12 medium-6 large-8 h-15-v m-b-2 h-md-40-v rel font-m font-lg-l">
 
-            <div class="columns p-0 h-a absDownL">
+            <div class="columns p-0 h-a p-l-1 absDownL">
 
               <div class="columns p-0 h-a font-light">
                 <label for="">Nombre: </label>
                 <?php
-                  echo get_post_meta(get_the_ID(),"roockie-nombre",true);
+                  echo get_post_meta(get_the_ID(),"mentor-nombre",true);
                 ?>
               </div>
               <div class="columns p-0 h-a font-light">
-                <label for="">Generación: </label>
+                <label for="">Tema: </label>
                 <?php
-                  echo get_post_meta(get_the_ID(),"roockie-generacion",true);
-                ?>
-              </div>
-              <div class="columns p-0 h-a font-light">
-                <label for="">Universidad: </label>
-                <?php
-                  echo get_post_meta(get_the_ID(),"roockie-universidad",true);
-                ?>
-              </div>
-              <div class="columns p-0 h-a font-light">
-                <label for="">Carrera: </label>
-                <?php
-                  echo get_post_meta(get_the_ID(),"roockie-carrera",true);
+                  echo get_post_meta(get_the_ID(),"mentor-tema",true);
                 ?>
               </div>
 
@@ -63,15 +51,15 @@ get_header();
           </div>
           <hr>
           <div class="columns p-0 p-t-1 h-a font-s font-sm-m font-md-s">
-            <label for="">Proyectos: </label>
+            <label for="">Expertise: </label>
             <?php
-              echo get_post_meta(get_the_ID(),"roockie-proyectos",true);
+              echo get_post_meta(get_the_ID(),"mentor-expertise",true);
             ?>
           </div>
           <div class="columns p-0 p-t-1 h-a font-s font-sm-m font-md-s">
             <label for="">Biografía: </label>
             <?php
-              echo get_post_meta(get_the_ID(),"roockie-bio",true);
+              echo get_post_meta(get_the_ID(),"mentor-bio",true);
             ?>
           </div>
 
