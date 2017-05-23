@@ -438,3 +438,12 @@ function menu_scroll() {
   })
 
 }
+
+// roockies
+function pasarela_roockies() {
+  var x = 0;
+  setInterval(function(){
+    x-=1;
+    $('.pasarela').css('background-position', x + 'px 0');
+  }, 10);
+}

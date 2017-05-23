@@ -4,18 +4,21 @@ Template Name: Roockies
 */
 get_header();
 ?>
+<!-- scroll imagen -->
+
+<!--  -->
+<div class="columns p-0 h-80-v rel">
+  <div class="pasarela columns p-0 imgLiquid imgLiquidFill">
+
+    <img src="http://fakeimg.pl/1920x800/?text=Pasarela_Roockies" alt="" />
+
+  </div>
+</div>
+<!--  -->
 
 <section id="content" class="content columns small-12 large-9 p-0 h-a">
 
   <div class="columns p-1">
-
-<!-- scroll imagen -->
-<div class="columns p-0 h-80-v imgLiquid imgLiquidFill">
-
-  <img src="http://fakeimg.pl/1920x800/?text=Pasarela_Roockies" alt="" />
-</div>
-<!--  -->
-
 
     <!--  -->
     <div class="bread columns p-0-2 h-10">
