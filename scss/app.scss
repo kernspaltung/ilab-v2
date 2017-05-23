@@ -220,7 +220,7 @@ p {
 .round {
   border-collapse: separate;
   -webkit-border-radius: 20px;
- -moz-border-radius: 20px;
+  -moz-border-radius: 20px;
   border-radius: 20px;
 }
 //
@@ -322,13 +322,11 @@ img:last-of-type {
 }
 //
 // Roockies pasarela
-// .pasarela {
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     overflow: hidden;
+// #pasarela img {
+//   height: 100% !important;
+//   width: auto;
+//   float: left;
 // }
-//
 // .pasarela:before, .pasarela:after {
 //     content: "";
 //     position: absolute;

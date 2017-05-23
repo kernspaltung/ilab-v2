@@ -16,7 +16,6 @@
 <!-- codigo analytics -->
 
 <!--  -->
-
 <?php wp_head(); ?>
 
 </head>

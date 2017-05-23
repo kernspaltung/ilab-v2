@@ -10,6 +10,7 @@ $(document).ready(function() {
   fullpage()
   menu_scroll()
   slider_footer()
+  pasarela_roockies()
 })
 //
 
@@ -57,10 +58,23 @@ function img_liquid() {
     fill:false,
     horizontalAlign:"left",
   });
+  $(".imgLiquid.imgLiquidFillLeft").imgLiquid({
+    fill:true,
+    horizontalAlign:"left",
+  });
 
   $(".imgLiquid.imgLiquidNoFillRight").imgLiquid({
     fill:false,
     horizontalAlign:"right",
+  });
+  $(".imgLiquid.imgLiquidFillRight").imgLiquid({
+    fill:true,
+    horizontalAlign:"right",
+  });
+  $(".imgLiquid.imgLiquidPasarela").imgLiquid({
+    fill:true,
+    horizontalAlign:"left",
+    fadeInTime: 1000
   });
 
 }
@@ -441,9 +455,28 @@ function menu_scroll() {
 
 // roockies
 function pasarela_roockies() {
-  var x = 0;
-  setInterval(function(){
-    x-=1;
-    $('.pasarela').css('background-position', x + 'px 0');
-  }, 10);
+
+  // para ejecutarse comprueba que sea la pagina de roockies
+  // para ejecutar el codigo para la imagen
+  if ($('.cont-pasarela').is(":visible")) {
+
+    var x = 0
+    var pasarela = $('.pasarela')
+
+    setInterval(function(){
+      x-=1
+      // console.log(x)
+      pasarela.css('background-position', x + 'px 0')
+
+    }, 80)
+
+    // aplica loop de imagen haciendo override de imgLiquid
+    setTimeout(function() {
+      $('#pasarela.imgLiquid.imgLiquidPasarela').css('background-repeat','repeat-x')
+    },10000)
+
+
+  }
+
+
 }

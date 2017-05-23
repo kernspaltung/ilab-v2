@@ -16,7 +16,6 @@
 <!-- codigo analytics -->
 
 <!--  -->
-
 <?php wp_head(); ?>
 
 </head>
@@ -132,4 +131,4 @@
     ?>
   </nav>
 
-  <div id="main" class="main columns p-top">
+  <div id="main" class="main p-0 columns p-top">
