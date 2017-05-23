@@ -9,7 +9,6 @@ get_header();
 <div id="cont-pasarela" class="cont-pasarela columns p-0 h-85-v rel">
   <div id="pasarela" class="pasarela columns p-0 imgLiquid imgLiquidPasarela">
 
-    <!-- <img src="http://fakeimg.pl/1920x800/?text=Pasarela_Roockies" alt="" /> -->
     <img src="<?php echo get_stylesheet_directory_uri();?>/img/roockies-9G.png" alt="" />
 
   </div>

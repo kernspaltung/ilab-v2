@@ -158,7 +158,9 @@ function slider_aliados() {
 
 //
 function sticky_sidebar() {
-  $("#sidebar-sticky").stick_in_parent();
+  $("#sidebar-sticky").stick_in_parent({
+    recalc_every:1
+  });
 }
 //
 
