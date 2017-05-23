@@ -62,7 +62,7 @@ function menu_paginas($lugar = '', $ul_ID = '' ) {
 
 }
 //delimita extracto
-function excerpt($limit, $string) {
+function excerpt($limit, $string = " ... mas") {
    $excerpt = explode(' ', get_the_excerpt(), $limit);
    if (count($excerpt)>=$limit) {
       array_pop($excerpt);
