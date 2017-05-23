@@ -158,9 +158,19 @@ function slider_aliados() {
 
 //
 function sticky_sidebar() {
-  $("#sidebar-sticky").stick_in_parent({
-    recalc_every:1
-  });
+
+  $('#sidebar-sticky').stick_in_parent({
+    // recalc_every:1
+  })
+
+  // fix bug con el sticky desbordandose en ciertas resoluciones
+  //restandole 2px al contenedor
+  setTimeout(function() {
+    var fixSticky = $('#sidebar-sticky').parent()
+    var ancho = fixSticky.width()
+    var fix = ancho - 2
+    fixSticky.css('width',fix);
+  },250)
 }
 //
 
