@@ -9,10 +9,13 @@ get_header();
 
     <!--  -->
     <div class="bread columns p-0-2 h-a">
-      <?php echo do_shortcode('[breadcrumb]'); ?>
+      <?php if(function_exists('bcn_display')) {
+        bcn_display();
+      }
+      ?>
     </div>
     <!--  -->
-    
+
     <div class="columns h-a p-t-1">
       <?php
       for ($i=0; $i < 100; $i++) {

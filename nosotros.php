@@ -11,7 +11,12 @@ get_header();
 
     <!--  -->
     <div class="bread columns p-0-2 h-10">
-      <?php echo do_shortcode('[breadcrumb]'); ?>
+      <?php //echo do_shortcode('[breadcrumb]');
+      ?>
+      <?php if(function_exists('bcn_display')) {
+        bcn_display();
+      }
+      ?>
     </div>
     <!--  -->
 
@@ -25,11 +30,11 @@ get_header();
       <div class="columns small-12 medium-8 h-80 h-md-70 v-center">
 
 
-              <h3 class="columns text-left font-light">
-                <?php
-                echo get_the_title();
-                ?>
-              </h3>
+        <h3 class="columns text-left font-light">
+          <?php
+          echo get_the_title();
+          ?>
+        </h3>
 
         <div class="columns h-a p-1 font-s font-md-s text-justify">
 

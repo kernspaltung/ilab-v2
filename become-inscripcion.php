@@ -11,7 +11,12 @@ get_header();
 
     <!--  -->
     <div class="bread columns p-0-2 h-10">
-      <?php echo do_shortcode('[breadcrumb]'); ?>
+      <?php //echo do_shortcode('[breadcrumb]');
+      ?>
+      <?php if(function_exists('bcn_display')) {
+        bcn_display();
+      }
+      ?>
     </div>
     <!--  -->
 
@@ -43,9 +48,9 @@ get_header();
   endif;
   ?>
 
-<div class="columns h-a">
+<div class="columns h-a p-1">
 
-  <?php echo do_shortcode('[contact-form-7 id="4" title="Contacto-ilab"]'); ?>
+  <?php echo do_shortcode('[contact-form-7 id="235" title="Bootcamp"]'); ?>
 
 </div>
 </div>
