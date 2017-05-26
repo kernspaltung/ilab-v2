@@ -22,6 +22,29 @@ label {
   @extend .color-texto;
   @extend .font-xxs;
 }
+// contacto bootcamp inscripcion
+.become {
+
+  .wpcf7-form {
+
+    background-color: lightgray;
+    padding: 16px !important;
+
+    & label {
+      @extend .color-texto;
+      @extend .font-m;
+    }
+    & input {
+      border:none;
+    & .wpcf7-submit{
+        @extend .p-2;
+      }
+    }
+  }
+
+}
+
+
 // contacto general, footer, page
 #contacto-general {
 
