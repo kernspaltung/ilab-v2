@@ -181,8 +181,12 @@ p {
   width: auto;
 }
 //override breadcrumbs
-.breadcrumb-container.theme1 a {
+.itemListElement {
   padding: 5px 0px !important;
+
+  & a {
+    @extend .color-texto;
+  }
 }
 //
 //override fullpage styles

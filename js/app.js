@@ -480,7 +480,7 @@ function pasarela_roockies() {
       // console.log(x)
       pasarela.css('background-position', x + 'px 0')
 
-    }, 80)
+    }, 50)
 
     // aplica loop de imagen haciendo override de imgLiquid
     setTimeout(function() {

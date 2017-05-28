@@ -4,25 +4,36 @@ Template Name: Roockies
 */
 get_header();
 ?>
-<!-- scroll imagen -->
-<!--  -->
-<div id="cont-pasarela" class="cont-pasarela columns p-0 h-85-v rel">
-  <div id="pasarela" class="pasarela columns p-0 imgLiquid imgLiquidPasarela">
+<?php
 
-    <img src="<?php echo get_stylesheet_directory_uri();?>/img/roockies-9G.png" alt="" />
+if (have_posts()):
+  while (have_posts()): the_post();
+  ?>
+  <!--  -->
+  <!-- scroll imagen -->
+  <!--  -->
+  <div id="cont-pasarela" class="cont-pasarela columns p-0 h-85-v rel">
+    <div id="pasarela" class="pasarela columns p-0 imgLiquid imgLiquidPasarela">
 
+      <?php echo get_the_post_thumbnail(); ?>
+
+    </div>
   </div>
-</div>
-<!--  -->
+  <!--  -->
 
+  <?php
+endwhile;
+endif;
+?>
 <section id="content" class="content columns small-12 large-9 p-0 h-a">
 
   <div class="columns p-1">
 
     <!--  -->
-    <div class="bread columns p-0-2 h-10">
-      <?php echo do_shortcode('[breadcrumb]'); ?>
-    </div>
+    <?php if(function_exists('bcn_display')) {
+      bcn_display();
+    }
+    ?>
     <!--  -->
 
     <?php
