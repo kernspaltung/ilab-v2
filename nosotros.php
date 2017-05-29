@@ -38,7 +38,7 @@ get_header();
 
         <div class="columns p-0 h-60">
 
-          <h3 class="columns text-left font-light bold">
+          <h3 class="columns p-t-0-3 text-left font-light bold">
             <?php
             echo get_the_title();
             ?>

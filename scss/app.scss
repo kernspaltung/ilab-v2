@@ -86,11 +86,12 @@ h1, h2, h3, h4, h5, h6 {
   @extend .color-texto;
 }
 a {
-  color: orange;
+  @extend .color-link;
+  color: #5aba5f;
 }
-li.active a div {
-  color: orange !important;
-}
+// li.active a div {
+//   @extend .color-link;
+// }
 a:hover {
   color: black;
 }
@@ -98,7 +99,8 @@ li a:hover {
   color: black !important;
 }
 li.active a div {
-  color: red !important;
+  // color: red !important;
+  color: green !important;
 }
 object {
   @extend .color-white;
@@ -154,6 +156,10 @@ p {
   // @extend .p-0;
   // background-color: transparent !important;
 }
+.button {
+  // @extend .color-link-bg;
+  background-color: #5aba5f !important;
+}
 .link-seccion {
   & div {
     @extend .color-white;
@@ -181,11 +187,16 @@ p {
   width: auto;
 }
 //override breadcrumbs
-.itemListElement {
+.bread {
+
   padding: 5px 0px !important;
 
-  & a {
-    @extend .color-texto;
+  span {
+
+    a {
+      @extend .color-texto;
+    }
+
   }
 }
 //
@@ -320,7 +331,7 @@ img:last-of-type {
 
   li {
     button::before {
-      color: orange !important;
+      @extend .color-link;
     }
   }
 }

@@ -11,6 +11,8 @@ $(document).ready(function() {
   menu_scroll()
   slider_footer()
   pasarela_roockies()
+
+  $('.menu-pagina ul li').addClass('shareW')
 })
 //
 
