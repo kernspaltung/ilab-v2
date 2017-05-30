@@ -73,22 +73,6 @@ div.wpcf7-response-output {
   height: auto !important;
   margin-top: 0px !important;
 }
-.menu-item a {
-  @extend .color-texto;
-}
-// activo
-li.current-menu-item a {
-  text-decoration: underline;
-  @extend .button;
-  @extend .color-blanco;
-}
-#lista-menu>li.current-menu-ancestor a,
-#lista-menu>li.current-menu-parent a,
-#lista-menu>li.current_page_parent a,
-#lista-menu>li.current_page_ancestor a {
-  @extend .button;
-  @extend .color-blanco;
-}
 //
 .wpcf7-not-valid-tip {
   display: none !important;
