@@ -24,7 +24,7 @@ function setupResize() {
   u.addWindowResizeFunction( u.shareH )
   u.addWindowResizeFunction( menu_movil )
 
-  //Carga especifica si es INICIO: si existen los svg es true
+  //Carga especifica; si es INICIO: existen los svg es true
   if ($('object').length > 0) {
 
     console.log('inicio')
@@ -33,6 +33,7 @@ function setupResize() {
     u.addWindowResizeFunction( slider_aliados )
     u.addWindowResizeFunction( slider_sidebar )
     u.addWindowResizeFunction( svgs )
+    u.addWindowResizeFunction( paralax )
 
   } else {
 
@@ -347,10 +348,10 @@ function fullpage() {
 
     //Scrolling
     css3: true,
-    scrollingSpeed: 900,
+    scrollingSpeed: 1500,
     autoScrolling: true,
     fitToSection: true,
-    fitToSectionDelay: 500,
+    fitToSectionDelay: 750,
     scrollBar: true,
     easing: 'easeInOutCubic',
     easingcss3: 'ease',
@@ -363,7 +364,7 @@ function fullpage() {
     //Design
     // controlArrows: true,
     verticalCentered: false,
-    paddingTop: '10vh',
+    paddingTop: '0vh',//10vh
     paddingBottom: '0vh',
     fixedElements: false,
     responsiveWidth: 0,
@@ -489,8 +490,23 @@ function pasarela_roockies() {
       $('#pasarela.imgLiquid.imgLiquidPasarela').css('background-repeat','repeat-x')
     },10000)
 
-
   }
 
+}
 
+// complemento del paralax con css
+function paralax() {
+  var parallax = document.querySelectorAll(".fondo"),
+      speed = 0.1;
+
+  window.onscroll = function(){
+    [].slice.call(parallax).forEach(function(el,i){
+
+      var windowYOffset = window.pageYOffset/8,
+          elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+      el.style.backgroundPosition = elBackgrounPos;
+
+    });
+  };
 }

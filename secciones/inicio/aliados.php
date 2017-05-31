@@ -11,7 +11,7 @@
 
 
 
-    <div class="fondo columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
+    <div class="fondo-aliados columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
       <?php echo get_the_post_thumbnail();?>
 
     </div>

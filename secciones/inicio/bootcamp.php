@@ -1,4 +1,4 @@
-<section id="inicio-bootcamp" class="paralax-bg section columns h-100-v p-top rel">
+<section id="inicio-bootcamp" class="paralax-bg section columns h-100-v rel">
 
   <?php
   $args = page_id(28);
@@ -11,14 +11,14 @@
 
 
 
-  <div class="fondo columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
+  <div class=" columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
     <?php echo get_the_post_thumbnail();?>
   </div>
 
 
   <div class="content-wrapper">
 
-      <div class="columns h-15 v-center">
+      <div class="columns h-15 v-center" style="display:none">
 
         <h1 class="columns p-0 text-left color-blanco text-shadow">
 
@@ -30,7 +30,8 @@
 
       </div>
       <!-- svg -->
-      <div class="columns h-85 v-center">
+      <div class="columns h-100 v-center">
+        <!-- h-85 -->
 
 
         <div class="columns p-0 small-8 medium-6 large-4 h-50 small-centered v-center">

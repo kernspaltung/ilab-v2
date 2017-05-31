@@ -311,26 +311,29 @@ img:last-of-type {
   left:0;
   right:0;
 }
-
+// tamano fondo paralax
 .paralax-bg, .paralax-bg:before {
   background: 50% 50% / cover;
-
 }
-
+// .fondo {
+//   width:200% !important;
+// }
 #inicio-nosotros .fondo {
   // background-image: url("http://loremflickr.com/1920/800/coop/all");
   background-attachment: fixed;
+  // transform: scale(1.5);
 }
 
 #inicio-bootcamp:before .fondo{
   // background-image: url("http://loremflickr.com/1920/800/peer/all");
-  transform: translateZ(-1px) scale(2);
-  z-index:-1;
+  transform: translateZ(-1px) scale(1.1);
+  // z-index:-1;
 }
 
 #inicio-incuba .fondo {
   // background-image: url("http://loremflickr.com/1920/800/okupa,girl/all");
   background-attachment: fixed;
+  // transform: scale(1.3);
 }
 
 // #inicio-startups:before .fondo {
@@ -339,9 +342,10 @@ img:last-of-type {
 //   z-index:-1;
 // }
 
-#inicio-aliados:before .fondo {
+#inicio-aliados:before .fondo-aliados {
   // background-image: url("http://loremflickr.com/1920/800/okupa/all");
   background-attachment: fixed;
+  transform: translateZ(-1px) scale(1.1);
 }
 // fin parallax
 

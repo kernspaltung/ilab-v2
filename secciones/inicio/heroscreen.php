@@ -25,7 +25,7 @@
         </div>
         <div class="textos-slider columns z1 absUpL p-0 color-white v-center">
 
-          <h1 class="columns p-1 h-a text-center color-blanco">
+          <h1 class="columns p-1 h-a text-center text-shadow color-blanco">
 
             <?php
 
@@ -34,8 +34,10 @@
             ?>
 
           </h1>
-          <div class="columns small-12 medium-8 p-1 h-a text-justify small-centered font-m font-sm-m font-lg-l color-blanco">
+          <div class="columns small-10 medium-8 large-6 p-1 m-b-0-3 rel h-a text-shadow text-justify small-centered font-s font-sm-m font-lg-l color-blanco">
+            <!-- <div class="columns p-0-3 cortina-negro absUpL z-1">
 
+            </div> -->
             <?php
 
             echo excerpt(26);

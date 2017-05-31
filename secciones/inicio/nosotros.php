@@ -43,7 +43,7 @@
         <div class="columns p-0-3 small-11 medium-9 large-7 small-centered h-50 rel v-center">
 
 
-            <div class="columns p-1 h-a font-s font-md-m font-lg-l shadow text-justified color-claro text-shadow rel">
+            <div class="columns p-1 h-a font-s font-md-m font-lg-l sha text-justified color-claro text-shadow rel">
 
                         <div class="columns p-0-3 cortina-negro absUpL z-1">
 
