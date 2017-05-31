@@ -350,10 +350,10 @@ function fullpage() {
     css3: true,
     scrollingSpeed: 1500,
     autoScrolling: true,
-    fitToSection: true,
+    fitToSection: false,
     fitToSectionDelay: 750,
     scrollBar: true,
-    easing: 'easeInOutCubic',
+    easing: 'swing',//'easeInOutCubic',
     easingcss3: 'ease',
 
     //Accessibility
@@ -378,13 +378,14 @@ function fullpage() {
     lazyLoading: false,
 
     //events
-    onLeave: function(index, nextIndex, direction){},
-    afterLoad: function(anchorLink, index){},
-    afterRender: function(){},
-    afterResize: function(){},
-    afterResponsive: function(isResponsive){},
-    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-    onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+    // onLeave: function(index, nextIndex, direction){},
+    // afterLoad: function(anchorLink, index){},
+    // afterRender: function(){},
+    // afterResize: function(){},
+    // afterResponsive: function(isResponsive){},
+    // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+    // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+
   });
 }
 
@@ -497,12 +498,12 @@ function pasarela_roockies() {
 // complemento del paralax con css
 function paralax() {
   var parallax = document.querySelectorAll(".fondo"),
-      speed = 0.1;
+      speed = 0.19;
 
   window.onscroll = function(){
     [].slice.call(parallax).forEach(function(el,i){
 
-      var windowYOffset = window.pageYOffset/8,
+      var windowYOffset = window.pageYOffset/7,
           elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
 
       el.style.backgroundPosition = elBackgrounPos;

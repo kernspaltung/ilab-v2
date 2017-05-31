@@ -19,7 +19,7 @@
 
     <div class="content-wrapper">
 
-      <div class="columns h-15 v-center">
+      <div class="columns h-15 v-center" style="display:none">
 
         <h1 class="columns p-0 text-left color-blanco text-shadow">
 
@@ -32,10 +32,13 @@
 
 
       <!--  -->
-      <div class="columns p-0 small-11 medium-9 large-7 small-centered h-30 rel v-center">
+      <div class="columns p-0 small-11 medium-9 large-7 small-centered h-40 rel v-center">
 
-        <div class="columns p-0 h-a font-s font-sm-m font-md-l text-justified color-claro text-shadow">
+        <div class="columns p-1 h-a m-b-0-2 font-s font-md-m font-lg-l text-justified color-claro text-shadow shadow  rel">
 
+          <div class="columns p-0-3 color-link-bg absUpL z-1">
+
+          </div>
           <?php
 
           echo get_the_content();

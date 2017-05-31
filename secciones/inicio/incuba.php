@@ -35,7 +35,7 @@
         <div class="columns h-85 v-center">
 
 
-          <div class="columns p-0 small-8 medium-6 large-4 h-50 small-centered v-center">
+          <div class="columns p-0 small-10 medium-8 large-6 h-40 small-centered v-center">
 
             <!-- svg animado -->
             <object id="incuba-svg" class="columns p-0 h-100 text-shadow" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri();?>/img/inicio-svgs/test4.svg"></object>
@@ -43,10 +43,13 @@
           </div>
 
           <!--  -->
-          <div class="columns p-0 small-11 medium-9 large-7 small-centered h-50 rel v-center">
+          <div class="columns p-1 small-11 medium-9 large-7 small-centered h-60 rel v-center">
 
-            <div class="columns p-0 h-a font-s font-sm-m font-md-l text-justified color-claro text-shadow">
+            <div class="columns p-1 h-a font-s font-md-m font-lg-l text-justified color-claro text-shadow rel">
 
+              <div class="columns p-0-3 color-negro-bg absUpL z-1">
+
+              </div>
               <?php
 
               echo get_the_content();
