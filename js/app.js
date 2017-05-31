@@ -196,7 +196,6 @@ function menu_movil() {
   if (menuicono.hasClass('fa-close')) {
 
     menuicono.removeClass('fa-close').addClass('fa-bars color-cerrado');
-
   }
   //
   var salemenu = {
@@ -227,12 +226,13 @@ function menu_movil() {
       //
       // gira
       menuicono.toggleClass('gira-icono-menu');
+      menuicono.removeClass('color-cerrado')
+      menuicono.addClass('color-abierto');
 
       //cambia el icono
       setTimeout(function() {
-
-        menuicono.removeClass('fa-bars color-abierto')
-        menuicono.addClass('fa-close color-cerrado');
+        menuicono.removeClass('fa-bars')
+        menuicono.addClass('fa-close');
 
       },125);
 
@@ -248,11 +248,13 @@ function menu_movil() {
       menumovil.css(salemenu);
       // gira
       menuicono.toggleClass('gira-icono-menu');
+      menuicono.removeClass('color-abierto')
+      menuicono.addClass('color-cerrado');
       //cambia el icono
       setTimeout(function() {
 
-        menuicono.removeClass('fa-close color-abierto')
-        menuicono.addClass('fa-bars color-cerrado');
+        menuicono.removeClass('fa-close ')
+        menuicono.addClass('fa-bars');
 
       },125);
 

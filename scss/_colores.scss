@@ -3,7 +3,16 @@ $blanco: white;
 $negro: #000;
 $texto: #5e5e5e;
 $claro: whitesmoke;
-$link: #5aba5f;//color general links
+// $link: #5aba5f;//color general links
+
+$link: #00b2f0;//color general links
+// colores listones ilab
+$azul: #00a1e0;
+$amarillo: #f6cf3b;
+$verde: #6ec048;
+$naranja: #f6cf3b;
+//
+
 $color-primary-0: #1a4269;
 $color-primary-1: #1779BA;//#3c6489;
 
@@ -29,7 +38,13 @@ blanco   $blanco,
 negro   $negro,
 texto    $texto,
 claro   $claro,
-link    #link,
+link    $link,
+
+azul   $azul,//nosotros
+naranja   $naranja, //bootcamp
+verde   $verde,//incuba
+amarillo   $amarillo,//aliados
+
 primary-0 $color-primary-0,
 primary-1 $color-primary-1,
 

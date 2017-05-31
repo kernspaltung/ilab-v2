@@ -34,7 +34,7 @@
         <!-- h-85 -->
 
 
-        <div class="columns p-0 small-10 medium-8 large-6 h-40 small-centered v-center">
+        <div class="columns p-0 small-10 medium-8 large-6 h-40 small-centered">
 
           <!-- svg animado -->
           <object id="bootcamp-svg" class="columns p-0 h-100 text-shadow" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri();?>/img/inicio-svgs/test2.svg"></object>
@@ -44,9 +44,9 @@
         <!--  -->
         <div class="columns p-0 small-11 medium-9 large-7 small-centered h-60 rel v-center">
 
-          <div class="columns p-1 h-a font-s font-md-m font-lg-l text-justified color-claro text-shadow rel">
+          <div class="columns p-1 h-a font-s font-md-m font-lg-l text-justified color-claro shadow rel">
 
-            <div class="columns p-0-3 color-negro-bg absUpL z-1">
+            <div class="columns p-0-3 color-naranja-bg absUpL z-1">
 
             </div>
             <?php
@@ -57,7 +57,7 @@
 
           </div>
 
-          <a href="<?php echo get_page_link(14);?>" class="link-seccion button columns small-8 medium-6 large-4 h-a p-1 m-t-0-2 font-s font-sm-m font-lg-l absDownR shadow">
+          <a href="<?php echo get_page_link(14);?>" class="link-seccion color-naranja-bg color-link-hover-bg color-claro columns text-center m-b-1 small-8 medium-6 large-4 h-a p-1 m-t-0-2 font-s font-sm-m font-lg-l absDownR shadow">
 
             Click para conocer más
 

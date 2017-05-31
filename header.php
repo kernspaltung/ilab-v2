@@ -102,7 +102,7 @@
 
             <div class="columns p-0 h-a text-center">
 
-              <i id="header-movil-boton-icono" class="fa fa-bars font-xl"></i>
+              <i id="header-movil-boton-icono" class="fa fa-bars font-xl color-cerrado color-link-hover"></i>
 
             </div>
 

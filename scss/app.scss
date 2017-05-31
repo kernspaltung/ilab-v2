@@ -93,14 +93,15 @@ a {
 //   @extend .color-link;
 // }
 a:hover {
-  color: black;
+  // @extend .color-azul;
 }
 li a:hover {
   color: black !important;
 }
 li.active a div {
   // color: red !important;
-  color: green !important;
+  // color: green !important;
+  @extend .color-link;
 }
 object {
   @extend .color-white;
@@ -112,18 +113,18 @@ p {
 .menu-item a {
   @extend .color-texto;
 }
-// activo
+// activo paginas
 li.current-menu-item a {
-  text-decoration: underline;
-  @extend .color-link-bg;
-  @extend .color-blanco;
+  text-decoration: none;
+  // @extend .color-link-bg;
+  @extend .color-link;
 }
 #lista-menu>li.current-menu-ancestor a,
 #lista-menu>li.current-menu-parent a,
 #lista-menu>li.current_page_parent a,
 #lista-menu>li.current_page_ancestor a {
-  @extend .button;
-  @extend .color-blanco;
+  // @extend .button;
+  @extend .color-link;
 }
 // generales
 .altura-header {
@@ -177,8 +178,12 @@ li.current-menu-item a {
   // background-color: transparent !important;
 }
 .button {
-  // @extend .color-link-bg;
-  background-color: #5aba5f !important;
+  @extend .color-link-bg;
+  // background-color: #5aba5f !important;
+}
+.button:hover {
+  @extend .color-azul-bg;
+  // background-color: #5aba5f !important;
 }
 .link-seccion {
   & div {
@@ -247,10 +252,10 @@ li.current-menu-item a {
   transform: rotate(360deg);
 }
 .color-cerrado {
-  color: blue;
+  @extend .color-link;
 }
 .color-abierto {
-  color: black;
+  @extend .color-naranja;
 }
 .round {
   border-collapse: separate;

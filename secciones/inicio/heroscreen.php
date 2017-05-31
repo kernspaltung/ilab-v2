@@ -34,20 +34,20 @@
             ?>
 
           </h1>
-          <div class="columns small-10 medium-8 large-6 p-1 m-b-0-3 rel h-a text-shadow text-justify small-centered font-s font-sm-m font-lg-l color-blanco">
+          <div class="columns small-10 medium-8 large-6 p-1 m-b-0-3 rel bold h-a text-shadow text-justify small-centered font-s font-sm-m font-lg-l color-blanco">
             <!-- <div class="columns p-0-3 cortina-negro absUpL z-1">
 
             </div> -->
             <?php
 
-            echo excerpt(26);
+            echo excerpt(23);
 
             ?>
 
           </div>
           <div class="columns small-8 medium-4 large-2 small-centered h-a">
 
-            <a href="<?php echo get_permalink();?>" class="button columns p-2 font-s font-sm-m font-lg-l text-center">
+            <a href="<?php echo get_permalink();?>" class="color-verde-bg color-link-hover-bg color-claro columns p-1-2 font-s font-sm-m font-lg-l text-center">
 
               <?php
 
