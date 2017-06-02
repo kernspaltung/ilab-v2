@@ -57,7 +57,7 @@
 
           </div>
 
-          <a href="<?php echo get_page_link(14);?>" class="link-seccion color-naranja-bg color-link-hover-bg color-claro columns text-center m-b-1 small-8 medium-6 large-4 h-a p-1 m-t-0-2 font-s font-sm-m font-lg-l absDownR shadow">
+          <a href="<?php echo get_page_link(14);?>" class="link-seccion color-naranja-bg color-link-hover-bg color-claro columns text-center m-b-1 small-8 medium-6 large-4 h-a p-1 m-t-0-2 font-s font-sm-m absDownR shadow">
 
             Click para conocer más
 

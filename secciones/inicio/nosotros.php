@@ -10,9 +10,7 @@
     ?>
 
     <div class="fondo columns p-0 absUpL z-1 imgLiquid imgLiquidFill">
-      <!-- <img src="http://loremflickr.com/1920/800/coop/all" alt="" /> -->
       <?php echo get_the_post_thumbnail();?>
-
     </div>
 
     <div class="content-wrapper">
@@ -42,7 +40,6 @@
         <!--  -->
         <div class="columns p-0-3 small-12 medium-9 large-7 small-centered h-60 rel v-center">
 
-
           <div class="columns p-1 h-a font-s font-md-m font-lg-l text-justified color-claro shadow rel">
 
             <div class="columns p-0-3 color-azul-bg absUpL z-1">
@@ -57,7 +54,7 @@
           </div>
 
 
-          <a href="<?php echo get_page_link(10);?>" class="link-seccion color-azul-bg color-link-hover-bg color-claro text-center columns small-8 medium-6 large-4 h-a p-1 m-t-0-2 m-r-1 m-b-1 font-s font-sm-m font-lg-l absDownR shadow">
+          <a href="<?php echo get_page_link(10);?>" class="link-seccion color-azul-bg color-link-hover-bg color-claro text-center columns small-8 medium-6 large-4 h-a p-1 m-t-0-2 m-r-1 m-b-1 font-s font-sm-m absDownR shadow">
 
             Click para conocer más
 

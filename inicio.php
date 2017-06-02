@@ -5,6 +5,7 @@ Template Name: Inicio
 get_header('inicio');
 
 ?>
+
 <div id="fullpage">
 
   <?php

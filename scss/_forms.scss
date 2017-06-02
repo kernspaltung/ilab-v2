@@ -77,28 +77,3 @@ div.wpcf7-response-output {
 .wpcf7-not-valid-tip {
   display: none !important;
 }
-//menus paginas
-.menu-pagina {
-
-  .menu-page {
-
-    li {
-      width: 100% !important;
-      background-color: green;
-      padding: 10px 0 !important;
-      margin: 5px 0;
-      text-transform: uppercase;
-      @extend .text-center;
-      @extend .button;
-
-      &>a {
-        height: 100%;
-        width: 100%;
-        color: whitesmoke !important;
-        @extend .color-primary-0-bg-hover !optional;
-      }
-    }
-
-  }
-
-}

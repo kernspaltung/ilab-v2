@@ -233,6 +233,32 @@ li.current-menu-item a {
   padding-top: 8vh !important;
 }
 //
+//menus paginas
+.menu-pagina {
+
+  .menu-page {
+
+    li {
+      height: 100%;
+      padding: 10px 0 !important;
+      margin: 5px 0;
+      text-transform: uppercase;
+      @extend .text-center;
+      @extend .p-0-2;
+
+      & a {
+        @extend .color-link-bg;
+        @extend .color-azul-hover-bg;
+        height: 100%;
+        width: 100%;
+        @extend .color-claro;
+        @extend .color-primary-0-bg-hover !optional;
+      }
+    }
+
+  }
+
+}
 
 // movimiento de menu movil
 .posicion-menu {
@@ -397,6 +423,13 @@ img:last-of-type {
   }
   .h-md-100-v {
     height: 100vh;
+  }
+
+}
+@media screen and (max-width:640px) {
+
+  .h-md-40 {
+    height: 40%;
   }
 
 }

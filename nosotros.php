@@ -7,7 +7,7 @@ get_header();
 
 <section id="content" class="content columns small-12 large-9 p-0 h-a h-md-100-v">
 
-  <div class="columns p-1">
+  <div class="columns p-1 h-a h-md-100">
 
     <!--  -->
     <div class="bread columns p-0-2 h-10">
@@ -28,7 +28,7 @@ get_header();
       <div class="columns small-12 h-80 h-md-70 v-center">
 
 
-        <div class="columns p-0 h-40">
+        <div class="columns p-0 h-40-v h-md-40">
           <div class="columns p-0 imgLiquid imgLiquidFill">
 
             <?php echo get_the_post_thumbnail(); ?>
@@ -62,7 +62,16 @@ get_header();
   <!-- inicia menu de paginas -->
   <div class="columns small-12  h-20 v-center">
 
-    <div class="menu-pagina p-0 columns h-a text-center">
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+      $('.menu-pagina ul li').addClass('shareW')
+
+    });
+
+    </script>
+
+    <div class="menu-pagina p-0 columns text-center">
 
       <?php
       menu_paginas('menu-about', 'menu-about' )

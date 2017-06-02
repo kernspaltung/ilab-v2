@@ -12,7 +12,9 @@
     <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>
   </title>
   <!--  -->
-
+<script type="text/javascript">
+  var inicio = true;
+</script>
 <!-- codigo analytics -->
 
 <!--  -->
