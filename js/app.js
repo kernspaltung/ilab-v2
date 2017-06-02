@@ -338,35 +338,15 @@ function mueve_menu() {
 }
 
 function menu_paginas() {
-  var menupaginas = $('#lista-menu.menu')
-  var li = $('#lista-menu.menu .menu-item')
-  var link = $('#lista-menu.menu .menu-item a')
+  // colorea los botones de paginas con el patone ilab
+  var botonpagina = $('.menu-page li')
+  var colores = ['.color-azul','.color-naranja','.color-verde','.color-amarillo']
+  botonpagina.each(function(i){
+    console.log(i);
+    $(this).addClass(colores[i])
 
-  li.addClass('v-center')
+  })
 
-  if ($(window).width() >= 1024) {
-
-    li.removeClass('shareH h-a text-left');
-    li.addClass('shareW h-100 text-center');
-
-    setTimeout(function() {//activa anchos
-      u.shareW()
-    },100)
-
-  } else {
-
-    li.removeClass('shareW h-100 text-center');
-    li.addClass('shareH h-a text-left');
-
-    setTimeout(function() {//activa alturas
-      u.shareH()
-    },100)
-
-  }
-
-  setTimeout(function() {//activa alturas
-    u.verticalCenter()
-  },200)
 }
 
 function fullpage() {
