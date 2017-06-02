@@ -244,12 +244,16 @@ li.current-menu-item a {
       margin: 5px 0;
       text-transform: uppercase;
       @extend .text-center;
-      @extend .p-0-2;
+      @extend .p-0-1;
 
       & a {
         @extend .color-link-bg;
         @extend .color-azul-hover-bg;
+        @extend .shadow;
         height: 100%;
+        @extend .p-0-2;
+        @extend .p-l-2;
+        @extend .p-r-2;
         width: 100%;
         @extend .color-claro;
         @extend .color-primary-0-bg-hover !optional;
