@@ -11,8 +11,11 @@ get_header();
 
     <!--  -->
     <div class="bread columns p-0-2 h-10">
-      <?php echo do_shortcode('[breadcrumb]'); ?>
-    </div>
+      <?php if(function_exists('bcn_display')) {
+        bcn_display();
+      }
+
+      ?>
     <!--  -->
 
     <?php

@@ -8,9 +8,10 @@ get_header();
   <div class="columns p-1">
 
     <!--  -->
-    <div class="bread columns p-0-2 h-a">
-      <?php echo do_shortcode('[breadcrumb]'); ?>
-    </div>
+    <?php if(function_exists('bcn_display')) {
+      bcn_display();
+    }
+    ?>
     <!--  -->
 
 

@@ -5,7 +5,7 @@ u = new Utils()
 $(document).ready(function() {
 
   // defaults todas las secciones
-  setupResize()
+  setup()
   img_liquid()
   fullpage()
   menu_scroll()
@@ -17,7 +17,7 @@ $(document).ready(function() {
 })
 //
 
-function setupResize() {
+function setup() {
 
   u.addWindowResizeFunction( mueve_menu )
   u.addWindowResizeFunction( u.verticalCenter )
@@ -36,6 +36,7 @@ function setupResize() {
   } else {
 
     menu_paginas()
+    colores_menu()
     sticky_sidebar()
     slider_sidebar()
   }
@@ -75,8 +76,9 @@ function resize() {
       setTimeout(function() {
         console.log('page or archive or single, or whatever')
         menu_paginas()
-        sticky_sidebar()
-        // slider_sidesbar()
+        // sticky_sidebar()
+        // slider_sidebar()
+        colores_menu()
       },100)
 
     }
@@ -338,14 +340,62 @@ function mueve_menu() {
 }
 
 function menu_paginas() {
+  var menupaginas = $('#lista-menu.menu')
+  var li = $('#lista-menu.menu .menu-item')
+  var link = $('#lista-menu.menu .menu-item a')
+
+  li.addClass('v-center')
+
+  if ($(window).width() >= 1024) {
+
+    li.removeClass('shareH h-a text-left');
+    li.addClass('shareW h-100 text-center');
+
+    setTimeout(function() {//activa anchos
+      u.shareW()
+    },100)
+
+  } else {
+
+    li.removeClass('shareW h-100 text-center');
+    li.addClass('shareH h-a text-left');
+
+    setTimeout(function() {//activa alturas
+      u.shareH()
+    },100)
+
+  }
+
+  setTimeout(function() {//activa alturas
+    u.verticalCenter()
+  },200)
+}
+
+function colores_menu() {
   // colorea los botones de paginas con el patone ilab
-  var botonpagina = $('.menu-page li')
-  var colores = ['.color-azul','.color-naranja','.color-verde','.color-amarillo']
+  var botonpagina = $('.menu-page li a')
+  var colores = ['color-azul-bg','color-naranja-bg','color-verde-bg','color-amarillo-bg','color-azul-bg','color-naranja-bg','color-verde-bg','color-amarillo-bg']
   botonpagina.each(function(i){
     console.log(i);
     $(this).addClass(colores[i])
 
   })
+
+// tamano botones
+if ($(window).width() >= 1024) {
+
+  $('.menu-pagina ul li').removeClass('h-15-v')
+  $('.menu-pagina ul li').addClass('shareW')
+
+} else {
+
+  $('.menu-pagina ul li').removeClass('shareW')
+  $('.menu-pagina ul li').addClass('h-15-v')
+
+}
+
+
+
 
 }
 

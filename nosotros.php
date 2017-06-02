@@ -7,7 +7,7 @@ get_header();
 
 <section id="content" class="content columns small-12 large-9 p-0 h-a h-md-100-v">
 
-  <div class="columns p-1 h-a h-md-100">
+  <div class="columns p-1 h-a m-b-1">
 
     <!--  -->
     <div class="bread columns p-0-2 h-10">
@@ -25,10 +25,10 @@ get_header();
       while (have_posts()): the_post();
       ?>
 
-      <div class="columns small-12 h-80 h-md-70 v-center">
+      <div class="columns small-12 h-a h-md-80">
 
 
-        <div class="columns p-0 h-40-v h-md-40">
+        <div class="columns p-0 h-30-v">
           <div class="columns p-0 imgLiquid imgLiquidFill">
 
             <?php echo get_the_post_thumbnail(); ?>
@@ -36,7 +36,7 @@ get_header();
           </div>
         </div>
 
-        <div class="columns p-0 h-60">
+        <div class="columns p-0 h-a h-md-40">
 
           <h3 class="columns p-t-0-3 text-left font-light bold">
             <?php
@@ -60,12 +60,12 @@ get_header();
   ?>
 
   <!-- inicia menu de paginas -->
-  <div class="columns small-12  h-20 v-center">
+  <div class="columns small-12 h-a h-md-20 v-center">
 
     <script type="text/javascript">
     $(document).ready(function() {
 
-      $('.menu-pagina ul li').addClass('shareW')
+      // $('.menu-pagina ul li').addClass('shareW')
 
     });
 
