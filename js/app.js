@@ -373,7 +373,7 @@ function menu_paginas() {
 
 function colores_menu() {
   // colorea los botones de paginas con el patone ilab
-  var botonpagina = $('.menu-page li a')
+  var botonpagina = $('.menu-page li ')
   var colores = ['color-azul-bg','color-naranja-bg','color-verde-bg','color-amarillo-bg','color-azul-bg','color-naranja-bg','color-verde-bg','color-amarillo-bg']
   botonpagina.each(function(i){
     console.log(i);
@@ -381,18 +381,18 @@ function colores_menu() {
 
   })
 
-// tamano botones
-if ($(window).width() >= 1024) {
+  // tamano botones
+  if ($(window).width() >= 1024) {
 
-  $('.menu-pagina ul li').removeClass('h-15-v')
-  $('.menu-pagina ul li').addClass('shareW')
+    $('.menu-pagina ul li').removeClass('h-15-v')
+    $('.menu-pagina ul li').addClass('shareW')
 
-} else {
+  } else {
 
-  $('.menu-pagina ul li').removeClass('shareW')
-  $('.menu-pagina ul li').addClass('h-15-v')
+    $('.menu-pagina ul li').removeClass('shareW')
+    $('.menu-pagina ul li').addClass('h-15-v')
 
-}
+  }
 
 
 
@@ -492,9 +492,15 @@ function menu_scroll() {
   if ($(document).scrollTop() > 150) {
     head.removeClass('altura-header')
     head.addClass('altura-header-scroll')
-    $('#sidebar-sticky').addClass('p-top-side')
     headTop.removeClass('altura-header-top')
     headBottom.addClass('altura-header-bottom-scroll')
+    //ecita el padding top del sidebar si es movil
+    if ($(window).width() >= 1024) {
+      $('#sidebar-sticky').addClass('p-top-side')
+    } else {
+      $('#sidebar-sticky').removeClass('p-top-side')
+    }
+    //
   }
   // al scrolear
   $(window).on('scroll', function() {
@@ -512,14 +518,20 @@ function menu_scroll() {
       setTimeout(function() {
         head.removeClass('altura-header')
         head.addClass('altura-header-scroll')
-        $('#sidebar-sticky').addClass('p-top-side')
+        //
+        if ($(window).width() >= 1024) {
+          $('#sidebar-sticky').addClass('p-top-side')
+        } else {
+          $('#sidebar-sticky').removeClass('p-top-side')
+        }
+        //
       },10)
     } else {
 
       setTimeout(function() {
         head.removeClass('altura-header-scroll')
         head.addClass('altura-header')
-        $('#sidebar-sticky').removeClass('p-top-side')
+        // $('#sidebar-sticky').removeClass('p-top-side')
       },10)
       setTimeout(function() {
         headBottom.addClass('altura-header-bottom')

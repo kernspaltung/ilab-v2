@@ -239,20 +239,24 @@ li.current-menu-item a {
   .menu-page {
 
     li {
+      // los colores se ponen con js
+      // margin: 1px !important;
       height: 100%;
-      padding: 5px 0 !important;
-      margin: 3px 0;
+      // padding: 5px !important;
+      margin: 5px 1px;
       text-transform: uppercase;
       @extend .text-center;
+      @extend .shadow;
 
       & a {
-        // los colores se ponen con js
         @extend .color-link-hover-bg;
         @extend .p-0-2;
-        @extend .p-l-2;
-        @extend .p-r-2;
+        @extend .font-m;
+        @extend .font-lg-s;
         @extend .color-claro;
-        @extend .shadow;
+        display: block;
+        width: 100% !important;
+        height: 100% !important;
       }
     }
 
