@@ -33,7 +33,7 @@ function setup() {
     svgs()
     paralax()
 
-  } else {
+  } else if (inicio == 0) {
 
     menu_paginas()
     colores_menu()
@@ -76,8 +76,7 @@ function resize() {
       setTimeout(function() {
         console.log('page or archive or single, or whatever')
         menu_paginas()
-        // sticky_sidebar()
-        // slider_sidebar()
+        sticky_sidebar()
         colores_menu()
       },100)
 
@@ -494,11 +493,11 @@ function menu_scroll() {
     head.addClass('altura-header-scroll')
     headTop.removeClass('altura-header-top')
     headBottom.addClass('altura-header-bottom-scroll')
-    //ecita el padding top del sidebar si es movil
+    //evita el padding top del sidebar si es movil
     if ($(window).width() >= 1024) {
       $('#sidebar-sticky').addClass('p-top-side')
     } else {
-      $('#sidebar-sticky').removeClass('p-top-side')
+      $('#sidebar-sticky').removeClass('p-top-side')//proteccion
     }
     //
   }
@@ -522,7 +521,7 @@ function menu_scroll() {
         if ($(window).width() >= 1024) {
           $('#sidebar-sticky').addClass('p-top-side')
         } else {
-          $('#sidebar-sticky').removeClass('p-top-side')
+          $('#sidebar-sticky').removeClass('p-top-side')//proteccion
         }
         //
       },10)
@@ -531,7 +530,6 @@ function menu_scroll() {
       setTimeout(function() {
         head.removeClass('altura-header-scroll')
         head.addClass('altura-header')
-        // $('#sidebar-sticky').removeClass('p-top-side')
       },10)
       setTimeout(function() {
         headBottom.addClass('altura-header-bottom')
@@ -540,6 +538,13 @@ function menu_scroll() {
       setTimeout(function() {
         headTop.addClass('altura-header-top')
         headTop.removeClass('altura-header-top-scroll')
+        //
+        if ($(window).width() >= 1024) {
+          $('#sidebar-sticky').removeClass('p-top-side')
+        } else {
+          $('#sidebar-sticky').removeClass('p-top-side')
+        }
+        //
       },10)
 
     }

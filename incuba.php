@@ -7,11 +7,14 @@ get_header();
 
 <section id="content" class="content columns small-12 large-9 p-0 h-a h-md-100-v">
 
-  <div class="columns p-1">
+  <div class="columns p-1 h-a m-b-1">
 
     <!--  -->
-    <div class="bread columns p-0-2 h-10">
-      <?php echo do_shortcode('[breadcrumb]'); ?>
+    <div class="bread columns p-0-3 h-10">
+      <?php if(function_exists('bcn_display')) {
+        bcn_display();
+      }
+      ?>
     </div>
     <!--  -->
 
@@ -21,18 +24,30 @@ get_header();
       while (have_posts()): the_post();
       ?>
 
-      <div class="columns small-12 medium-8 h-80 h-md-70 v-center">
+      <div class="columns small-12 h-a h-md-80">
 
 
-              <h3 class="columns text-left font-light">
-                <?php
-                echo get_the_title();
-                ?>
-              </h3>
+        <div class="columns p-0 h-30-v">
+          <div class="columns p-0 imgLiquid imgLiquidFill">
 
-        <div class="columns h-a p-1 font-s font-md-s text-justify">
+            <?php echo get_the_post_thumbnail(); ?>
 
-          <?php echo get_the_content(); ?>
+          </div>
+        </div>
+
+        <div class="columns p-0 h-a h-md-40">
+
+          <h3 class="columns p-t-0-3 p-l-0 text-left font-light bold">
+            <?php
+            echo get_the_title();
+            ?>
+          </h3>
+          <hr>
+          <div class="columns h-a p-1 font-s text-justify">
+
+            <?php echo get_the_content(); ?>
+
+          </div>
 
         </div>
 
@@ -44,14 +59,12 @@ get_header();
   ?>
 
   <!-- inicia menu de paginas -->
-  <div class="columns small-12 medium-4 h-80 h-md-70 v-center">
+  <div class="columns small-12 h-a h-md-20 v-center">
 
-    <div class="menu-pagina columns h-a p-0 text-center">
+    <div class="menu-pagina p-0 columns text-center">
 
       <?php
-
-      menu_paginas('menu-incuba', 'menu-incuba' )
-
+      menu_paginas('menu-incuba', 'menu-incuba' );
       ?>
 
     </div>
@@ -60,7 +73,7 @@ get_header();
   <!-- fin menu de paginas -->
 
 
-</div>
+  </div>
 
 </section>
 

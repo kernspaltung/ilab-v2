@@ -214,12 +214,14 @@ li.current-menu-item a {
 //override breadcrumbs
 .bread {
 
-  padding: 5px 0px !important;
+  padding: 5px !important;
+  padding-left: 0.9375rem !important;
 
   span {
 
     a {
       @extend .color-texto;
+      @extend .font-s;
     }
 
   }
@@ -252,7 +254,7 @@ li.current-menu-item a {
         @extend .color-link-hover-bg;
         @extend .p-0-2;
         @extend .font-m;
-        @extend .font-lg-s;
+        @extend .font-md-s;
         @extend .color-claro;
         display: block;
         width: 100% !important;

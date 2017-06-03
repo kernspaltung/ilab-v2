@@ -10,7 +10,7 @@ get_header();
   <div class="columns p-1 h-a m-b-1">
 
     <!--  -->
-    <div class="bread columns p-0-2 h-10">
+    <div class="bread columns p-0-3 h-10">
       <?php //echo do_shortcode('[breadcrumb]');?>
       <?php if(function_exists('bcn_display')) {
         bcn_display();
@@ -38,7 +38,7 @@ get_header();
 
         <div class="columns p-0 h-a h-md-40">
 
-          <h3 class="columns p-t-0-3 text-left font-light bold">
+          <h3 class="columns p-t-0-3 p-l-0 text-left font-light bold">
             <?php
             echo get_the_title();
             ?>
@@ -62,19 +62,10 @@ get_header();
   <!-- inicia menu de paginas -->
   <div class="columns small-12 h-a h-md-20 v-center">
 
-    <script type="text/javascript">
-    $(document).ready(function() {
-
-      // $('.menu-pagina ul li').addClass('shareW')
-
-    });
-
-    </script>
-
     <div class="menu-pagina p-0 columns text-center">
 
       <?php
-      menu_paginas('menu-about', 'menu-about' )
+      menu_paginas('menu-about', 'menu-about' );
       ?>
 
     </div>
