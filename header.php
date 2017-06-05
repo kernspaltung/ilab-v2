@@ -44,9 +44,9 @@
         <!-- boton login  -->
         <div class="columns small-3 p-0">
           <a href="#" class="columns p-0 h-100">
-            <div class="columns p-0 v-center">
+            <div class="columns p-0-1">
 
-              <div class="button columns h-a p-0-1 p-0 text-center color-blanco font-xs font-sm-s font-lg-m">
+              <div class="button columns h-a p-0-1 text-center color-blanco font-xs font-sm-s font-lg-m">
                 Login
               </div>
 

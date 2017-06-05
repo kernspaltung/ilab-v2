@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Aliados
+Template Name: Aliados iLab
 */
 get_header();
 ?>
