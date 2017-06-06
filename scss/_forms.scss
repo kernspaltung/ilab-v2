@@ -43,7 +43,7 @@ label {
     }
     & input {
       border:none;
-    & .wpcf7-submit{
+      & .wpcf7-submit{
         @extend .p-2;
       }
     }
@@ -84,3 +84,11 @@ div.wpcf7-response-output {
 .wpcf7-not-valid-tip {
   display: none !important;
 }
+
+
+// wp-admin login
+body.login div#login form#loginform {
+
+  @extend .color-blanco;
+
+ }

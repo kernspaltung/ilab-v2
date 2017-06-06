@@ -47,13 +47,13 @@ add_action( 'init', 'registro_menu' );
 //paginas
 function page_id($id) {
 
-   return array( 'page_id' => $id );
+  return array( 'page_id' => $id );
 
 }
 //cpts
 function cpt($cpt_slug) {
 
-   return array( 'post_type' => $cpt_slug );
+  return array( 'post_type' => $cpt_slug );
 
 }
 //menus para paginas
@@ -63,49 +63,72 @@ function menu_paginas($lugar = '', $ul_ID = '' ) {
 }
 //delimita extracto
 function excerpt($limit, $string = " ... mas") {
-   $excerpt = explode(' ', get_the_excerpt(), $limit);
-   if (count($excerpt)>=$limit) {
-      array_pop($excerpt);
-      $excerpt = implode(" ",$excerpt).'.';
-   } else {
-      $excerpt = implode(" ",$excerpt);
-   }
-   $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+  $excerpt = explode(' ', get_the_excerpt(), $limit);
+  if (count($excerpt)>=$limit) {
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt).'.';
+  } else {
+    $excerpt = implode(" ",$excerpt);
+  }
+  $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
 
 
-   return $excerpt . " " . $string;
+  return $excerpt . " " . $string;
 }
 
+// wp-admin login
+function my_login_logo() { ?>
+  <style type="text/css">
+  #login h1 a, .login h1 a {
+    background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/logo-grande-negro.png);
+    height:80px;
+    width:100px;
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+  }
+  </style>
+  <?php
+}
+  add_action( 'login_enqueue_scripts', 'my_login_logo' );
+  function my_login_logo_url() {
+      return home_url();
+  }
+  add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+  function my_login_logo_url_title() {
+      return 'Ilab Backend';
+  }
+  add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+  //fin wp-admin login
 
 
-
-//
-//
-// add_action( 'wp_ajax_get_service', 'get_service' );
-// add_action( 'wp_ajax_nopriv_get_service', 'get_service' );
-//
-// function get_service() {
-//
-//    $response = array();
-//
-//    if( isset($_GET['id'])) {
-//
-//       $id = $_GET['id'];
-//       $post = get_post( $id );
-//
-//       $title = get_the_title($id);
-//       $image = get_the_post_thumbnail($id);
-//       $content = apply_filters('the_content',$post->post_content);
-//
-//       $response = array(
-//          'title' => $title,
-//          'image' => $image,
-//          'description' => $content,
-//       );
-//
-//    }
-//
-//
-// 	wp_die( json_encode( $response ) );
-//
-// }
+  // add_action( 'wp_ajax_get_service', 'get_service' );
+  // add_action( 'wp_ajax_nopriv_get_service', 'get_service' );
+  //
+  // function get_service() {
+  //
+  //    $response = array();
+  //
+  //    if( isset($_GET['id'])) {
+  //
+  //       $id = $_GET['id'];
+  //       $post = get_post( $id );
+  //
+  //       $title = get_the_title($id);
+  //       $image = get_the_post_thumbnail($id);
+  //       $content = apply_filters('the_content',$post->post_content);
+  //
+  //       $response = array(
+  //          'title' => $title,
+  //          'image' => $image,
+  //          'description' => $content,
+  //       );
+  //
+  //    }
+  //
+  //
+  // 	wp_die( json_encode( $response ) );
+  //
+  // }
