@@ -11,10 +11,8 @@ get_header();
 
     <!--  -->
     <div class="bread columns p-0-2 h-10" style="display:none;">
-      ?>
-      <?php if(function_exists('bcn_display')) {
-        bcn_display();
-      }
+      <?php
+      get_template_part('secciones/general/breadcrumbs')
       ?>
     </div>
     <!--  -->

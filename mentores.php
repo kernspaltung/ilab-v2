@@ -11,7 +11,9 @@ get_header();
 
     <!--  -->
     <div class="bread columns p-0-2 h-10">
-      <?php echo do_shortcode('[breadcrumb]'); ?>
+      <?php
+      get_template_part('secciones/general/breadcrumbs')
+      ?>
     </div>
     <!--  -->
 

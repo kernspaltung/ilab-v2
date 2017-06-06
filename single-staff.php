@@ -8,10 +8,11 @@ get_header();
   <div class="columns p-1">
 
     <!--  -->
-    <?php if(function_exists('bcn_display')) {
-      bcn_display();
-    }
-    ?>
+    <div class="bread columns p-0-2 h-10">
+      <?php
+      get_template_part('secciones/general/breadcrumbs')
+      ?>
+    </div>
     <!--  -->
 
 

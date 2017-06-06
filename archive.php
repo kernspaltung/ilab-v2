@@ -1,5 +1,4 @@
 <?php
-
 get_header();
 
 
@@ -9,8 +8,8 @@ get_header();
 
   <div class="columns p-1">
 
-    <!-- mapa sitio -->
-    <div class="bread columns p-0-2 h-10">
+    <!--  mapa sitio -->
+    <div class="bread columns p-0-2 h-a">
       <?php
       get_template_part('secciones/general/breadcrumbs')
       ?>
@@ -20,7 +19,7 @@ get_header();
     <div class="columns h-a p-t-1">
       <?php
       for ($i=0; $i < 500 ; $i++) {
-        echo ' Esto es  el contenedor del single ';
+        echo ' Esto es  el contenedor del archivo';
       }
       ?>
     </div>
