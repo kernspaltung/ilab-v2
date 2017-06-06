@@ -34,7 +34,7 @@
       <!--  -->
       <div class="columns p-0 small-11 medium-9 large-7 small-centered h-40 rel">
 
-        <div class="columns p-1 h-a m-b-0-2 font-s font-md-m font-lg-l text-justified color-claro shadow rel">
+        <div class="columns p-1 h-a m-b-0-2 font-s font-md-m text-justified color-claro shadow rel">
 
           <div class="columns p-0-3 color-amarillo-bg absUpL z-1">
 

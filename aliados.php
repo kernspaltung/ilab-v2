@@ -5,7 +5,7 @@ Template Name: Aliados iLab
 get_header();
 ?>
 
-<section id="content" class="content columns small-12 large-9 p-0 h-a h-md-100-v">
+<section id="content" class="content columns small-12 large-9 p-0 h-a">
 
   <div class="columns p-1 h-a m-b-1">
 
@@ -73,9 +73,21 @@ get_header();
   <!-- fin menu de paginas -->
 
 
+  <!-- slider logos -->
+  <div class="columns p-0 h-50-v color-claro-bg p-b-1-2 v-center">
+    <?php echo get_template_part('secciones/general/slider-aliados'); ?>
+
+  </div>
+  <!--  -->
+
 </div>
 
 </section>
+<script type="text/javascript">
+$(document).ready(function() {
+  slider_aliados()
+});
+</script>
 
 <?php
 get_footer();

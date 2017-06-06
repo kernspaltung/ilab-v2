@@ -192,6 +192,7 @@ li.current-menu-item a {
   }
 
   &:hover {
+    @extend .color-claro;
     & div {
       @extend .color-negro;
     }
@@ -433,6 +434,9 @@ img:last-of-type {
   }
   .h-md-40-v {
     height: 40vh;
+  }
+  .h-md-50-v {
+    height: 50vh;
   }
   .h-md-70-v {
     height: 70vh;

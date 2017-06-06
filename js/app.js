@@ -37,8 +37,10 @@ function setup() {
 
     menu_paginas()
     colores_menu()
-    sticky_sidebar()
     slider_sidebar()
+    setTimeout(function(){
+      sticky_sidebar()
+    },200)
   }
   //
 
@@ -76,8 +78,8 @@ function resize() {
       setTimeout(function() {
         console.log('page or archive or single, or whatever')
         menu_paginas()
-        sticky_sidebar()
         colores_menu()
+        sticky_sidebar()
       },100)
 
     }

@@ -42,9 +42,9 @@
         </div>
 
         <!--  -->
-        <div class="columns p-0 small-11 medium-9 large-7 small-centered h-60 rel v-center">
+        <div class="columns p-0 small-11 medium-9 large-7 small-centered h-50 rel v-center">
 
-          <div class="columns p-1 h-a font-s font-md-m font-lg-l text-justified color-claro shadow rel">
+          <div class="columns p-1 h-a font-s font-md-m text-justified color-claro shadow rel">
 
             <div class="columns p-0-3 color-naranja-bg absUpL z-1">
 
