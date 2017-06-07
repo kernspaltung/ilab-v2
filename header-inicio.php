@@ -44,13 +44,22 @@
         <!-- boton login  -->
         <div id="boton-login" class="columns small-3 p-0">
           <!-- <a href="#" class="columns p-0 h-100"> -->
-            <div class="columns p-0-1">
+          <div class="columns p-0-1">
 
-              <div class="button columns h-a p-0-1 text-center color-blanco font-xs font-sm-s font-lg-m">
-                Login
-              </div>
+            <div class="button columns h-a p-0-1 text-center color-blanco font-xs font-sm-s font-lg-m">
+
+              <?php
+              if ( is_user_logged_in() ) {
+                echo "Logout";
+                wp_loginout(home_url());
+              } else {
+                echo "Login";
+              }
+              ?>
 
             </div>
+
+          </div>
           <!-- </a> -->
         </div>
 
@@ -121,20 +130,20 @@
 
     </div>
 
-    <!-- js Analytics -->
-
-    <!--  -->
-  </header> <!-- header escritorio -->
-
-  <!-- formulario de login -->
-  <div id="header-login" class="columns h-80-v h-md-50-v p-top fixed top left z-1 posicion-login shadow color-blanco-bg">
+    <!-- formulario de login -->
+    <div id="header-login" class="columns h-80-v h-md-50-v p-top fixed top left z-1 posicion-login shadow color-blanco-bg">
 
       <?php
       get_template_part('secciones/login/login');
       ?>
 
-  </div>
-  <!--  -->
+    </div>
+    <!--  -->
+    <!-- js Analytics -->
+
+    <!--  -->
+  </header> <!-- header escritorio -->
+
 
   <nav id="menu-movil" class="columns small-7 medium-4 h-100-v posicion-menu-fuera p-top fixed top right z1k shadow-up color-blanco-bg hide-for-large">
     <!-- el menu se pasa aqui en movil -->

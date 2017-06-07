@@ -178,6 +178,9 @@ li.current-menu-item a {
   // @extend .p-0;
   // background-color: transparent !important;
 }
+#header-top, #header-bottom {
+  background-color: white !important;
+}
 .button {
   @extend .color-link-bg;
   // background-color: #5aba5f !important;
