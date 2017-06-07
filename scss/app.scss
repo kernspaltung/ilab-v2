@@ -270,7 +270,12 @@ li.current-menu-item a {
   }
 
 }
-
+#boton-login {
+  & a {
+    @extend .color-claro;
+    @extend .font-s;
+  }
+}
 // movimiento de menu movil
 .posicion-menu {
   transition: 1s;

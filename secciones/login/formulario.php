@@ -7,7 +7,7 @@ if ( ! is_user_logged_in() ) { // Display WordPress login form:
         'label_password' => __( 'Contraseña' ),
         'label_remember' => __( 'Recuérdame' ),
         'label_log_in' => __( 'Inicia' ),
-        'remember' => true
+        'remember' => false
     );
     wp_login_form( $args );
 } else { // If logged in:

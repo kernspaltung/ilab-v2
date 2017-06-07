@@ -1,4 +1,4 @@
-<section class="columns h-80-v h-md-60-v">
+<section class="columns h-a">
 
   <div class="columns small-9 medium-6 large-4 small-centered">
 

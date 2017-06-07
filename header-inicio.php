@@ -43,27 +43,12 @@
 
         <!-- boton login  -->
         <div id="boton-login" class="columns small-3 p-0">
-          <!-- <a href="#" class="columns p-0 h-100"> -->
-          <div class="columns p-0-1">
 
-            <div class="button columns h-a p-0-1 text-center color-blanco font-xs font-sm-s font-lg-m">
+          <?php
+          get_template_part("secciones/login/header-boton-login");
+          ?>
 
-              <?php
-              if ( is_user_logged_in() ) {
-                echo "Logout";
-                wp_loginout(home_url());
-              } else {
-                echo "Login";
-              }
-              ?>
-
-            </div>
-
-          </div>
-          <!-- </a> -->
         </div>
-
-
 
       </div>
 
@@ -131,7 +116,7 @@
     </div>
 
     <!-- formulario de login -->
-    <div id="header-login" class="columns h-80-v h-md-50-v p-top fixed top left z-1 posicion-login shadow color-blanco-bg">
+    <div id="header-login" class="columns h-a p-top fixed top left z-1 posicion-login shadow color-blanco-bg">
 
       <?php
       get_template_part('secciones/login/login');

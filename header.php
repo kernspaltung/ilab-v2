@@ -13,12 +13,12 @@
   </title>
   <!--  -->
   <script type="text/javascript">
-    var inicio = false;
+  var inicio = false;
   </script>
-<!-- codigo analytics -->
+  <!-- codigo analytics -->
 
-<!--  -->
-<?php wp_head(); ?>
+  <!--  -->
+  <?php wp_head(); ?>
 
 </head>
 
@@ -42,16 +42,13 @@
         </div><!-- fin top social -->
 
         <!-- boton login  -->
-        <div class="columns small-3 p-0">
-          <a href="#" class="columns p-0 h-100">
-            <div class="columns p-0-1">
 
-              <div class="button columns h-a p-0-1 text-center color-blanco font-xs font-sm-s font-lg-m">
-                Login
-              </div>
+        <div id="boton-login" class="columns small-3 p-0">
 
-            </div>
-          </a>
+          <?php
+          get_template_part("secciones/login/header-boton-login");
+          ?>
+          
         </div>
 
 
@@ -120,9 +117,21 @@
 
     </div>
 
+    <!-- formulario de login -->
+    <div id="header-login" class="columns h-a p-top fixed top left z-1 posicion-login shadow color-blanco-bg">
 
+      <?php
+      get_template_part('secciones/login/login');
+      ?>
 
+    </div>
+    <!--  -->
+
+    <!-- js Analytics -->
+
+    <!--  -->
   </header> <!-- header escritorio -->
+
   <nav id="menu-movil" class="columns small-7 medium-4 h-100-v posicion-menu-fuera p-top fixed top right z1k shadow-up color-blanco-bg hide-for-large">
     <!-- el menu se pasa aqui en movil -->
     <?php
