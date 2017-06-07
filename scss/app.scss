@@ -277,6 +277,14 @@ li.current-menu-item a {
   -o-transform: translateX(100%);
   transform: translateX(100%);
 }
+.posicion-login {
+  transition: 1s;
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
 .gira-icono-menu {
   transition: 0.4s;
   -webkit-transform: rotate(360deg);
@@ -303,7 +311,9 @@ li.current-menu-item a {
     height: 50vh;
     // @extend .p-top;
   }
-
+}
+.z100 {
+  z-index: 10;
 }
 .h-widget-contacto {
   height: 50vh;

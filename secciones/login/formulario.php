@@ -3,16 +3,16 @@ if ( ! is_user_logged_in() ) { // Display WordPress login form:
     $args = array(
         'redirect' => admin_url(),
         'form_id' => 'loginform-custom',
-        'label_username' => __( 'Username custom text' ),
-        'label_password' => __( 'Password custom text' ),
-        'label_remember' => __( 'Remember Me custom text' ),
-        'label_log_in' => __( 'Log In custom text' ),
+        'label_username' => __( 'Nombre de usuario' ),
+        'label_password' => __( 'Contraseña' ),
+        'label_remember' => __( 'Recuérdame' ),
+        'label_log_in' => __( 'Inicia' ),
         'remember' => true
     );
     wp_login_form( $args );
 } else { // If logged in:
     wp_loginout( home_url() ); // Display "Log Out" link.
-    echo " | ";
-    wp_register('', ''); // Display "Site Admin" link.
+    // sin registro en el front
+    // wp_register('', '');
 }
 ?>

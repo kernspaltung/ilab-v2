@@ -597,3 +597,51 @@ function paralax() {
     });
   };
 }
+
+function header_login() {
+  var fondo = $("#header_login")
+  // registra su posicion inicial, fuera de la pantalla
+  var altura = fondo.height()
+  var negativo = altura * -1
+
+  var posicioninicial = menumovil.css({
+    'transition': '0.01s',
+    '-webkit-transform': 'translateY(' + negativo + 'px)',
+    '-moz-transform': 'translateY(' + negativo +'px)',
+    '-ms-transform': 'translateY(' + negativo +'px)',
+    '-o-transform': 'translateY(' + negativo +'px)',
+    'transform': 'translateY(' + negativo +'px)'
+  })
+  var posicionabierta = {
+    'transition': '0.25s',
+    '-webkit-transform': 'translateY(' + altura + 'px)',
+    '-moz-transform': 'translateY(' + altura +'px)',
+    '-ms-transform': 'translateY(' + altura +'px)',
+    '-o-transform': 'translateY(' + altura +'px)',
+    'transform': 'translateY(' + altura +'px)'
+  }
+
+  // abre menu movil
+  $('#boton-login a').on('click', function() {
+
+    var posicion = fondo.position();
+
+    if(posicion.top >= $(document).height()) {
+      // entra formulario
+      fondo.css({
+        'transition': '0.25s',
+        '-webkit-transform': 'translateY(0px)',
+        '-moz-transform': 'translateY(0px)',
+        '-ms-transform': 'translateY(0px)',
+        '-o-transform': 'translateY(0px)',
+        'transform': 'translateY(0px)'
+      });
+      //
+    } else {
+      // sale formulario
+      fondo.css(salemenu);
+    }
+
+  });
+
+}
