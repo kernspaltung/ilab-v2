@@ -22,7 +22,7 @@ get_header();
         <?php echo single_cat_title(); ?>
       </h3>
 
-      <div class="columns text-center p-0 font-xs font-md-s font-lg-m">
+      <div class="columns text-center p-0 font-s font-md-s font-lg-m">
         <?php
         echo the_archive_description();
         ?>

@@ -9,9 +9,7 @@ get_header();
 if (have_posts()):
   while (have_posts()): the_post();
   ?>
-  <!--  -->
   <!-- scroll imagen -->
-  <!--  -->
   <div id="cont-pasarela" class="cont-pasarela columns p-0 h-85-v rel">
     <div id="pasarela" class="pasarela columns p-0 imgLiquid imgLiquidPasarela">
 
