@@ -74,7 +74,7 @@ endif;
     ?>
     <div class="columns small-12 medium-6 large-4 text-center  font-m font-md-s">
 
-      <a href="<?php echo get_the_permalink();?>" class="columns p-0 h-a">
+      <a href="<?php echo get_the_permalink();?>" class="columns p-0 h-a card">
 
         <div class="w-100 p-2 h-40-v">
           <div class="columns round p-0 imgLiquid imgLiquidFill">

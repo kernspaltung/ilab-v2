@@ -52,7 +52,7 @@ get_header();
       while ( $q->have_posts()): $q->the_post();
       ?>
 
-      <div class="columns p-t-2 p-b-2 small-12 medium-6 h-a end">
+      <div class="columns p-t-1 p-b-1 small-12 medium-6 h-a end">
 
         <a class="columns p-0 h-a card p-0-3" href="<?php echo get_the_permalink();?>">
 
