@@ -42,7 +42,7 @@ get_header();
 
         <div class="columns p-t-2 p-b-2 small-12 medium-6 h-a end">
 
-          <a class="columns p-0 h-a" href="<?php echo get_the_permalink();?>">
+          <a class="columns p-0 h-a card p-0-3" href="<?php echo get_the_permalink();?>">
 
           <div class="columns p-0 imgLiquid imgLiquidFill h-45-v h-md-40-v">
             <?php echo get_the_post_thumbnail(); ?>
