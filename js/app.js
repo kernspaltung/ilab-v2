@@ -1,9 +1,9 @@
-$(document).foundation()
-
+//scripts Ilab.v2
 u = new Utils()
 //
 $(document).ready(function() {
 
+  $(document).foundation()
   // defaults todas las secciones
   setup()
   img_liquid()
@@ -42,6 +42,7 @@ function setup() {
     setTimeout(function(){
       sticky_sidebar()
     },200)
+    proyectos_roockies()
   }
   //
 
@@ -81,6 +82,7 @@ function resize() {
         menu_paginas()
         colores_menu()
         sticky_sidebar()
+        proyectos_roockies()
       },100)
 
     }
@@ -621,11 +623,11 @@ function header_login() {
     '-o-transform': 'translateY(' + negativo +'px)',
     'transform': 'translateY(' + negativo +'px)'
   }
-
-// debug
-console.log("funcion");
+  // debug
+  console.log("funcion");
 
   // abre menu movil
+
   $('#boton-login .button').on('click', function() {
 
     var posicion = fondo.position()
@@ -643,5 +645,24 @@ console.log("funcion");
     }
 
   });
+
+}
+
+
+function proyectos_roockies() {
+
+  // default
+  // $("#proyecto-header").addClass("p-l-1 absDownL");
+
+  if($(window).width() >= 1024) {
+
+    $("#proyecto-header").addClass("p-l-1 absDownL");
+
+  } else {
+    //
+    $("#proyecto-header").removeClass("p-l-1 absDownL");
+
+  }
+
 
 }

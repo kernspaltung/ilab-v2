@@ -23,15 +23,15 @@ get_header();
 
         ?>
 
-        <div class="columns p-t-2 p-b-2 h-80 h-md-70 v-center">
+        <div class="columns p-t-2 p-b-2 h-a">
 
           <div class="columns small-12 medium-6 large-4 p-0 h-40-v m-b-2 h-40 imgLiquid imgLiquidFill h-45-v h-md-40-v">
             <?php echo get_the_post_thumbnail(); ?>
           </div>
 
-          <div class="columns small-12 medium-6 large-8 h-15-v m-b-2 h-md-40-v rel font-m font-lg-l">
+          <div class="columns small-12 medium-6 large-8 h-a m-b-2 h-md-40-v rel font-m font-lg-l">
 
-            <div class="columns p-0 h-a p-l-1 absDownL">
+            <div id="proyecto-header" class="columns p-0 h-a">
 
               <h3 class="columns p-0 h-a">
                 <label class="font-light" for="">Titulo: </label>

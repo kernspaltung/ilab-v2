@@ -67,14 +67,9 @@ get_header();
               echo get_post_meta(get_the_ID(),"nombre-proyecto",true);
               ?>
             </h5>
-            <div class="columns p-0 h-a font-xs font-light">
-              <?php
-              echo get_post_meta(get_the_ID(),"integrantes-proyecto",true);
-              ?>
-            </div>
             <div class="columns p-0 p-t-1 h-a font-s font-sm-m font-md-s">
               <?php
-              echo the_excerpt(26);
+              echo "Click para conocer mas ...";
               ?>
             </div>
 
