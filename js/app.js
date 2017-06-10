@@ -24,6 +24,7 @@ function setup() {
   u.addWindowResizeFunction( u.verticalCenter )
   u.addWindowResizeFunction( u.shareW )
   u.addWindowResizeFunction( u.shareH )
+  u.addWindowResizeFunction( u.squareH )
   u.addWindowResizeFunction( menu_movil )
   //
   //Carga especifica; si es INICIO o no por valor -> (var inicio) en headers
@@ -61,6 +62,7 @@ function resize() {
     u.verticalCenter()
     u.shareW()
     u.shareH()
+    u.squareH()
     menu_movil()
 
     //Carga especifica; si es INICIO: existen los svg es true

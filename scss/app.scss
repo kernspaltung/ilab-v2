@@ -308,10 +308,11 @@ li.current-menu-item a {
   @extend .color-naranja;
 }
 .round {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
   border-collapse: separate;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
 }
 //
 #footer-widgets {
@@ -460,6 +461,9 @@ img:last-of-type {
   }
   .h-md-80 {
     height: 80%;
+  }
+  .h-md-35-v {
+    height: 35vh;
   }
   .h-md-40-v {
     height: 40vh;
