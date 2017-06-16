@@ -65,7 +65,7 @@
 
           <div id="header-escritorio-logo" class="columns p-0 imgLiquid imgLiquidNoFillLeft">
 
-            <img src="<?php echo get_stylesheet_directory_uri();?>/img/logo-ilab-negro.png" alt="">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/img/logo-header-ilab.png" alt="">
 
           </div>
 
