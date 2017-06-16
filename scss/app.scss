@@ -281,6 +281,7 @@ li.current-menu-item a {
   transition: 1s;
   -ms-transform: translateX(100%);
   -webkit-transform: translateX(100%);
+  -webkit-transform: -webkit-translateY(100%);
   -moz-transform: translateX(100%);
   -o-transform: translateX(100%);
   transform: translateX(100%);
@@ -289,6 +290,7 @@ li.current-menu-item a {
   transition: 1s;
   -ms-transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
+  -webkit-transform: -webkit-translateY(-100%);
   -moz-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -296,6 +298,7 @@ li.current-menu-item a {
 .gira-icono-menu {
   transition: 0.4s;
   -webkit-transform: rotate(360deg);
+  -webkit-transform: -webkit-rotate(360deg);
   -moz-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360deg);
@@ -417,6 +420,21 @@ img:last-of-type {
   transform: translateZ(-1px) scale(1.1);
 }
 // fin parallax
+
+// eventos / ac
+#inicio-eventos-ac {
+
+  & a:hover {
+
+    & .eventos-ac {
+      transition: 0.25s;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      transition: 0.25s;
+    }
+  }
+}
+//
 
 // sliders
 .slick-dots {

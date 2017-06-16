@@ -27,10 +27,10 @@
 
       </div>
       <!-- svg -->
-      <div class="columns h-100 v-center">
+      <div class="columns h-100">
         <!-- h-85 -->
 
-        <div class="columns p-0 small-10 medium-8 large-6 h-40 small-centered">
+        <div class="columns p-0 small-10 medium-8 large-6 h-50 small-centered">
 
           <!-- svg animado -->
           <object id="nosotros-svg" class="columns p-0 h-100 text-shadow" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri();?>/img/inicio-svgs/test.svg"></object>

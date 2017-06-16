@@ -10,13 +10,18 @@
     while ( $query->have_posts() ) : $query->the_post();
     ?>
 
-    <a href="<?php echo get_permalink();?>" class="columns h-35-v small-6 color-primary-1-bg-hover v-center">
-      <div class="columns v-center">
+    <div class="columns h-35-v small-6">
 
-        <h1 class="columns p-0 text-center h-a texto-gigante">E</h1>
+    <a href="<?php echo get_permalink();?>" class="columns h-100">
+
+        <div class="eventos-ac columns p-0 imgLiquid imgLiquidNoFill">
+          <img src="<?php echo get_stylesheet_directory_uri();?>/img/eventos-color.png" alt="Eventos" />
+        </div>
+        <!-- <h1 class="columns p-0 text-center h-a texto-gigante">E</h1> -->
+
+      </a>
 
       </div>
-    </a>
     <?php
   endwhile;
 endif;
@@ -33,17 +38,20 @@ if ( $query->have_posts() ) :
   while ( $query->have_posts() ) : $query->the_post();
   ?>
 
-<a href="<?php echo get_permalink();?>" class="columns h-35-v small-6 color-primary-2-bg-hover v-center">
-  <div class="columns v-center">
+    <div class="columns h-35-v small-6">
+      <a href="<?php echo get_permalink();?>" class="columns h-100">
 
-    <h1 class="columns p-0 text-center h-a texto-gigante">AC</h1>
+      <!-- <h1 class="columns p-0 text-center h-a texto-gigante">AC</h1> -->
+      <div class="eventos-ac columns p-0 imgLiquid imgLiquidNoFill">
+        <img src="<?php echo get_stylesheet_directory_uri();?>/img/ac-color.png" alt="AC" />
+      </div>
 
-  </div>
-</a>
-<?php
+    </a>
+    </div>
+  <?php
 endwhile;
 endif;
- ?>
+?>
 
 
 </section>

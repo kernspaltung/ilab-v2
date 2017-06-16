@@ -610,40 +610,44 @@ function header_login() {
   var negativo = altura * -1
 
   var posicioninicial = {
-    'transition': '0.25s',
+    'transition': '0.35s',
     '-webkit-transform': 'translateY(0px)',
+    '-webkit-transform': '-webkit-translateY(0px)',
     '-moz-transform': 'translateY(0px)',
     '-ms-transform': 'translateY(0px)',
     '-o-transform': 'translateY(0px)',
     'transform': 'translateY(0px)'
   }
   var posicionabierta = {
-    'transition': '0.25s',
+    'transition': '0.35s',
     '-webkit-transform': 'translateY(' + negativo + 'px)',
+    '-webkit-transform': '-webkit-translateY(' + negativo + 'px)',
     '-moz-transform': 'translateY(' + negativo +'px)',
     '-ms-transform': 'translateY(' + negativo +'px)',
     '-o-transform': 'translateY(' + negativo +'px)',
     'transform': 'translateY(' + negativo +'px)'
   }
-  // debug
-  console.log("funcion");
 
   // abre menu movil
-
   $('#boton-login .button').on('click', function() {
 
     var posicion = fondo.position()
 
-    console.log(posicion)
     if(posicion.top <= negativo) {
-      console.log("sisisis")
+      // console.log("sisisis")
       // entra formulario
       fondo.css(posicioninicial)
-      //
+      setTimeout(function() {
+        fondo.removeClass('hidden')
+      },250)
     } else {
-      console.log("nonono")
+      // console.log("nonono")
       // sale formulario
       fondo.css(posicionabierta)
+      fondo.css(posicioninicial)
+      setTimeout(function() {
+        fondo.addClass('hidden')
+      },250)
     }
 
   });

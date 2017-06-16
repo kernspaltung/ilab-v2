@@ -30,11 +30,11 @@
 
       </div>
       <!-- svg -->
-      <div class="columns h-100 v-center">
+      <div class="columns h-100">
         <!-- h-85 -->
 
 
-        <div class="columns p-0 small-11 medium-10 large-9 h-40 small-centered">
+        <div class="columns p-0 small-11 medium-10 large-9 h-50 small-centered">
 
           <!-- svg animado -->
           <object id="bootcamp-svg" class="columns p-0 h-100 text-shadow" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri();?>/img/inicio-svgs/bootcamp.svg"></object>
