@@ -12,13 +12,17 @@
 
     <div class="columns p-0 rel">
 
-      <div class="columns p-2 p-md-3 p-lg-4 z-1 absUpL">
-        <div class="columns p-0 imgLiquid imgLiquidNoFill">
+      <div class="columns p-2 p-md-3 p-lg-4 z1 absUpL">
+        <a href="<?php echo get_post_meta(get_the_ID(),"aliados-link",true);?>" class="columns p-0 h-100" target="_blank">
 
-          <?php
-          echo get_the_post_thumbnail();
-          ?>
-        </div>
+          <div class="columns p-0 imgLiquid imgLiquidNoFill">
+
+            <?php
+            echo get_the_post_thumbnail();
+            ?>
+          </div>
+
+        </a>
       </div>
       <div class="textos-slider h-20 columns z1 absDownL p-0 color-white v-center">
 

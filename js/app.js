@@ -471,12 +471,12 @@ function svgs() {
   })
   new Vivus('bootcamp-svg', {
     type: 'oneByOne',
-    duration: 1100,
+    duration: 700,
     animTimingFunction: Vivus.EASE
   })
   new Vivus('incuba-svg', {
     type: 'oneByOne',
-    duration: 1100,
+    duration: 300,
     animTimingFunction: Vivus.EASE
   })
   // new Vivus('startups-svg', {
