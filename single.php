@@ -52,6 +52,9 @@ get_header();
 
       </div>
 
+      <div class="columns h-a">
+        <?php echo tags(); ?>
+      </div>
       <?php
 
     endwhile;

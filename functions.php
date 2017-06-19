@@ -90,44 +90,59 @@ function my_login_logo() { ?>
   </style>
   <?php
 }
-  add_action( 'login_enqueue_scripts', 'my_login_logo' );
-  function my_login_logo_url() {
-      return home_url();
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+function my_login_logo_url() {
+  return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+  return 'Ilab Backend';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+//fin wp-admin login
+
+
+// Agrega tags despues del contenidos
+function tags($content) {
+$posttags = get_the_tags();
+if ($posttags) {
+  $array = [];
+  foreach($posttags as $tag) {
+    $array[] = '<a href="/tag/' . $tag->slug . '/">' . $tag->name . '</a>';
   }
-  add_filter( 'login_headerurl', 'my_login_logo_url' );
+  $content .= 'Etiquetas: ' . implode(', ', $array) . '<br>';
+}
 
-  function my_login_logo_url_title() {
-      return 'Ilab Backend';
-  }
-  add_filter( 'login_headertitle', 'my_login_logo_url_title' );
-  //fin wp-admin login
+return $content;
+}
+add_filter( 'the_content', 'tags' );
 
-
-  // add_action( 'wp_ajax_get_service', 'get_service' );
-  // add_action( 'wp_ajax_nopriv_get_service', 'get_service' );
-  //
-  // function get_service() {
-  //
-  //    $response = array();
-  //
-  //    if( isset($_GET['id'])) {
-  //
-  //       $id = $_GET['id'];
-  //       $post = get_post( $id );
-  //
-  //       $title = get_the_title($id);
-  //       $image = get_the_post_thumbnail($id);
-  //       $content = apply_filters('the_content',$post->post_content);
-  //
-  //       $response = array(
-  //          'title' => $title,
-  //          'image' => $image,
-  //          'description' => $content,
-  //       );
-  //
-  //    }
-  //
-  //
-  // 	wp_die( json_encode( $response ) );
-  //
-  // }
+// add_action( 'wp_ajax_get_service', 'get_service' );
+// add_action( 'wp_ajax_nopriv_get_service', 'get_service' );
+//
+// function get_service() {
+//
+//    $response = array();
+//
+//    if( isset($_GET['id'])) {
+//
+//       $id = $_GET['id'];
+//       $post = get_post( $id );
+//
+//       $title = get_the_title($id);
+//       $image = get_the_post_thumbnail($id);
+//       $content = apply_filters('the_content',$post->post_content);
+//
+//       $response = array(
+//          'title' => $title,
+//          'image' => $image,
+//          'description' => $content,
+//       );
+//
+//    }
+//
+//
+// 	wp_die( json_encode( $response ) );
+//
+// }
