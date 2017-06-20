@@ -343,6 +343,24 @@ li.current-menu-item a {
 }
 
 //
+.cat-item {
+  width: auto;
+  display: inline-block;
+  @extend .p-0-2;
+  @extend .m-b-0-2;
+
+  & a {
+    @extend .color-link-bg;
+    @extend .color-claro;
+    @extend .p-0-2;
+  }
+  & a:hover {
+    @extend .color-azul-bg;
+    @extend .color-claro;
+  }
+}
+//
+//
 // Parallax
 // ------------- MIXINS ------------- //
 @mixin transition($time, $property: all, $easing: ease-in) {

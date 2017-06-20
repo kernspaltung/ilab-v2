@@ -29,27 +29,37 @@ get_header();
       </div>
 
 
-      <div class="columns text-left p-0 font-s font-md-s font-lg-m">
+      <div class="columns text-left p-0 font-s font-md-s font-lg-m m-t-2">
         <?php
-        echo "Lista de Categorias como tags";
+        // echo "Lista de Categorias como tags";
         ?>
-      </div>
-
+        <?php
+        $args = array (
+        'hide_empty' => 0,
+        'title_li' => false,
+        'echo' => 0,
+        'style' => 'list',
+      );
+      echo str_replace( "<br>", "", wp_list_categories( $args ) );
+      // wp_list_categories($args);
+      ?>
     </div>
 
-    <div class="columns p-l-0 p-r-0 p-t-2 p-b-2 h-a">
+  </div>
 
-      <?php
+  <div class="columns p-l-0 p-r-0 p-t-2 p-b-2 h-a">
 
-      if ( have_posts() ):
-        while ( have_posts() ): the_post();
+    <?php
+
+    if ( have_posts() ):
+      while ( have_posts() ): the_post();
 
 
-        ?>
+      ?>
 
-        <div class="columns p-t-1 p-b-1 small-12 medium-6 h-a end">
+      <div class="columns p-t-1 p-b-1 small-12 medium-6 h-a end">
 
-          <a class="columns p-0 h-a card p-0-3" href="<?php echo get_the_permalink();?>">
+        <a class="columns p-0 h-a card p-0-3" href="<?php echo get_the_permalink();?>">
 
           <div class="columns p-0 imgLiquid imgLiquidFill h-45-v h-md-40-v">
             <?php echo get_the_post_thumbnail(); ?>
@@ -77,18 +87,23 @@ get_header();
 
 
 
-          </a>
+        </a>
 
-        </div>
+      </div>
 
 
-        <?php
+      <?php
 
-      endwhile;
-    endif;
+    endwhile;
+    // Paginacion
     ?>
+    <div class="nav-previous columns small-6 text-left"><?php previous_posts_link( '< Artículos Anteriores' ); ?></div>
+    <div class="nav-next columns small-6 text-right"><?php next_posts_link( 'Siguientes Artículos >' ); ?></div>
+    <?php
+  endif;
+  ?>
 
-  </div>
+</div>
 
 
 </div>

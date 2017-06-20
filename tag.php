@@ -23,7 +23,7 @@ get_header();
         echo "Estas son las estradas relacionadas con la etiqueta:";
         ?>
       </div>
-      <h3 class="columns text-left font-light p-0">
+      <h3 class="columns text-center font-light p-0">
         <?php echo single_cat_title(); ?>
       </h3>
 
