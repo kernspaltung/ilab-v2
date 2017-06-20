@@ -44,8 +44,8 @@ get_header();
   <div class="columns p-l-0 p-r-0 p-t-2 p-b-2 h-a">
 
     <?php
-
-    $args = cpt('proyectos-roockies');
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    $args = cpt('proyectos-roockies', $paged);
     $q = new WP_Query( $args );
 
     if ( $q->have_posts()):
@@ -85,6 +85,9 @@ get_header();
       <?php
 
     endwhile;
+
+    include_once "secciones/general/paginacion-cpt.php";
+
   endif;
   ?>
 
