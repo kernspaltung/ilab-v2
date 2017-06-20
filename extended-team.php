@@ -48,7 +48,8 @@ get_header();
 
   <!-- inicia perfil  -->
   <?php
-  $args = cpt('extended-team');
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  $args = cpt('extended-team', $paged);
   $q = new WP_Query( $args );
 
   if ( $q->have_posts()):
@@ -85,6 +86,9 @@ get_header();
 
     <?php
   endwhile;
+  // Paginacion
+  include_once "secciones/general/paginacion-cpt.php";
+  //
 endif;
 ?>
 <!-- Termina perfil -->

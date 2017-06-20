@@ -48,13 +48,14 @@ get_header();
 
   <!-- inicia perfil  -->
   <?php
-  $args = cpt('staff');
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  $args = cpt('staff', $paged);
   $q = new WP_Query( $args );
 
   if ( $q->have_posts()):
     while ( $q->have_posts()):  $q->the_post();
     ?>
-    
+
     <div class="columns small-12 medium-6 large-4 text-center font-m font-md-s">
 
       <a href="<?php echo  get_the_permalink();?>" class="columns p-0 h-a card">
@@ -83,6 +84,9 @@ get_header();
 
     <?php
   endwhile;
+  // Paginacion
+  include_once "secciones/general/paginacion-cpt.php";
+  //
 endif;
 ?>
 <!-- Termina perfil -->

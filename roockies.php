@@ -66,7 +66,8 @@ endif;
 
   <!-- inicia perfil  -->
   <?php
-  $args = cpt('roockies');
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  $args = cpt('roockies', $paged);
   $q = new WP_Query( $args );
 
   if ( $q->have_posts()):
@@ -100,6 +101,9 @@ endif;
 
     <?php
   endwhile;
+  // Paginacion
+  include_once "secciones/general/paginacion-cpt.php";
+  //
 endif;
 ?>
 <!-- Termina perfil -->

@@ -95,11 +95,11 @@ get_header();
       <?php
 
     endwhile;
+
     // Paginacion
-    ?>
-    <div class="nav-previous columns small-6 text-left"><?php previous_posts_link( '< Artículos Anteriores' ); ?></div>
-    <div class="nav-next columns small-6 text-right"><?php next_posts_link( 'Siguientes Artículos >' ); ?></div>
-    <?php
+      include_once "secciones/general/paginacion.php";
+    //
+
   endif;
   ?>
 
