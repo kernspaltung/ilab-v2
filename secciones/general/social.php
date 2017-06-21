@@ -1,7 +1,7 @@
 
 <?php
   $args_social = array(
-    'post_type' => 'social',
+    'post_type' => 'ilab-social',
     'orderby' => 'ID',
   	'order'   => 'ASC',
     'posts_per_page' => 6, //maximo 6 redes
@@ -22,9 +22,9 @@ if ( $query_social->have_posts() ) :
 
     <div class="columns p-0 h-a text-center">
 
-      <a class="columns p-0 font-s font-sm-m" href="<?php echo $link;?>" target="_blank">
+      <a class="columns p-0 font-s font-sm-m" href="<?php echo get_post_meta(get_the_ID(),"redes-link",true);?>" target="_blank">
 
-        <i class="fa fa-<?php echo $icono;?>"></i>
+        <i class="fa fa-<?php echo get_post_meta(get_the_ID(),"redes-icono",true);?>"></i>
 
       </a>
 
