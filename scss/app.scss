@@ -231,6 +231,12 @@ li.current-menu-item a {
 
   }
 }
+.lista-categorias {
+
+  & li a {
+    @extend .shadow;
+  }
+}
 //
 //override fullpage styles
 .section {

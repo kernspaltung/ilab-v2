@@ -6,23 +6,25 @@
 </aside>
 
 
-</div><!-- main -->
+
+</main><!-- fin main -->
 
 
 
-<div class="columns small-12 h-a h-md-20 v-center">
 
-  <div class="menu-footer p-0 columns text-center">
+<footer id="footer" class="columns p-0 color-claro-bg">
 
-    <?php
-    menu_paginas('menu-footer', 'menu-footer' );
-    ?>
+  <div class="columns small-12 h-a h-md-15-v v-center">
+
+    <div class="menu-pagina p-0 columns text-center">
+
+      <?php
+      menu_paginas('menu-footer', 'menu-footer' );
+      ?>
+
+    </div>
 
   </div>
-
-</div>
-
-<footer id="footer" class="columns p-0">
 
 
   <?php

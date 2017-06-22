@@ -575,7 +575,7 @@ function pasarela_roockies() {
       // console.log(x)
       pasarela.css('background-position', x + 'px 0')
 
-    }, 50)
+    }, 60)
 
     // aplica loop de imagen haciendo override de imgLiquid
     setTimeout(function() {
@@ -605,9 +605,8 @@ function paralax() {
 
 function header_login() {
   var fondo = $("#header-login")
-  // registra su posicion inicial, fuera de la pantalla
   var altura = fondo.height()
-  var negativo = altura * -1
+  var negativo = altura * -1.25
 
   var posicioninicial = {
     'transition': '0.35s',
@@ -618,7 +617,7 @@ function header_login() {
     '-o-transform': 'translateY(0px)',
     'transform': 'translateY(0px)'
   }
-  var posicionabierta = {
+  var posicioncerrada = {
     'transition': '0.35s',
     '-webkit-transform': 'translateY(' + negativo + 'px)',
     '-webkit-transform': '-webkit-translateY(' + negativo + 'px)',
@@ -634,20 +633,13 @@ function header_login() {
     var posicion = fondo.position()
 
     if(posicion.top <= negativo) {
-      // console.log("sisisis")
       // entra formulario
       fondo.css(posicioninicial)
-      setTimeout(function() {
-        fondo.removeClass('hidden')
-      },250)
+
     } else {
-      // console.log("nonono")
       // sale formulario
-      fondo.css(posicionabierta)
-      fondo.css(posicioninicial)
-      setTimeout(function() {
-        fondo.addClass('hidden')
-      },250)
+      fondo.css(posicioncerrada)
+
     }
 
   });

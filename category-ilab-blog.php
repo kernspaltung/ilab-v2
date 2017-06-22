@@ -29,7 +29,7 @@ get_header();
       </div>
 
 
-      <div class="columns text-left p-0 font-s font-md-s font-lg-m m-t-2">
+      <div class="lista-categorias columns text-left p-0 font-s font-md-s font-lg-m m-t-2">
         <?php
         // echo "Lista de Categorias como tags";
         ?>
@@ -37,8 +37,8 @@ get_header();
         $args = array (
         'hide_empty' => 0,
         'title_li' => false,
-        'echo' => 0,
         'style' => 'list',
+        'echo' => 0,
       );
       echo str_replace( "<br>", "", wp_list_categories( $args ) );
       // wp_list_categories($args);
