@@ -1,7 +1,7 @@
 <div id="aliados-slider" class="slick-aliados columns p-0">
 
   <?php
-  $args_slider = cpt('aliados');
+  $args_slider = cpt('aliados',0);
 
   $query_slider = new WP_Query( $args_slider );
 
