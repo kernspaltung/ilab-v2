@@ -40,6 +40,7 @@ function registro_menu() {
   register_nav_menu('menu-startups'  ,__( 'Menú Página Startups' ));
   register_nav_menu('menu-eventos'  ,__( 'Menú Página Eventos' ));
   register_nav_menu('menu-ac'  ,__( 'Menú Página AC' ));
+  register_nav_menu('menu-footer'  ,__( 'Menú Footer Widgets' ));
 
 }
 add_action( 'init', 'registro_menu' );
@@ -59,6 +60,7 @@ function cpt($cpt_slug,$paginado) {
 }
 //menus para paginas
 function menu_paginas($lugar = '', $ul_ID = '' ) {
+
   wp_nav_menu( array( 'theme_location' => $lugar, 'menu_id' => $ul_ID, 'container' => '', 'menu_class' => 'menu-page columns text-center p-1' ));
 
 }

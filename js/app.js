@@ -65,7 +65,8 @@ function resize() {
     u.squareH()
     menu_movil()
 
-    //Carga especifica; si es INICIO: existen los svg es true
+    //Carga especifica; si es INICIO: var inicio = 1
+    // Esta declarada en el header
     if (inicio == 1) {
 
       setTimeout(function() {
@@ -80,7 +81,6 @@ function resize() {
     } else {
 
       setTimeout(function() {
-        console.log('page or archive or single, or whatever')
         menu_paginas()
         colores_menu()
         sticky_sidebar()
@@ -382,7 +382,7 @@ function colores_menu() {
   var botonpagina = $('.menu-page li ')
   var colores = ['color-azul-bg','color-naranja-bg','color-verde-bg','color-amarillo-bg','color-azul-bg','color-naranja-bg','color-verde-bg','color-amarillo-bg']
   botonpagina.each(function(i){
-    console.log(i);
+    // console.log(i);
     $(this).addClass(colores[i])
 
   })
