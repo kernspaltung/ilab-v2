@@ -140,4 +140,4 @@
     ?>
   </nav>
 
-  <div id="main" class="main columns p-0">
+  <main id="main" class="main columns p-0">

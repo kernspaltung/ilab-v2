@@ -137,7 +137,7 @@
     <?php
 
     // include_once "secciones/general/menu-movil.php";
-    get_template_part("secciones/general/menu-movil");
+    // get_template_part("secciones/general/menu-movil");
 
     ?>
   </nav>

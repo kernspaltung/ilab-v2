@@ -228,6 +228,7 @@ function menu_movil() {
   var posicioninicial = menumovil.css({
     'transition': '0.01s',
     '-webkit-transform': 'translateX(' + anchomenumovil + 'px)',
+    '-webkit-transform': '-webkit-translateX(' + anchomenumovil + 'px)',
     '-moz-transform': 'translateX(' + anchomenumovil +'px)',
     '-ms-transform': 'translateX(' + anchomenumovil +'px)',
     '-o-transform': 'translateX(' + anchomenumovil +'px)',
@@ -244,6 +245,7 @@ function menu_movil() {
   var salemenu = {
     'transition': '0.25s',
     '-webkit-transform': 'translateX(' + anchomenumovil + 'px)',
+    '-webkit-transform': '-webkit-translateX(' + anchomenumovil + 'px)',
     '-moz-transform': 'translateX(' + anchomenumovil +'px)',
     '-ms-transform': 'translateX(' + anchomenumovil +'px)',
     '-o-transform': 'translateX(' + anchomenumovil +'px)',
@@ -261,6 +263,7 @@ function menu_movil() {
       menumovil.css({
         'transition': '0.25s',
         '-webkit-transform': 'translateX(0px)',
+        '-webkit-transform': '-webkit-translateX(0px)',
         '-moz-transform': 'translateX(0px)',
         '-ms-transform': 'translateX(0px)',
         '-o-transform': 'translateX(0px)',
@@ -466,17 +469,17 @@ function svgs() {
 
   new Vivus('nosotros-svg', {
     type: 'oneByOne',
-    duration: 500,
+    duration: 400,
     animTimingFunction: Vivus.EASE
   })
   new Vivus('bootcamp-svg', {
     type: 'oneByOne',
-    duration: 500,
+    duration: 400,
     animTimingFunction: Vivus.EASE
   })
   new Vivus('incuba-svg', {
     type: 'oneByOne',
-    duration: 500,
+    duration: 400,
     animTimingFunction: Vivus.EASE
   })
   // new Vivus('startups-svg', {
@@ -636,9 +639,13 @@ function header_login() {
       // entra formulario
       fondo.css(posicioninicial)
 
+      $(this).html('X')
+
     } else {
       // sale formulario
       fondo.css(posicioncerrada)
+
+      $(this).html('Ingresa')
 
     }
 

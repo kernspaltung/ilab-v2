@@ -7,7 +7,7 @@
       // echo "Logout";
       wp_loginout(home_url());
     } else {
-      echo "Login";
+      echo "Ingresa";
     }
     ?>
 
