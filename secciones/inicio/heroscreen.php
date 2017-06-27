@@ -40,7 +40,7 @@
             </div> -->
             <?php
 
-            echo excerpt(19);
+            // echo excerpt(19);
 
             ?>
 
