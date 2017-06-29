@@ -215,7 +215,7 @@ function slider_aliados() {
 function sticky_sidebar() {
 
   $('#sidebar-sticky').stick_in_parent({
-    recalc_every:1
+    // recalc_every:1
   })
 
   // fix bug con el sticky desbordandose en ciertas resoluciones
@@ -225,7 +225,7 @@ function sticky_sidebar() {
     var ancho = fixSticky.width()
     var fix = ancho - 1
     fixSticky.css('width',fix)
-  },10)
+  },50)
 }
 //
 
@@ -491,11 +491,6 @@ function svgs() {
     duration: 400,
     animTimingFunction: Vivus.EASE
   })
-  // new Vivus('startups-svg', {
-  //   type: 'oneByOne',
-  //   duration: 1100,
-  //   animTimingFunction: Vivus.EASE
-  // })
 
 }
 
@@ -644,14 +639,15 @@ function header_login() {
 
     var posicion = fondo.position()
 
-    if(posicion.top <= negativo) {
+    if( (posicion.top - 1 ) <= negativo) {
+      console.log("menor o igual a negativo" + " " + posicion.top + " " + negativo );
       // entra formulario
       fondo.css(posicioninicial)
 
       $(this).html('X')
-
     } else {
       // sale formulario
+      console.log("mayor o igual a negativo" + " " + posicion.top + " " + negativo);
       fondo.css(posicioncerrada)
 
       $(this).html('Ingresa')
