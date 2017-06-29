@@ -22,9 +22,9 @@ if ( $query_social->have_posts() ) :
 
     <div class="columns p-0 h-a text-center">
 
-      <a class="columns p-0 font-s font-sm-m" href="<?php echo get_post_meta(get_the_ID(),"redes-link",true);?>" target="_blank">
+      <a class="columns p-0 font-s font-sm-m" href="<?php echo $link; ?>" target="_blank">
 
-        <i class="fa fa-<?php echo get_post_meta(get_the_ID(),"redes-icono",true);?>"></i>
+        <i class="fa fa-<?php echo $icono; ?>"></i>
 
       </a>
 
