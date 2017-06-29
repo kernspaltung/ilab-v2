@@ -13,8 +13,8 @@ $query_social = new WP_Query( $args_social );
 if ( $query_social->have_posts() ) :
   while ( $query_social->have_posts() ) : $query_social->the_post();
 
-  $icono = get_post_meta(get_the_ID(),"redes-icono",true);
-  $link = get_post_meta(get_the_ID(),"redes-link",true);
+  $icono = get_post_meta(get_the_ID(),"red-icono",true);
+  $link = get_post_meta(get_the_ID(),"red-link",true);
 
 ?>
 

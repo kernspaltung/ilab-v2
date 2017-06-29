@@ -20,12 +20,20 @@ $(document).ready(function() {
 
 function setup() {
 
-  u.addWindowResizeFunction( mueve_menu )
-  u.addWindowResizeFunction( u.verticalCenter )
-  u.addWindowResizeFunction( u.shareW )
-  u.addWindowResizeFunction( u.shareH )
-  u.addWindowResizeFunction( u.squareH )
-  u.addWindowResizeFunction( menu_movil )
+  // u.addWindowResizeFunction( mueve_menu )
+  // u.addWindowResizeFunction( u.verticalCenter )
+  // u.addWindowResizeFunction( u.shareW )
+  // u.addWindowResizeFunction( u.shareH )
+  // u.addWindowResizeFunction( u.squareH )
+  // u.addWindowResizeFunction( menu_movil )
+   mueve_menu()
+  u.verticalCenter()
+  u.shareW()
+  u.shareH()
+  // u.squareH()
+   menu_movil()
+
+
   //
   //Carga especifica; si es INICIO o no por valor -> (var inicio) en headers
   if (inicio == 1) {
@@ -40,10 +48,10 @@ function setup() {
     menu_paginas()
     colores_menu()
     slider_sidebar()
+    proyectos_roockies()
     setTimeout(function(){
       sticky_sidebar()
-    },200)
-    proyectos_roockies()
+    },100)
   }
   //
 
@@ -59,11 +67,12 @@ function resize() {
   $(window).resize(function() {
 
     mueve_menu()
-    u.verticalCenter()
     u.shareW()
     u.shareH()
-    u.squareH()
+    // u.squareH()
     menu_movil()
+    u.verticalCenter()
+
 
     //Carga especifica; si es INICIO: var inicio = 1
     // Esta declarada en el header
@@ -80,10 +89,10 @@ function resize() {
 
     } else {
 
+      sticky_sidebar()
       setTimeout(function() {
         menu_paginas()
         colores_menu()
-        sticky_sidebar()
         proyectos_roockies()
       },100)
 
@@ -206,7 +215,7 @@ function slider_aliados() {
 function sticky_sidebar() {
 
   $('#sidebar-sticky').stick_in_parent({
-    // recalc_every:1
+    recalc_every:1
   })
 
   // fix bug con el sticky desbordandose en ciertas resoluciones
@@ -214,9 +223,9 @@ function sticky_sidebar() {
   setTimeout(function() {
     var fixSticky = $('#sidebar-sticky').parent()
     var ancho = fixSticky.width()
-    var fix = ancho - 2
+    var fix = ancho - 1
     fixSticky.css('width',fix)
-  },100)
+  },10)
 }
 //
 
