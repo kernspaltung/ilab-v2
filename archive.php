@@ -19,7 +19,7 @@ get_header();
     <div id="encabezado-categoria" class="columns small-12 p-1 h-a">
 
       <h3 class="columns text-left font-light p-0">
-        <?php echo single_cat_title(); ?>
+        <?php echo get_the_archive_title(); ?>
       </h3>
 
       <div class="columns text-center p-0 font-s font-md-s font-lg-m">

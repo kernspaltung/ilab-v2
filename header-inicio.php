@@ -116,7 +116,7 @@
     </div>
 
     <!-- formulario de login -->
-    <div id="header-login" class="columns h-a p-top fixed top left z-1 posicion-login color-blanco-bg">
+    <div id="header-login" class="columns h-a p-top fixed top left z-1 posicion-login color-blanco-bg shadow">
 
       <?php
       get_template_part('secciones/login/login');

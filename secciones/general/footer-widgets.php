@@ -28,7 +28,7 @@
   </div>
 
   <!--  -->
-  <div class="columns small-12 medium-6 large-4 h-widget-contacto v-center">
+  <div class="columns small-12 medium-6 large-4 h-widget-contacto v-center hide-for-small-only">
 
     <div class="columns h-90 text-left">
 
