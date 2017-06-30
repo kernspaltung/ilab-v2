@@ -272,9 +272,32 @@ li.current-menu-item a {
         height: 100% !important;
       }
     }
+  }
+  .menu-footer {
+
+    li {
+      // los colores se ponen con js
+      // margin: 1px !important;
+      height: 100%;
+      // padding: 5px !important;
+      margin: 5px 1px;
+      text-transform: uppercase;
+      @extend .text-center;
+      @extend .shadow;
+
+      & a {
+        @extend .color-link-hover-bg;
+        @extend .p-0-2;
+        @extend .font-m;
+        @extend .font-md-s;
+        @extend .color-claro;
+        display: block;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
 
   }
-
 }
 #boton-login {
   & a {
@@ -480,6 +503,24 @@ img:last-of-type {
   position: static;
 }
 //
+
+.breadcrumb-trail {
+
+  @extend .font-xs;
+  @extend .font-md-s;
+
+  &.trail-item {
+    li {
+      a{
+        @extend .font-xs;
+        @extend .font-md-s;
+
+      }
+    }
+  }
+}
+//
+
 
 // responsivos
 @media screen and (max-width:640px) {

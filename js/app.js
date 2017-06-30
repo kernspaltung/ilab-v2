@@ -12,6 +12,7 @@ $(document).ready(function() {
   slider_footer()
   pasarela_roockies()
   header_login()
+
   //
   resize()
   //
@@ -26,12 +27,9 @@ function setup() {
   // u.addWindowResizeFunction( u.shareH )
   // u.addWindowResizeFunction( u.squareH )
   // u.addWindowResizeFunction( menu_movil )
-   mueve_menu()
-  u.verticalCenter()
-  u.shareW()
-  u.shareH()
-  // u.squareH()
-   menu_movil()
+  mueve_menu()
+  color_menu_footer()
+  menu_movil()
 
 
   //
@@ -45,16 +43,22 @@ function setup() {
 
   } else if (inicio == 0) {
 
+    mapa_sitio()
     menu_paginas()
     colores_menu()
+    color_menu_footer()
     slider_sidebar()
     proyectos_roockies()
     setTimeout(function(){
       sticky_sidebar()
     },100)
-  }
-  //
 
+  }
+  //ultimos en ejecutar
+  u.verticalCenter()
+  u.shareW()
+  u.shareH()
+  // u.squareH()
   // setTimeout(function(){
   //
   //   $(window).trigger('resize')
@@ -92,8 +96,8 @@ function resize() {
       sticky_sidebar()
       setTimeout(function() {
         menu_paginas()
-        colores_menu()
-        proyectos_roockies()
+        // colores_menu()
+        // proyectos_roockies()
       },100)
 
     }
@@ -412,8 +416,30 @@ function colores_menu() {
 
   }
 
+}
+function color_menu_footer() {
+  // colorea los botones de paginas con el patone ilab
+  var botonpagina = $('.menu-footer li ')
+  var colores = ['color-azul-bg','color-naranja-bg','color-verde-bg', 'color-amarillo-bg']
+  var color = colores[Math.floor(Math.random()*colores.length)]
+  botonpagina.each(function(){
+
+    $(this).addClass(color)
+
+  })
+  // tamano botones
+  if ($(window).width() >= 1024) {
+
+    $('.menu-pagina ul li').removeClass('h-15-v')
+    $('.menu-pagina ul li').addClass('shareW')
+
+  } else {
+
+    $('.menu-pagina ul li').removeClass('shareW')
+    $('.menu-pagina ul li').addClass('h-15-v')
 
 
+  }
 
 }
 
@@ -675,4 +701,8 @@ function proyectos_roockies() {
   }
 
 
+}
+//breadcrumbs hack
+function mapa_sitio() {
+  $(".trail-browse").html("Mapa: ")
 }

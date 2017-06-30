@@ -11,7 +11,7 @@ get_header();
     <!--  -->
     <div class="bread columns p-0-3 h-10">
       <?php
-      get_template_part('secciones/general/breadcrumbs')
+      get_template_part('secciones/general/breadcrumbs');
       ?>
     </div>
     <!--  -->

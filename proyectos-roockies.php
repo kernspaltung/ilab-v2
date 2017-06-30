@@ -11,9 +11,9 @@ get_header();
   <div class="columns p-1">
 
     <!--  -->
-    <div class="bread columns p-0-2 h-10">
+    <div class="bread columns p-0-3 h-10">
       <?php
-      get_template_part('secciones/general/breadcrumbs')
+      get_template_part('secciones/general/breadcrumbs');
       ?>
     </div>
     <!--  -->
