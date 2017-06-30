@@ -24,12 +24,14 @@
 
     </div>
 
-  </div>
+    <hr>
+
+</div>
 
 
-  <?php
-  get_template_part('secciones/general/footer-widgets');
-  ?>
+<?php
+get_template_part('secciones/general/footer-widgets');
+?>
 
 
 </footer>

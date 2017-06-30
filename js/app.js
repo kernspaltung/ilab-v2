@@ -640,14 +640,14 @@ function header_login() {
     var posicion = fondo.position()
 
     if( (posicion.top - 1 ) <= negativo) {
-      console.log("menor o igual a negativo" + " " + posicion.top + " " + negativo );
+      // console.log("menor o igual a negativo" + " " + posicion.top + " " + negativo );
       // entra formulario
       fondo.css(posicioninicial)
 
       $(this).html('X')
     } else {
       // sale formulario
-      console.log("mayor o igual a negativo" + " " + posicion.top + " " + negativo);
+      // console.log("mayor o igual a negativo" + " " + posicion.top + " " + negativo);
       fondo.css(posicioncerrada)
 
       $(this).html('Ingresa')
