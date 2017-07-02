@@ -55,9 +55,9 @@ function setup() {
 
   }
   //ultimos en ejecutar
-  u.verticalCenter()
   u.shareW()
   u.shareH()
+  u.verticalCenter()
   // u.squareH()
   // setTimeout(function(){
   //
@@ -459,12 +459,12 @@ function fullpage() {
 
     //Scrolling
     css3: true,
-    scrollingSpeed: 1500,
+    scrollingSpeed: 2000,
     autoScrolling: true,
-    fitToSection: false,
+    fitToSection: true,
     fitToSectionDelay: 750,
     scrollBar: true,
-    easing: 'swing',//'easeInOutCubic',
+    easing: 'easeOutExpo',//'easeInOutCubic',
     easingcss3: 'ease',
 
     //Accessibility

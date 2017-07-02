@@ -17,6 +17,9 @@
 <?php
 get_template_part('secciones/general/footer-widgets');
 ?>
+<?php
+get_template_part('secciones/general/copyright');
+?>
 
 </footer>
 

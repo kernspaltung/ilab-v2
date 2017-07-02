@@ -86,7 +86,7 @@ get_header();
 
     endwhile;
 
-    include_once "secciones/general/paginacion-cpt.php";
+    get_template_part("secciones/general/paginacion-cpt");
 
   endif;
   ?>
