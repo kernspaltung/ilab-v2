@@ -23,7 +23,7 @@ get_header();
       while (have_posts()): the_post();
       ?>
 
-      <div class="columns small-12 h-80-v v-center">
+      <div class="columns small-12 h-90-v v-center">
 
 
         <h3 class="columns  p-0 text-left font-light">
@@ -53,7 +53,7 @@ get_header();
 
   <div class="become columns h-a p-1">
 
-    <?php echo do_shortcode('[contact-form-7 id="235" title="SEB"]'); ?>
+    <?php echo do_shortcode('[contact-form-7 id="243" title="SEB"]'); ?>
 
   </div>
 </div>

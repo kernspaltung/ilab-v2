@@ -24,9 +24,9 @@
 
 <body>
 
-  <header id="header" class="altura-header columns shadow fixed top left z1k1 ovH color-blanco-bg">
+  <header id="header" class="altura-header columns shadow fixed top left z1k1 ovH p-0">
 
-    <div id="header-top" class="columns p-0 h-35">
+    <div id="header-top" class="columns h-35">
 
       <!-- Este div vacio desaparece en movil para que no mueva las redes -->
       <div class="columns medium-6 large-8 hide-for-small-only"></div>
@@ -57,7 +57,7 @@
 
 
 
-    <div id="header-bottom" class="columns p-0 h-65">
+    <div id="header-bottom" class="columns h-65">
 
       <div id="header-escritorio-logo" class="columns small-4 p-0-1">
 

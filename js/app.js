@@ -459,12 +459,12 @@ function fullpage() {
 
     //Scrolling
     css3: true,
-    scrollingSpeed: 2000,
-    autoScrolling: true,
+    scrollingSpeed: 1000,
+    autoScrolling: false,
     fitToSection: true,
     fitToSectionDelay: 750,
     scrollBar: true,
-    easing: 'easeOutExpo',//'easeInOutCubic',
+    easing: 'easeInOutCubic',//'easeInOutCubic',
     easingcss3: 'ease',
 
     //Accessibility
