@@ -705,4 +705,5 @@ function proyectos_roockies() {
 //breadcrumbs hack
 function mapa_sitio() {
   $(".trail-browse").html("Mapa: ")
+  $('.trail-begin a span').html('Inicio')
 }

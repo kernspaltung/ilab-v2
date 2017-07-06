@@ -8,10 +8,19 @@ input#searchsubmit {
   height: 100%;
   textarea {
     border: 0px !important;
+    @extend .card;
+    @extend .color-claro-bg;
   }
   input {
     border: 0px !important;
+    @extend .card;
+    @extend .color-claro-bg;
 
+  }
+
+  select {
+    @extend .card;
+    @extend .color-claro-bg;
   }
 
 }
@@ -95,3 +104,9 @@ body.login div#login form#loginform {
 .login-username {
   @extend .color-verde;
 }
+
+// fix a tamano de date picker cf7
+#ui-datepicker-div {
+  height: auto;
+}
+//

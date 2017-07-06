@@ -223,12 +223,9 @@ li.current-menu-item a {
   padding-left: 0.9375rem !important;
 
   &.trail-items {
-
-    li {
-
-      a {
-        span {
-
+    & li {
+      & a {
+        & span {
           @extend .color-texto;
           @extend .font-s;
         }
@@ -236,8 +233,37 @@ li.current-menu-item a {
     }
   }
 }
-.lista-categorias {
+.trail-items {
+   display: inline-flex !important;
+   padding-left: 13px !important;
+}
+.trail-end {
+  & span {
+    @extend .color-naranja;
+    font-size: 11px !important;
+    text-transform: lowercase;
+  }
+}
+ li.trail-item {
+  & a {
+    & span {
+      // @extend .font-s;
+      font-size: 11px !important;
+      text-transform: lowercase;
+      @extend .color-texto;
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+  a:hover {
+    // @extend .color-azul;
+    color: orange !important;
+    text-decoration: none !important;
+  }
+}
 
+.lista-categorias {
   & li a {
     @extend .shadow;
   }
