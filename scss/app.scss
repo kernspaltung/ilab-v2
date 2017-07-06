@@ -222,13 +222,18 @@ li.current-menu-item a {
   padding: 5px !important;
   padding-left: 0.9375rem !important;
 
-  span {
+  &.trail-items {
 
-    a {
-      @extend .color-texto;
-      @extend .font-s;
+    li {
+
+      a {
+        span {
+
+          @extend .color-texto;
+          @extend .font-s;
+        }
+      }
     }
-
   }
 }
 .lista-categorias {

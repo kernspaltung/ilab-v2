@@ -23,7 +23,7 @@ get_header();
       while (have_posts()): the_post();
       ?>
 
-      <div class="columns small-12 h-90-v v-center">
+      <div class="columns small-12 h-90-v">
 
 
         <h3 class="columns  p-0 text-left font-light">

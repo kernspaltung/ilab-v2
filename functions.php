@@ -119,3 +119,7 @@ function tags($content) {
   return $content;
 }
 add_filter( 'the_content', 'tags' );
+
+// fix contact form 7 date field
+add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
+//  
