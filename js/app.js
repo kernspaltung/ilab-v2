@@ -16,23 +16,21 @@ $(document).ready(function() {
   //
   resize()
   //
+
+  setTimeout(function() {
+
+    u.verticalCenter()
+
+  },250)
 })
 //
 
 function setup() {
 
-  // u.addWindowResizeFunction( mueve_menu )
-  // u.addWindowResizeFunction( u.verticalCenter )
-  // u.addWindowResizeFunction( u.shareW )
-  // u.addWindowResizeFunction( u.shareH )
-  // u.addWindowResizeFunction( u.squareH )
-  // u.addWindowResizeFunction( menu_movil )
   mueve_menu()
   color_menu_footer()
   menu_movil()
 
-
-  //
   //Carga especifica; si es INICIO o no por valor -> (var inicio) en headers
   if (inicio == 1) {
 
@@ -43,27 +41,20 @@ function setup() {
 
   } else if (inicio == 0) {
 
-    mapa_sitio()
     menu_paginas()
+    mapa_sitio()
     colores_menu()
     color_menu_footer()
     slider_sidebar()
     proyectos_roockies()
     setTimeout(function(){
       sticky_sidebar()
-    },100)
+    },200)
 
   }
   //ultimos en ejecutar
   u.shareW()
   u.shareH()
-  u.verticalCenter()
-  // u.squareH()
-  // setTimeout(function(){
-  //
-  //   $(window).trigger('resize')
-  //
-  // },100);
 
 }
 
@@ -71,37 +62,24 @@ function resize() {
   $(window).resize(function() {
 
     mueve_menu()
-    u.shareW()
-    u.shareH()
-    // u.squareH()
     menu_movil()
-    u.verticalCenter()
-
 
     //Carga especifica; si es INICIO: var inicio = 1
     // Esta declarada en el header
-    if (inicio == 1) {
+    if (! inicio == 1) {
 
-      setTimeout(function() {
-
-        console.log('inicio')
-        // slider_portada()
-        // slider_aliados()
-        svgs()
-        // paralax()
-      },100)
-
-    } else {
-
-      sticky_sidebar()
       setTimeout(function() {
         menu_paginas()
-        // colores_menu()
-        // proyectos_roockies()
       },100)
 
+      sticky_sidebar()
     }
 
+    u.shareW()
+    u.shareH()
+    setTimeout(function() {
+      u.verticalCenter()
+    },250)
   })//resize func
 
 }
@@ -373,24 +351,24 @@ function menu_paginas() {
     li.removeClass('shareH h-a text-left');
     li.addClass('shareW h-100 text-center');
 
-    setTimeout(function() {//activa anchos
-      u.shareW()
-    },100)
+    // setTimeout(function() {//activa anchos
+    //   u.shareW()
+    // },100)
 
   } else {
 
     li.removeClass('shareW h-100 text-center');
     li.addClass('shareH h-a text-left');
 
-    setTimeout(function() {//activa alturas
-      u.shareH()
-    },100)
+    // setTimeout(function() {//activa alturas
+    //   u.shareH()
+    // },100)
 
   }
 
-  setTimeout(function() {//activa alturas
-    u.verticalCenter()
-  },200)
+  // setTimeout(function() {//activa alturas
+  //   u.verticalCenter()
+  // },200)
 }
 
 function colores_menu() {
