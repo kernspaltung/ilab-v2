@@ -7,7 +7,7 @@ get_header();
 
 <section id="content" class="content columns small-12 medium-8 large-9 h-a">
 
-  <div class="columns p-1 h-a">
+  <div class="columns p-t-1 h-a">
 
 
     <!--  -->

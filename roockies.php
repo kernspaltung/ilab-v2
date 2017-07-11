@@ -25,7 +25,7 @@ endif;
 ?>
 <section id="content" class="content columns small-12 large-9 p-0 h-a">
 
-  <div class="columns p-1">
+  <div class="columns p-t-1">
 
     <!--  -->
     <div class="bread columns p-0-2 h-10">

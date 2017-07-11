@@ -23,7 +23,7 @@ $search = new WP_Query($search_query);
 
 <section id="content" class="content columns small-12 medium-8 large-9">
 
-  <div class="columns p-1">
+  <div class="columns p-t-1">
 
 
 

@@ -13,6 +13,7 @@ $(document).ready(function() {
   pasarela_roockies()
   header_login()
 
+  // scroll()
   //
   resize()
   //
@@ -83,6 +84,15 @@ function resize() {
   })//resize func
 
 }
+
+// function scroll() {
+//   $(window).scroll(function() {
+//
+//     setTimeout(function() {
+//       sticky_sidebar()
+//     },2000)
+//   })
+// }
 //
 function img_liquid() {
 
@@ -205,9 +215,9 @@ function sticky_sidebar() {
   setTimeout(function() {
     var fixSticky = $('#sidebar-sticky').parent()
     var ancho = fixSticky.width()
-    var fix = ancho - 1
+    var fix = ancho - 2
     fixSticky.css('width',fix)
-  },50)
+  },450)
 }
 //
 
@@ -437,8 +447,8 @@ function fullpage() {
 
     //Scrolling
     css3: true,
-    scrollingSpeed: 1000,
-    autoScrolling: false,
+    scrollingSpeed: 750,
+    autoScrolling: true,
     fitToSection: true,
     fitToSectionDelay: 750,
     scrollBar: true,
@@ -457,14 +467,14 @@ function fullpage() {
     paddingBottom: '0vh',
     fixedElements: false,
     responsiveWidth: 0,
-    responsiveHeight: 0,
-    responsiveSlides: false,
+    // responsiveHeight: 0,
+    // responsiveSlides: false,
 
     //Custom selectors
     sectionSelector: '.section',
     slideSelector: '.slide',
 
-    lazyLoading: false,
+    lazyLoading: true,
 
     //events
     // onLeave: function(index, nextIndex, direction){},
