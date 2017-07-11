@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Become - Inscripción
+Template Name: Lego Formulario
 */
 get_header();
 ?>
@@ -53,7 +53,7 @@ get_header();
 
   <div class="become columns h-a p-1">
 
-    <?php echo do_shortcode('[contact-form-7 id="235" title="Bootcamp"]'); ?>
+    <?php echo do_shortcode('[contact-form-7 id="426" title="LEGO"]'); ?>
 
   </div>
 </div>
