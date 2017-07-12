@@ -10,7 +10,7 @@ $(document).ready(function() {
   fullpage()
   menu_scroll()
   slider_footer()
-  pasarela_roockies()
+  pasarela_rookies()
   header_login()
 
   // scroll()
@@ -53,7 +53,7 @@ function setup() {
     colores_menu()
     color_menu_footer()
     slider_sidebar()
-    proyectos_roockies()
+    proyectos_rookies()
     setTimeout(function(){
       sticky_sidebar()
     },250)
@@ -615,10 +615,10 @@ function menu_scroll() {
 
 }
 
-// roockies
-function pasarela_roockies() {
+// rookies
+function pasarela_rookies() {
 
-  // para ejecutarse comprueba que sea la pagina de roockies
+  // para ejecutarse comprueba que sea la pagina de rookies
   // para ejecutar el codigo para la imagen
   if ($('.cont-pasarela').is(":visible")) {
 
@@ -682,6 +682,7 @@ function header_login() {
     'transform': 'translateY(' + negativo +'px)'
   }
 
+  fondo.removeClass('shadow')
   // abre menu movil
   $('#boton-login .button').on('click', function() {
 
@@ -691,12 +692,14 @@ function header_login() {
       // console.log("menor o igual a negativo" + " " + posicion.top + " " + negativo );
       // entra formulario
       fondo.css(posicioninicial)
+      fondo.addClass('shadow')
 
       $(this).html('X')
     } else {
       // sale formulario
       // console.log("mayor o igual a negativo" + " " + posicion.top + " " + negativo);
       fondo.css(posicioncerrada)
+      fondo.removeClass('shadow')
 
       $(this).html('Ingresa')
 
@@ -707,7 +710,7 @@ function header_login() {
 }
 
 
-function proyectos_roockies() {
+function proyectos_rookies() {
 
   // default
   // $("#proyecto-header").addClass("p-l-1 absDownL");

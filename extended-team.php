@@ -60,13 +60,14 @@ get_header();
       <a href="<?php echo get_the_permalink();?>" class="columns p-0 h-a card">
 
 
-        <div class="columns p-1-2 h-50-v h-md-35-v">
-          <div class="columns p-0 round">
-            <div class="columns p-0 imgLiquid imgLiquidNoFill">
-              <?php echo get_the_post_thumbnail(); ?>
-            </div>
+        <div class="w-100 p-1 h-40-v ">
 
+          <div class="columns p-0 round">
+            <div class="columns  p-0 imgLiquid imgLiquidNoFill">
+              <?php echo  get_the_post_thumbnail(); ?>
+            </div>
           </div>
+
         </div>
 
         <div class=" texto-perfil columns p-0-3 h-a">

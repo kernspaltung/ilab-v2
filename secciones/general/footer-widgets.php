@@ -41,7 +41,7 @@
 
   </div>
 
-  <div class="columns small-12 large-4 h-footer-widget v-center hide-for-small-only">
+  <div class="columns small-12 large-4 h-footer-widget v-center">
 
     <div class="columns h-90 text-center">
       <?php

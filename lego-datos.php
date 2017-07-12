@@ -23,16 +23,16 @@ get_header();
       while (have_posts()): the_post();
       ?>
 
-      <div class="columns small-12 h-80-v v-center">
+      <div class="columns small-12 h-a">
 
 
-        <h3 class="columns  p-0 text-left font-light">
+        <h3 class="columns p-0 text-left font-light">
           <?php
           echo get_the_title();
           ?>
         </h3>
 
-        <div class="columns p-0 h-50 h-md-40 imgLiquid imgLiquidFill">
+        <div class="columns p-0 h-50-v h-md-40-v imgLiquid imgLiquidFill">
           <?php
           echo get_the_post_thumbnail(); ?>
         </div>

@@ -31,7 +31,7 @@ get_header();
           ?>
         </h4 >
 
-        <div class="columns h-a p-0 p-t-2 font-s font-md-s text-left">
+        <div class="columns h-a p-0 p-t-2 font-s font-md-m text-left">
 
           <?php echo get_the_content(); ?>
 
@@ -60,9 +60,12 @@ get_header();
 
       <a href="<?php echo  get_the_permalink();?>" class="columns p-0 h-a card">
 
-        <div class="w-100 p-2 h-40-v">
-          <div class="columns round p-0 imgLiquid imgLiquidFill">
-            <?php echo get_the_post_thumbnail(); ?>
+        <div class="w-100 p-1 h-40-v ">
+
+          <div class="columns p-0 round">
+            <div class="columns  p-0 imgLiquid imgLiquidNoFill">
+              <?php echo  get_the_post_thumbnail(); ?>
+            </div>
           </div>
 
         </div>
@@ -85,7 +88,9 @@ get_header();
     <?php
   endwhile;
   // Paginacion
-  include_once "secciones/general/paginacion-cpt.php";
+  // include_once "secciones/general/paginacion-cpt.php";
+  get_template_part("secciones/general/paginacion-cpt");
+//
   //
 endif;
 ?>

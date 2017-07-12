@@ -2,7 +2,7 @@
 
 
   <?php
-  $menu = array('Inicio', 'Nosotros','Bootcamp','Incuba',/*'Startups',*/'Ailados','Eventos/AC','Contacto');
+  $menu = array('Inicio', 'Nosotros','Bootcamp','Incuba',/*'Startups',*/'Aliados','Eventos/AC','Contacto');
   $ids = array('portada', 'quien-somos','bootcamp','incuba',/*'startups',*/'aliados','eventos-ac','contacto');
 
   for ($i=0; $i < count($menu) ; $i++):

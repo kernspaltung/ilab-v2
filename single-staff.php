@@ -27,7 +27,7 @@ get_header();
         <div class="columns p-t-2 p-b-2 h-80 h-md-70 v-center">
 
 
-          <div class="columns small-12 medium-6 large-4 p-0 h-40-v m-b-2 h-40 imgLiquid imgLiquidFill h-45-v h-md-40-v">
+          <div class="columns small-12 medium-6 large-4 p-0 h-40-v m-b-2 h-40 imgLiquid imgLiquidNoFill h-45-v h-md-40-v">
             <?php echo get_the_post_thumbnail(); ?>
           </div>
 
@@ -52,7 +52,7 @@ get_header();
 
           </div>
           <hr>
-          <div class="columns p-0 p-t-1 h-a font-s font-sm-m font-md-s">
+          <div class="columns p-0 p-t-1 h-a font-light">
             <label for="">Biografía: </label>
             <?php
               echo get_post_meta(get_the_ID(),"staff-bio",true);

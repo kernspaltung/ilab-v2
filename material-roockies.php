@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Material Roockies*/
+/*Template Name: Material Rookies*/
 get_header();
 
 ?>
