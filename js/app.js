@@ -23,6 +23,12 @@ $(document).ready(function() {
     u.verticalCenter()
 
   },250)
+
+  setTimeout(function() {
+
+    sticky_sidebar()
+
+  },750)
 })
 //
 
@@ -50,7 +56,7 @@ function setup() {
     proyectos_roockies()
     setTimeout(function(){
       sticky_sidebar()
-    },200)
+    },250)
 
   }
   //ultimos en ejecutar
@@ -89,8 +95,9 @@ function resize() {
 //   $(window).scroll(function() {
 //
 //     setTimeout(function() {
-//       sticky_sidebar()
-//     },2000)
+
+//     },1000)
+//
 //   })
 // }
 //
@@ -206,18 +213,34 @@ function slider_aliados() {
 //
 function sticky_sidebar() {
 
-  $('#sidebar-sticky').stick_in_parent({
-    // recalc_every:1
-  })
+  $('#sidebar-sticky').stick_in_parent()
 
-  // fix bug con el sticky desbordandose en ciertas resoluciones
-  //restandole 2px al contenedor
+  $('#sidebar-sticky').on('sticky_kit:bottom', function(e) {
+    $(this).parent().css('position', 'static');
+    fix_sticky()
+  }).on('sticky_kit:unbottom', function(e) {
+    $(this).parent().css('position', 'relative');
+  })
+  var fixSticky = $('#sidebar-sticky').parent()
+  var ancho = fixSticky.width()
+  var fix = ancho - 2
   setTimeout(function() {
-    var fixSticky = $('#sidebar-sticky').parent()
-    var ancho = fixSticky.width()
-    var fix = ancho - 2
     fixSticky.css('width',fix)
-  },450)
+    // fixSticky.addClass('columns small-12 medium-3');
+  },100)
+}
+
+// fix bug con el sticky desbordandose en ciertas resoluciones
+//restandole 2px al contenedor
+function fix_sticky() {
+  // var fixSticky = $('.is_stuck')
+  var fixSticky = $('.is_stuck').parent()
+  var ancho = fixSticky.width()
+  var fix = ancho - 2
+  setTimeout(function() {
+    // fixSticky.css('width',fix)
+    fixSticky.addClass('columns small-12 medium-3');
+  },500)
 }
 //
 
