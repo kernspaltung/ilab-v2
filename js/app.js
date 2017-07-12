@@ -220,6 +220,7 @@ function sticky_sidebar() {
     fix_sticky()
   }).on('sticky_kit:unbottom', function(e) {
     $(this).parent().css('position', 'relative');
+    fix_up_sticky()
   })
   var fixSticky = $('#sidebar-sticky').parent()
   var ancho = fixSticky.width()
@@ -238,9 +239,19 @@ function fix_sticky() {
   var ancho = fixSticky.width()
   var fix = ancho - 2
   setTimeout(function() {
-    // fixSticky.css('width',fix)
-    fixSticky.addClass('columns small-12 medium-3');
-  },500)
+    fixSticky.css('width',fix)
+    // fixSticky.addClass('columns small-12 medium-3');
+  },50)
+}
+function fix_up_sticky() {
+  // var fixSticky = $('.is_stuck')
+  var fixSticky = $('.is_stuck').parent()
+  var ancho = fixSticky.width()
+  var fix = ancho + 2
+  setTimeout(function() {
+    fixSticky.css('width',fix)
+    // fixSticky.addClass('columns small-12 medium-3');
+  },50)
 }
 //
 

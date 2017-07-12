@@ -62,6 +62,15 @@ get_header();
 
         </div>
 
+        <!--  -->
+        <div class="columns h-a p-t-1 p-b-1">
+
+          <div class="columns h-a p-b-1 p-0">
+            <?php echo "Comparte: "?>
+          </div>
+          <?php echo do_shortcode('[addtoany buttons="google_plus,twitter,facebook,email"]') ?>
+        </div>
+        <!--  -->
 
         <?php
 

@@ -32,11 +32,11 @@ get_header();
           <?php echo get_the_post_thumbnail(); ?>
         </div>
 
-          <h3 class="columns p-0">
+        <h3 class="columns p-0">
 
-            <?php echo get_the_title(); ?>
+          <?php echo get_the_title(); ?>
 
-          </h3>
+        </h3>
 
         <hr>
         <label class="columns text-right"><?php echo get_the_date(); ?></label>
@@ -53,9 +53,19 @@ get_header();
 
       </div>
 
-      <div class="columns h-a">
+      <!--  -->
+      <div class="columns h-a p-t-1 p-b-1">
+
+        <div class="columns h-a p-b-1 p-0">
+          <?php echo "Comparte: "?>
+        </div>
+        <?php echo do_shortcode('[addtoany buttons="google_plus,twitter,facebook,email"]') ?>
+      </div>
+
+      <div class="columns h-a p-t-1 p-b-1">
         <?php echo tags(); ?>
       </div>
+      <!--  -->
       <?php
 
     endwhile;
