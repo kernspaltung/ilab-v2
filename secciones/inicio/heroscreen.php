@@ -47,7 +47,7 @@
           </div>
           <div class="columns small-8 medium-4 large-2 small-centered h-a">
 
-            <a href="<?php echo get_permalink();?>" class="color-verde-bg color-link-hover-bg color-claro-hover color-claro columns p-1-1 font-s font-sm-m font-lg-l text-center">
+            <a href="<?php echo get_permalink();?>" class="color-azul-bg color-link-hover-bg color-claro-hover color-claro columns p-1-1 font-s font-sm-m font-lg-l text-center shadow">
 
               <?php
 
@@ -72,8 +72,6 @@
   ?>
 
 </div>
-
-
 
 
 </section>

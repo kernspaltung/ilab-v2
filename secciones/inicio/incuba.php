@@ -35,7 +35,7 @@
       <div class="columns h-100">
         <!-- h-85 -->
 
-        <div class="columns p-0 small-11 medium-10 large-9 h-50 small-centered">
+        <div class="columns p-0 small-11 medium-10 large-9 h-35 small-centered">
 
           <!-- svg animado -->
           <object id="incuba-svg" class="columns p-0 h-100 text-shadow" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri();?>/img/inicio-svgs/incuba.svg"></object>
@@ -43,7 +43,7 @@
         </div>
 
         <!--  -->
-        <div class="columns p-1 p-l-0 p-r-0 small-11 medium-9 large-7 small-centered h-50 rel v-center">
+        <div class="columns p-1 p-l-0 p-r-0 small-11 medium-9 large-7 small-centered h-65 rel v-center">
 
           <div class="columns p-1 h-a font-s font-md-m text-justified color-claro shadow rel">
 
@@ -56,13 +56,13 @@
 
             ?>
 
+            <a href="<?php echo get_page_link(16);?>" class="link-seccion color-azul-bg color-link-hover-bg text-center color-claro columns small-8 medium-6 large-4 h-a p-0-2 m-t-0-2 m-b-0 font-s font-sm-m">
+
+              Click para conocer más
+
+            </a>
           </div>
 
-          <a href="<?php echo get_page_link(16);?>" class="link-seccion color-verde-bg color-link-hover-bg text-center color-claro columns small-8 medium-6 large-4 h-a p-1 m-t-0-2 m-b-1 font-s font-sm-m font-lg-l absDownR shadow">
-
-            Click para conocer más
-
-          </a>
 
         </div>
 

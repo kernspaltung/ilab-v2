@@ -45,13 +45,13 @@
 
           ?>
 
+          <a href="<?php echo get_page_link(20);?>" class="link-seccion color-naranja-bg color-link-hover-bg color-claro columns small-8 medium-6 large-4 h-a p-0-2 m-t-0-2 m-l-0-2 text-center font-s font-sm-m">
+
+            Click para conocer más
+
+          </a>
         </div>
 
-        <a href="<?php echo get_page_link(20);?>" class="link-seccion color-amarillo-bg color-link-hover-bg color-claro columns small-8 medium-6 large-4 h-a p-1 m-t-0-2 text-center font-s font-sm-m font-lg-l absDownR shadow">
-
-          Click para conocer más
-
-        </a>
 
       </div>
 
