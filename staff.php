@@ -88,8 +88,8 @@ get_header();
     <?php
   endwhile;
   // Paginacion
-  // include_once "secciones/general/paginacion-cpt.php";
-  get_template_part("secciones/general/paginacion-cpt");
+  include_once "secciones/general/paginacion-cpt.php";
+  // get_template_part("secciones/general/paginacion-cpt");
 //
   //
 endif;
