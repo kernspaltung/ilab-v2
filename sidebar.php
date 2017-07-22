@@ -25,7 +25,7 @@
       <div class="columns p-0 rel">
         <a href="<?php echo get_post_meta(get_the_ID(),"side-link",true);?>" class="columns p-0 h-100 absUpL" target="_blank">
 
-          <div class="columns p-0 imgLiquid imgLiquidFill">
+          <div class="columns p-0 imgLiquid imgLiquidNoFill">
 
             <?php
             echo get_the_post_thumbnail();
