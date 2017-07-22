@@ -103,7 +103,6 @@ function resize() {
 //
 function img_liquid() {
 
-
   $(".imgLiquid.imgLiquidFill").imgLiquid()
 
   $(".imgLiquid.imgLiquidNoFill").imgLiquid({fill:false})
@@ -222,13 +221,7 @@ function sticky_sidebar() {
     $(this).parent().css('position', 'relative');
     fix_up_sticky()
   })
-  var fixSticky = $('#sidebar-sticky').parent()
-  var ancho = fixSticky.width()
-  var fix = ancho - 2
-  setTimeout(function() {
-    fixSticky.css('width',fix)
-    // fixSticky.addClass('columns small-12 medium-3');
-  },100)
+
 }
 
 // fix bug con el sticky desbordandose en ciertas resoluciones
@@ -466,7 +459,6 @@ function color_menu_footer() {
 }
 
 function fullpage() {
-  // $('#fullpage').fullpage();
   $('#fullpage').fullpage({
     //Navigation
     menu: '#lista-menu',
