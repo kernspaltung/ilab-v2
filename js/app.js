@@ -213,13 +213,20 @@ function slider_aliados() {
 function sticky_sidebar() {
 
   $('#sidebar-sticky').stick_in_parent()
-
-  $('#sidebar-sticky').on('sticky_kit:bottom', function(e) {
-    $(this).parent().css('position', 'static');
+  .on('sticky_kit:stick', function(e) {
+    // $(this).parent().css('position', 'relative');
+    $('aside').addClass('p-r-2')
+  })
+  .on('sticky_kit:unstick', function(e) {
+    // $(this).parent().css('position', 'relative');
+    $('aside').addClass('p-r-2')
+  })
+  .on('sticky_kit:bottom', function(e) {
+    // $(this).parent().css('position', 'static');
     fix_sticky()
-  }).on('sticky_kit:unbottom', function(e) {
-    $(this).parent().css('position', 'relative');
-    fix_up_sticky()
+  })
+  .on('sticky_kit:unbottom', function(e) {
+    // $(this).parent().css('position', 'relative');
   })
 
 }
@@ -227,23 +234,10 @@ function sticky_sidebar() {
 // fix bug con el sticky desbordandose en ciertas resoluciones
 //restandole 2px al contenedor
 function fix_sticky() {
-  // var fixSticky = $('.is_stuck')
+  // var fixSticky = $('#main div:last-child')
   var fixSticky = $('.is_stuck').parent()
-  var ancho = fixSticky.width()
-  var fix = ancho - 2
   setTimeout(function() {
-    fixSticky.css('width',fix)
-    // fixSticky.addClass('columns small-12 medium-3');
-  },50)
-}
-function fix_up_sticky() {
-  // var fixSticky = $('.is_stuck')
-  var fixSticky = $('.is_stuck').parent()
-  var ancho = fixSticky.width()
-  var fix = ancho + 2
-  setTimeout(function() {
-    fixSticky.css('width',fix)
-    // fixSticky.addClass('columns small-12 medium-3');
+    fixSticky.addClass('columns small-12 medium-3')
   },50)
 }
 //
