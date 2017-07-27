@@ -30,7 +30,7 @@ get_header();
         <?php echo get_the_title(); ?>
       </h3>
 
-      <div class="columns font-s font-lg-m">
+      <div class="columns font-s font-md-m">
         <?php echo get_the_content(); ?>
       </div>
 

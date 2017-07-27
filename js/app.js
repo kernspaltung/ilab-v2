@@ -439,14 +439,18 @@ function color_menu_footer() {
   // tamano botones
   if ($(window).width() >= 1024) {
 
-    $('.menu-pagina ul li').removeClass('h-15-v')
-    $('.menu-pagina ul li').addClass('shareW')
+    botonpagina.addClass('h-15-v')
+    botonpagina.addClass('shareW')
+    botonpagina.removeClass('h-a')
+    setTimeout(function() {
+      u.shareW();
+    },100)
 
   } else {
 
-    $('.menu-pagina ul li').removeClass('shareW')
-    $('.menu-pagina ul li').addClass('h-15-v')
-
+    botonpagina.removeClass('shareW')
+    botonpagina.removeClass('h-15-v')
+    botonpagina.addClass('h-a')
 
   }
 

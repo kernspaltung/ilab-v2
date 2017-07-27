@@ -48,7 +48,7 @@ get_header();
             <?php echo do_shortcode('[contact-form-7 id="4" title="Contacto-ilab"]'); ?>
 
           </div>
-          <div class="columns small-12 medium-6 h-a p-1 font-s text-justify">
+          <div class="columns small-12 medium-6 h-a p-1 font-s font-md-m text-justify">
 
             <?php echo get_the_content(); ?>
 

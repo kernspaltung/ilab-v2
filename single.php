@@ -41,7 +41,7 @@ get_header();
         <hr>
         <label class="columns text-right"><?php echo get_the_date(); ?></label>
 
-        <div class="columns p-0 p-t-1 h-a font-s font-sm-m">
+        <div class="columns p-0 p-t-1 h-a font-s font-md-m">
 
           <?php
 

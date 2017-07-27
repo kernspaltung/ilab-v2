@@ -37,7 +37,7 @@ get_header();
           <?php echo get_the_post_thumbnail(); ?>
         </div>
 
-        <div class="columns h-a p-0 p-t-2 font-s font-md-s text-left">
+        <div class="columns h-a p-0 p-t-2 font-s font-md-m text-left">
 
           <?php echo get_the_content(); ?>
 

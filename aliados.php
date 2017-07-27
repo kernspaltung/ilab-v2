@@ -42,7 +42,7 @@ get_header();
             ?>
           </h3>
           <hr>
-          <div class="columns h-a p-1 font-s text-justify">
+          <div class="columns h-a p-1 font-s font-md-m text-justify">
 
             <?php echo get_the_content(); ?>
 
