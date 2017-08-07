@@ -461,7 +461,7 @@ function fullpage() {
     //Navigation
     menu: '#lista-menu',
     lockAnchors: false,
-    anchors:['portada', 'quien-somos','bootcamp','incuba',/*'startups',*/'aliados','eventos-ac','contacto'],
+    anchors:['portada', 'quien-somos','bootcamp','coworking',/*'incuba','startups',*/'aliados','eventos-ac','contacto'],
     navigation: false,
     navigationPosition: 'left',
     // navigationTooltips: ['firstSlide', 'secondSlide'],

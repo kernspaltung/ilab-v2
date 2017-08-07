@@ -15,7 +15,8 @@ get_header('inicio');
   //
   get_template_part("secciones/inicio/bootcamp");
   //
-  get_template_part("secciones/inicio/incuba");
+  // get_template_part("secciones/inicio/incuba");
+  get_template_part("secciones/inicio/coworking");
 
   // get_template_part("secciones/inicio/startups");
 

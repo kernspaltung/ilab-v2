@@ -2,13 +2,12 @@
 
 
   <?php
-  $menu = array('Inicio', 'Nosotros','Bootcamp','Incuba',/*'Startups',*/'Aliados','Eventos/AC','Contacto');
-  $ids = array('portada', 'quien-somos','bootcamp','incuba',/*'startups',*/'aliados','eventos-ac','contacto');
+  $menu = array('Inicio', 'Nosotros','Bootcamp','Coworking',/*'Incuba','Startups',*/'Aliados','Eventos/AC','Contacto');
+  $ids = array('portada', 'quien-somos','bootcamp','coworking',/*'incuba','startups',*/'aliados','eventos-ac','contacto');
 
   for ($i=0; $i < count($menu) ; $i++):
 
     ?>
-
 
     <li class="columns p-0 h-100 shareW" data-menuanchor="<?php echo $ids[$i];?>">
 

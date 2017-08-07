@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Incuba
+Template Name: Coworking
 */
 get_header();
 ?>
